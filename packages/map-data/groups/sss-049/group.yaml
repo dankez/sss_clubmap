@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: jzfkvck@gmail.com
   phone: '+421387607038'
+area_relationships:
+  - group_id: sss-049
+    area_id: area-uhrovec-kras
+    relationship: primary

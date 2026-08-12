@@ -13,3 +13,7 @@ website: https://www.speleoroznava.webnode.sk
 public_contact:
   email: mikulas.repaszky@gmail.com
   phone: '+421925756833'
+area_relationships:
+  - group_id: sss-036
+    area_id: area-roznava-silica
+    relationship: primary

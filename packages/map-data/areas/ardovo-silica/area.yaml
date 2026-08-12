@@ -1,0 +1,25 @@
+id: area-ardovo-silica
+name: Ardovský kras & Silica
+slug: ardovo-silica
+description: Prieskum a dokumentácia Ardovskej jaskyne a južnej časti Silickej planiny.
+aggregated_cave_count:
+  value: 24
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.340000000000003
+        - 48.58
+      - - 20.5
+        - 48.58
+      - - 20.5
+        - 48.480000000000004
+      - - 20.340000000000003
+        - 48.480000000000004
+      - - 20.340000000000003
+        - 48.58
+polygon_status: estimated
+groups:
+  - sss-005
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

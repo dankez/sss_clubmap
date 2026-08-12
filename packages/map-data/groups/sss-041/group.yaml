@@ -18,3 +18,7 @@ social_links:
     url: https://www.facebook.com/Speleo-SpisskaBela
   - platform: instagram
     url: https://www.instagram.com/speleota3
+area_relationships:
+  - group_id: sss-041
+    area_id: area-belianske-tatry
+    relationship: primary

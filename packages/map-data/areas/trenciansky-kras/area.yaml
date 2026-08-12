@@ -1,0 +1,25 @@
+id: area-trenciansky-kras
+name: Trenčianska kotlina & Strážov
+slug: trenciansky-kras
+description: Prieskum jaskýň v okolí Trenčína a južnej časti Strážovských vrchov.
+aggregated_cave_count:
+  value: 87
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 17.96
+        - 48.94
+      - - 18.119999999999997
+        - 48.94
+      - - 18.119999999999997
+        - 48.84
+      - - 17.96
+        - 48.84
+      - - 17.96
+        - 48.94
+polygon_status: estimated
+groups:
+  - sss-045
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

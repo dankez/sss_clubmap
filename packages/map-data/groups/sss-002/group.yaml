@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: dobosati007@gmail.com
   phone: '+421903656664'
+area_relationships:
+  - group_id: sss-002
+    area_id: area-jasovska-planina
+    relationship: primary

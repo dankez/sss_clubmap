@@ -1,0 +1,25 @@
+id: area-muranska-planina-stred
+name: Muránska planina (Stred)
+slug: muranska-planina-stred
+description: Prieskum a mapovanie hlbokých priepastí a vyvieračiek Muránskej planiny.
+aggregated_cave_count:
+  value: 82
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.96
+        - 48.809999999999995
+      - - 20.119999999999997
+        - 48.809999999999995
+      - - 20.119999999999997
+        - 48.71
+      - - 19.96
+        - 48.71
+      - - 19.96
+        - 48.809999999999995
+polygon_status: estimated
+groups:
+  - sss-028
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

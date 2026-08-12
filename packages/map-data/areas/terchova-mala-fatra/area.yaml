@@ -1,0 +1,25 @@
+id: area-terchova-mala-fatra
+name: Terchová & Krivánska Fatra
+slug: terchova-mala-fatra
+description: Prieskum jaskýň v Krivánskej Malej Fatre a okolí Terchovej.
+aggregated_cave_count:
+  value: 58
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 18.950000000000003
+        - 49.3
+      - - 19.11
+        - 49.3
+      - - 19.11
+        - 49.2
+      - - 18.950000000000003
+        - 49.2
+      - - 18.950000000000003
+        - 49.3
+polygon_status: estimated
+groups:
+  - sss-001
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

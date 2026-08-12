@@ -1,0 +1,25 @@
+id: area-krasnohorska-jaskyna
+name: Krásnohorská jaskyňa & Buzgo
+slug: krasnohorska-jaskyna
+description: Prevádzka, výskum a ochrana systému Krásnohorskej jaskyne.
+aggregated_cave_count:
+  value: 43
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.520000000000003
+        - 48.69
+      - - 20.68
+        - 48.69
+      - - 20.68
+        - 48.59
+      - - 20.520000000000003
+        - 48.59
+      - - 20.520000000000003
+        - 48.69
+polygon_status: estimated
+groups:
+  - sss-027
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

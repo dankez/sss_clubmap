@@ -1,0 +1,25 @@
+id: area-horehronie-dumbier
+name: Horehronský kras & Ďumbierske Tatry
+slug: horehronie-dumbier
+description: Speleologický výskum na Horehroní a južných svahoch Ďumbiera.
+aggregated_cave_count:
+  value: 71
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.560000000000002
+        - 48.86
+      - - 19.72
+        - 48.86
+      - - 19.72
+        - 48.760000000000005
+      - - 19.560000000000002
+        - 48.760000000000005
+      - - 19.560000000000002
+        - 48.86
+polygon_status: estimated
+groups:
+  - sss-008
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -1,0 +1,25 @@
+id: area-cervene-vrchy
+name: Červené vrchy & Západné Tatry
+slug: cervene-vrchy
+description: Vysokohorská speleológia a prieskum hlbokých jaskynných systémov Červených vrchov.
+aggregated_cave_count:
+  value: 89
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.82
+        - 49.279999999999994
+      - - 19.979999999999997
+        - 49.279999999999994
+      - - 19.979999999999997
+        - 49.18
+      - - 19.82
+        - 49.18
+      - - 19.82
+        - 49.279999999999994
+polygon_status: estimated
+groups:
+  - sss-011
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

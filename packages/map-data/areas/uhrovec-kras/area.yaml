@@ -1,0 +1,25 @@
+id: area-uhrovec-kras
+name: Uhrovecký kras & Jankov vŕšok
+slug: uhrovec-kras
+description: Prieskum jaskýň v okolí Uhrovca a Nitrických vrchov.
+aggregated_cave_count:
+  value: 76
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 18.25
+        - 48.79
+      - - 18.409999999999997
+        - 48.79
+      - - 18.409999999999997
+        - 48.690000000000005
+      - - 18.25
+        - 48.690000000000005
+      - - 18.25
+        - 48.79
+polygon_status: estimated
+groups:
+  - sss-049
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

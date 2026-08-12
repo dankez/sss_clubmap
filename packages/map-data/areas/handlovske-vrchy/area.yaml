@@ -1,0 +1,25 @@
+id: area-handlovske-vrchy
+name: Handlovská kotlina & Vtáčnik
+slug: handlovske-vrchy
+description: Prieskum krasových a pseudokrasových lokálít Handlovskej kotliny.
+aggregated_cave_count:
+  value: 37
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 18.680000000000003
+        - 48.769999999999996
+      - - 18.84
+        - 48.769999999999996
+      - - 18.84
+        - 48.67
+      - - 18.680000000000003
+        - 48.67
+      - - 18.680000000000003
+        - 48.769999999999996
+polygon_status: estimated
+groups:
+  - sss-019
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

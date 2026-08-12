@@ -13,3 +13,7 @@ website: https://www.kubi.sk
 public_contact:
   email: kubi@kubi.sk
   phone: '+421905108699'
+area_relationships:
+  - group_id: sss-039
+    area_id: area-speleopotapanie-sk
+    relationship: primary

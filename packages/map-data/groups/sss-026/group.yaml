@@ -13,3 +13,7 @@ website: http://speleomalafatra.webnode.sk
 public_contact:
   email: pavolpokrievka@zoznam.sk
   phone: '+421434223701'
+area_relationships:
+  - group_id: sss-026
+    area_id: area-vratna-mala-fatra
+    relationship: primary

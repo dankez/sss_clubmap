@@ -1,0 +1,25 @@
+id: area-hajska-dolina
+name: Hájska dolina & Zádielska planina
+slug: hajska-dolina
+description: Prieskum a športová speleológia v Hájskej doline a Zádielskej planine.
+aggregated_cave_count:
+  value: 20
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.76
+        - 48.669999999999995
+      - - 20.919999999999998
+        - 48.669999999999995
+      - - 20.919999999999998
+        - 48.57
+      - - 20.76
+        - 48.57
+      - - 20.76
+        - 48.669999999999995
+polygon_status: estimated
+groups:
+  - sss-018
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

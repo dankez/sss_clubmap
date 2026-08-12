@@ -13,3 +13,7 @@ website: https://www.speleo.sk
 public_contact:
   email: stevo.mlynarik@gmail.com
   phone: '+421903514704'
+area_relationships:
+  - group_id: sss-006
+    area_id: area-ponicky-kras
+    relationship: primary

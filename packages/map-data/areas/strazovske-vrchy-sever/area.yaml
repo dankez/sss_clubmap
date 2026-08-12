@@ -1,0 +1,25 @@
+id: area-strazovske-vrchy-sever
+name: Strážovské vrchy (Sever) & Váh
+slug: strazovske-vrchy-sever
+description: Prieskum jaskýň v okrese Ilava, Dubnica nad Váhom a Trenčianskej kotline.
+aggregated_cave_count:
+  value: 57
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 18.150000000000002
+        - 49.01
+      - - 18.31
+        - 49.01
+      - - 18.31
+        - 48.910000000000004
+      - - 18.150000000000002
+        - 48.910000000000004
+      - - 18.150000000000002
+        - 49.01
+polygon_status: estimated
+groups:
+  - sss-016
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: mgr.kyska@airtrend.sk
   phone: '+421948693191'
+area_relationships:
+  - group_id: sss-040
+    area_id: area-speleodiver-vyvieracky
+    relationship: primary

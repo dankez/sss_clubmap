@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-12T06:13:04.586Z",
-  "areas_count": 7,
+  "generated_at": "2026-08-12T06:28:56.562Z",
+  "areas_count": 53,
   "groups_count": 53,
   "areas": [
     {
-      "id": "area-cachticky-kras",
-      "name": "Čachtický kras",
-      "slug": "cachticky-kras",
-      "description": "Najsevernejší kras Malých Karpát s rozsiahlou Čachtickou jaskyňou.",
+      "id": "area-ardovo-silica",
+      "name": "Ardovský kras & Silica",
+      "slug": "ardovo-silica",
+      "description": "Prieskum a dokumentácia Ardovskej jaskyne a južnej časti Silickej planiny.",
       "aggregated_cave_count": {
-        "value": 80,
+        "value": 24,
         "estimated": true
       },
       "polygon": {
@@ -17,39 +17,300 @@
         "coordinates": [
           [
             [
-              17.7,
-              48.78
+              20.340000000000003,
+              48.58
             ],
             [
-              17.85,
-              48.77
+              20.5,
+              48.58
+            ],
+            [
+              20.5,
+              48.480000000000004
+            ],
+            [
+              20.340000000000003,
+              48.480000000000004
+            ],
+            [
+              20.340000000000003,
+              48.58
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-005"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-belianske-tatry",
+      "name": "Belianske Tatry & Spišská Belá",
+      "slug": "belianske-tatry",
+      "description": "Vysokohorský speleologický prieskum a mapovanie jaskýň Belianskych Tatier.",
+      "aggregated_cave_count": {
+        "value": 98,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.240000000000002,
+              49.269999999999996
+            ],
+            [
+              20.4,
+              49.269999999999996
+            ],
+            [
+              20.4,
+              49.17
+            ],
+            [
+              20.240000000000002,
+              49.17
+            ],
+            [
+              20.240000000000002,
+              49.269999999999996
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-041"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-borcinsky-kras",
+      "name": "Borčiansky kras & Borka",
+      "slug": "borcinsky-kras",
+      "description": "Speleologický výskum a prieskum Borčianskeho krasu a Zádielskej tiesňavy.",
+      "aggregated_cave_count": {
+        "value": 38,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.700000000000003,
+              48.68
+            ],
+            [
+              20.86,
+              48.68
+            ],
+            [
+              20.86,
+              48.580000000000005
+            ],
+            [
+              20.700000000000003,
+              48.580000000000005
+            ],
+            [
+              20.700000000000003,
+              48.68
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-012"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-cachticky-kras",
+      "name": "Čachtický kras & Malé Karpaty",
+      "slug": "cachticky-kras",
+      "description": "Prieskum a ochrana Čachtickej jaskyne a Čachtickej planiny.",
+      "aggregated_cave_count": {
+        "value": 82,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.700000000000003,
+              48.769999999999996
+            ],
+            [
+              17.86,
+              48.769999999999996
             ],
             [
               17.86,
               48.67
             ],
             [
-              17.69,
-              48.68
+              17.700000000000003,
+              48.67
             ],
             [
-              17.7,
-              48.78
+              17.700000000000003,
+              48.769999999999996
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-010"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-cervene-vrchy",
+      "name": "Červené vrchy & Západné Tatry",
+      "slug": "cervene-vrchy",
+      "description": "Vysokohorská speleológia a prieskum hlbokých jaskynných systémov Červených vrchov.",
+      "aggregated_cave_count": {
+        "value": 89,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.82,
+              49.279999999999994
+            ],
+            [
+              19.979999999999997,
+              49.279999999999994
+            ],
+            [
+              19.979999999999997,
+              49.18
+            ],
+            [
+              19.82,
+              49.18
+            ],
+            [
+              19.82,
+              49.279999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-011"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-choce-liptov",
+      "name": "Liptovský Trnovec & Chočské podhorie",
+      "slug": "choce-liptov",
+      "description": "Prieskum a výskum jaskýň v okolí Liptovskej Mary.",
+      "aggregated_cave_count": {
+        "value": 41,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.46,
+              49.16
+            ],
+            [
+              19.619999999999997,
+              49.16
+            ],
+            [
+              19.619999999999997,
+              49.06
+            ],
+            [
+              19.46,
+              49.06
+            ],
+            [
+              19.46,
+              49.16
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-025"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-chocske-vrchy",
+      "name": "Chočské vrchy & Liptovské krasy",
+      "slug": "chocske-vrchy",
+      "description": "Prieskum a mapovanie jaskýň Chočských vrchov a Kvačianskej doliny.",
+      "aggregated_cave_count": {
+        "value": 70,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.26,
+              49.19
+            ],
+            [
+              19.419999999999998,
+              49.19
+            ],
+            [
+              19.419999999999998,
+              49.09
+            ],
+            [
+              19.26,
+              49.09
+            ],
+            [
+              19.26,
+              49.19
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-020"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
       "id": "area-demanovska-dolina",
-      "name": "Demänovská dolina",
+      "name": "Demänovská dolina & Nízke Tatry",
       "slug": "demanovska-dolina",
-      "description": "Svetoznámy Demänovský jaskynný systém s dĺžkou vyše 43 km undergroundových priestorov.",
+      "description": "Prieskum, mapovanie a prepojovanie Demänovského jaskynného systému.",
       "aggregated_cave_count": {
-        "value": 300,
+        "value": 66,
         "estimated": true
       },
       "polygon": {
@@ -57,39 +318,816 @@
         "coordinates": [
           [
             [
-              19.52,
+              19.5,
+              49.04
+            ],
+            [
+              19.659999999999997,
+              49.04
+            ],
+            [
+              19.659999999999997,
+              48.940000000000005
+            ],
+            [
+              19.5,
+              48.940000000000005
+            ],
+            [
+              19.5,
+              49.04
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-013"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-devinske-karpaty",
+      "name": "Devínske & Malé Karpaty",
+      "slug": "devinske-karpaty",
+      "description": "Prieskum a mapovanie jaskynných priestorov Malých Karpát a Bratislavy.",
+      "aggregated_cave_count": {
+        "value": 76,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.970000000000002,
+              48.23
+            ],
+            [
+              17.13,
+              48.23
+            ],
+            [
+              17.13,
+              48.13
+            ],
+            [
+              16.970000000000002,
+              48.13
+            ],
+            [
+              16.970000000000002,
+              48.23
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-007"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-driencansky-kras",
+      "name": "Drienčanský kras & Rimava",
+      "slug": "driencansky-kras",
+      "description": "Prieskum a výskum Drienčanského krasu v okrese Rimavská Sobota.",
+      "aggregated_cave_count": {
+        "value": 60,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20,
+              48.529999999999994
+            ],
+            [
+              20.159999999999997,
+              48.529999999999994
+            ],
+            [
+              20.159999999999997,
+              48.43
+            ],
+            [
+              20,
+              48.43
+            ],
+            [
+              20,
+              48.529999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-034"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-drienovska-planina",
+      "name": "Drienovská planina & Zádiel",
+      "slug": "drienovska-planina",
+      "description": "Výskum jaskynných priestorov Drienovskej planiny a Medzeva.",
+      "aggregated_cave_count": {
+        "value": 85,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.57,
+              48.66
+            ],
+            [
+              20.729999999999997,
+              48.66
+            ],
+            [
+              20.729999999999997,
+              48.56
+            ],
+            [
+              20.57,
+              48.56
+            ],
+            [
+              20.57,
+              48.66
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-015"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-gaderska-dolina",
+      "name": "Gaderská & Blatnická dolina",
+      "slug": "gaderska-dolina",
+      "description": "Prieskum jaskýň vo Veľkej Fatre v Gaderskej a Blatnickej doline.",
+      "aggregated_cave_count": {
+        "value": 83,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.880000000000003,
+              48.97
+            ],
+            [
+              19.04,
+              48.97
+            ],
+            [
+              19.04,
+              48.870000000000005
+            ],
+            [
+              18.880000000000003,
+              48.870000000000005
+            ],
+            [
+              18.880000000000003,
+              48.97
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-048"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-hajska-dolina",
+      "name": "Hájska dolina & Zádielska planina",
+      "slug": "hajska-dolina",
+      "description": "Prieskum a športová speleológia v Hájskej doline a Zádielskej planine.",
+      "aggregated_cave_count": {
+        "value": 20,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.76,
+              48.669999999999995
+            ],
+            [
+              20.919999999999998,
+              48.669999999999995
+            ],
+            [
+              20.919999999999998,
+              48.57
+            ],
+            [
+              20.76,
+              48.57
+            ],
+            [
+              20.76,
+              48.669999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-018"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-handlovske-vrchy",
+      "name": "Handlovská kotlina & Vtáčnik",
+      "slug": "handlovske-vrchy",
+      "description": "Prieskum krasových a pseudokrasových lokálít Handlovskej kotliny.",
+      "aggregated_cave_count": {
+        "value": 37,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.680000000000003,
+              48.769999999999996
+            ],
+            [
+              18.84,
+              48.769999999999996
+            ],
+            [
+              18.84,
+              48.67
+            ],
+            [
+              18.680000000000003,
+              48.67
+            ],
+            [
+              18.680000000000003,
+              48.769999999999996
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-019"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-horehronie-dumbier",
+      "name": "Horehronský kras & Ďumbierske Tatry",
+      "slug": "horehronie-dumbier",
+      "description": "Speleologický výskum na Horehroní a južných svahoch Ďumbiera.",
+      "aggregated_cave_count": {
+        "value": 71,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.560000000000002,
+              48.86
+            ],
+            [
+              19.72,
+              48.86
+            ],
+            [
+              19.72,
+              48.760000000000005
+            ],
+            [
+              19.560000000000002,
+              48.760000000000005
+            ],
+            [
+              19.560000000000002,
+              48.86
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-008"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-janska-dolina",
+      "name": "Jánska dolina & Nízke Tatry",
+      "slug": "janska-dolina",
+      "description": "Prieskum a mapovanie rozsiahlych podzemných systémov Jánskej doliny (Krakova hoľa, Ohnište).",
+      "aggregated_cave_count": {
+        "value": 68,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.590000000000003,
+              49.01
+            ],
+            [
+              19.75,
+              49.01
+            ],
+            [
+              19.75,
+              48.910000000000004
+            ],
+            [
+              19.590000000000003,
+              48.910000000000004
+            ],
+            [
+              19.590000000000003,
+              49.01
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-017"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-jasovska-planina",
+      "name": "Jasovská planina & Moldava",
+      "slug": "jasovska-planina",
+      "description": "Prieskum a výskum krasu Jasovskej planiny a Medzeva.",
+      "aggregated_cave_count": {
+        "value": 36,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.900000000000002,
+              48.66
+            ],
+            [
+              21.06,
+              48.66
+            ],
+            [
+              21.06,
+              48.56
+            ],
+            [
+              20.900000000000002,
+              48.56
+            ],
+            [
+              20.900000000000002,
+              48.66
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-002"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-kozie-chrbty",
+      "name": "Kozie chrbty & Liptovská Teplička",
+      "slug": "kozie-chrbty",
+      "description": "Prieskum jaskýň Kozích chrbtov a Čierneho Váhu.",
+      "aggregated_cave_count": {
+        "value": 20,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.07,
+              48.959999999999994
+            ],
+            [
+              20.229999999999997,
+              48.959999999999994
+            ],
+            [
+              20.229999999999997,
+              48.86
+            ],
+            [
+              20.07,
+              48.86
+            ],
+            [
+              20.07,
+              48.959999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-023"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-krasnohorska-jaskyna",
+      "name": "Krásnohorská jaskyňa & Buzgo",
+      "slug": "krasnohorska-jaskyna",
+      "description": "Prevádzka, výskum a ochrana systému Krásnohorskej jaskyne.",
+      "aggregated_cave_count": {
+        "value": 43,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.520000000000003,
+              48.69
+            ],
+            [
+              20.68,
+              48.69
+            ],
+            [
+              20.68,
+              48.59
+            ],
+            [
+              20.520000000000003,
+              48.59
+            ],
+            [
+              20.520000000000003,
+              48.69
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-027"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-krasnohorska-planina",
+      "name": "Hrušovská planina & Krásna Hôrka",
+      "slug": "krasnohorska-planina",
+      "description": "Výskum a dokumentácia jaskýň v okolí Krásnohorskej Dlhej Lúky.",
+      "aggregated_cave_count": {
+        "value": 68,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.53,
+              48.669999999999995
+            ],
+            [
+              20.689999999999998,
+              48.669999999999995
+            ],
+            [
+              20.689999999999998,
+              48.57
+            ],
+            [
+              20.53,
+              48.57
+            ],
+            [
+              20.53,
+              48.669999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-004"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-liptovsky-kras",
+      "name": "Liptovský kras & Nízke Tatry",
+      "slug": "liptovsky-kras",
+      "description": "Dokumentácia a výskum krasu Liptovskej kotliny a Nízkych Tatier.",
+      "aggregated_cave_count": {
+        "value": 84,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.540000000000003,
+              49.129999999999995
+            ],
+            [
+              19.7,
+              49.129999999999995
+            ],
+            [
+              19.7,
               49.03
             ],
             [
-              19.64,
+              19.540000000000003,
               49.03
             ],
             [
-              19.65,
-              48.95
+              19.540000000000003,
+              49.129999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-024"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-ludrovska-dolina",
+      "name": "Ludrovská dolina & Veľká Fatra",
+      "slug": "ludrovska-dolina",
+      "description": "Prieskum a dokumentácia jaskýň v Ludrovskej doline a na Červenej skale.",
+      "aggregated_cave_count": {
+        "value": 60,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.220000000000002,
+              49.07
+            ],
+            [
+              19.38,
+              49.07
+            ],
+            [
+              19.38,
+              48.970000000000006
+            ],
+            [
+              19.220000000000002,
+              48.970000000000006
+            ],
+            [
+              19.220000000000002,
+              49.07
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-037"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-male-karpaty-juh",
+      "name": "Malé Karpaty (Juh & Stred)",
+      "slug": "male-karpaty-juh",
+      "description": "Prieskum a výskum jaskýň Malých Karpát v okolí Trnavy.",
+      "aggregated_cave_count": {
+        "value": 23,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.5,
+              48.43
+            ],
+            [
+              17.659999999999997,
+              48.43
+            ],
+            [
+              17.659999999999997,
+              48.330000000000005
+            ],
+            [
+              17.5,
+              48.330000000000005
+            ],
+            [
+              17.5,
+              48.43
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-047"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-mojtinsky-kras",
+      "name": "Mojtínsky kras & Suchý vrch",
+      "slug": "mojtinsky-kras",
+      "description": "Prieskum a mapovanie jaskýň Mojtínskej krasovej oblasti v Strážovských vrchoch.",
+      "aggregated_cave_count": {
+        "value": 79,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.330000000000002,
+              49.029999999999994
+            ],
+            [
+              18.49,
+              49.029999999999994
+            ],
+            [
+              18.49,
+              48.93
+            ],
+            [
+              18.330000000000002,
+              48.93
+            ],
+            [
+              18.330000000000002,
+              49.029999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-042"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-muranska-planina-stred",
+      "name": "Muránska planina (Stred)",
+      "slug": "muranska-planina-stred",
+      "description": "Prieskum a mapovanie hlbokých priepastí a vyvieračiek Muránskej planiny.",
+      "aggregated_cave_count": {
+        "value": 82,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.96,
+              48.809999999999995
+            ],
+            [
+              20.119999999999997,
+              48.809999999999995
+            ],
+            [
+              20.119999999999997,
+              48.71
+            ],
+            [
+              19.96,
+              48.71
+            ],
+            [
+              19.96,
+              48.809999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-028"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-nicolaus-liptov",
+      "name": "Liptovský Mikuláš & Nízke Tatry",
+      "slug": "nicolaus-liptov",
+      "description": "Vedecký výskum, dokumentácia a mapovanie jaskýň Liptova.",
+      "aggregated_cave_count": {
+        "value": 20,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.53,
+              49.129999999999995
+            ],
+            [
+              19.689999999999998,
+              49.129999999999995
+            ],
+            [
+              19.689999999999998,
+              49.03
             ],
             [
               19.53,
-              48.95
-            ],
-            [
-              19.52,
               49.03
+            ],
+            [
+              19.53,
+              49.129999999999995
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-029"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
-      "id": "area-mala-fatra",
-      "name": "Malá Fatra",
-      "slug": "mala-fatra",
-      "description": "Krasové útvary v kryštaliniku a obalových jednotkách Malej Fatry.",
+      "id": "area-oravsky-kras",
+      "name": "Oravský kras & Oravská Magura",
+      "slug": "oravsky-kras",
+      "description": "Prieskum jaskýň Oravskej vrchoviny, Roháčov a Oravskej Magury.",
       "aggregated_cave_count": {
-        "value": 150,
+        "value": 57,
         "estimated": true
       },
       "polygon": {
@@ -97,39 +1135,42 @@
         "coordinates": [
           [
             [
-              18.9,
-              49.26
+              19.270000000000003,
+              49.379999999999995
             ],
             [
-              19.22,
-              49.25
+              19.43,
+              49.379999999999995
             ],
             [
-              19.18,
-              49.1
+              19.43,
+              49.28
             ],
             [
-              18.88,
-              49.12
+              19.270000000000003,
+              49.28
             ],
             [
-              18.9,
-              49.26
+              19.270000000000003,
+              49.379999999999995
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-031"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
-      "id": "area-muranska-planina",
-      "name": "Muránska planina",
-      "slug": "muranska-planina",
-      "description": "Divoký kras s rozsiahlym systémom priepastí, jaskýň a vyvieračiek.",
+      "id": "area-plavecky-kras",
+      "name": "Plavecký kras & Malé Karpaty",
+      "slug": "plavecky-kras",
+      "description": "Prieskum a mapovanie Plaveckého jaskynného systému v Malých Karpatoch.",
       "aggregated_cave_count": {
-        "value": 500,
+        "value": 73,
         "estimated": true
       },
       "polygon": {
@@ -137,39 +1178,42 @@
         "coordinates": [
           [
             [
-              19.9,
-              48.85
+              17.17,
+              48.529999999999994
             ],
             [
-              20.18,
-              48.82
+              17.33,
+              48.529999999999994
             ],
             [
-              20.15,
-              48.7
+              17.33,
+              48.43
             ],
             [
-              19.88,
-              48.72
+              17.17,
+              48.43
             ],
             [
-              19.9,
-              48.85
+              17.17,
+              48.529999999999994
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-032"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
-      "id": "area-slovensky-kras",
-      "name": "Slovenský kras",
-      "slug": "slovensky-kras",
-      "description": "Najväčšia krasová oblasť na Slovensku s výnimočnými planinami a vyše 1000 jaskyňami.",
+      "id": "area-plesivecka-planina",
+      "name": "Plešivecká planina & Slovenský kras",
+      "slug": "plesivecka-planina",
+      "description": "Prieskum, mapovanie a dokumentácia jaskýň Plešiveckej a Silickej planiny.",
       "aggregated_cave_count": {
-        "value": 1000,
+        "value": 81,
         "estimated": true
       },
       "polygon": {
@@ -177,43 +1221,42 @@
         "coordinates": [
           [
             [
-              20.35,
-              48.65
+              20.340000000000003,
+              48.61
             ],
             [
-              20.85,
-              48.68
+              20.5,
+              48.61
             ],
             [
-              20.92,
-              48.52
+              20.5,
+              48.510000000000005
             ],
             [
-              20.6,
-              48.48
+              20.340000000000003,
+              48.510000000000005
             ],
             [
-              20.35,
-              48.55
-            ],
-            [
-              20.35,
-              48.65
+              20.340000000000003,
+              48.61
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-009"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
-      "id": "area-slovensky-raj",
-      "name": "Slovenský raj",
-      "slug": "slovensky-raj",
-      "description": "Unikátne rokliny, Dobšinská ľadová jaskyňa a krasové planiny Glac a Pelc.",
+      "id": "area-polana-detva",
+      "name": "Poľana & Detviansky kras",
+      "slug": "polana-detva",
+      "description": "Prieskum pseudokrasových a krasových útvarov Poľany a okolia Detvy.",
       "aggregated_cave_count": {
-        "value": 400,
+        "value": 49,
         "estimated": true
       },
       "polygon": {
@@ -221,39 +1264,128 @@
         "coordinates": [
           [
             [
-              20.18,
-              48.97
+              19.44,
+              48.61
             ],
             [
-              20.45,
-              48.96
+              19.599999999999998,
+              48.61
             ],
             [
-              20.42,
-              48.82
+              19.599999999999998,
+              48.510000000000005
             ],
             [
-              20.16,
+              19.44,
+              48.510000000000005
+            ],
+            [
+              19.44,
+              48.61
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-014"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-ponicky-kras",
+      "name": "Ponický kras & Bystrické vrchy",
+      "slug": "ponicky-kras",
+      "description": "Prieskum krasových javov v okolí Poník, Ľubietovej a Banskej Bystrice.",
+      "aggregated_cave_count": {
+        "value": 74,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.180000000000003,
+              48.769999999999996
+            ],
+            [
+              19.34,
+              48.769999999999996
+            ],
+            [
+              19.34,
+              48.67
+            ],
+            [
+              19.180000000000003,
+              48.67
+            ],
+            [
+              19.180000000000003,
+              48.769999999999996
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-006"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-povazsky-inovec",
+      "name": "Považský Inovec & Trenčín",
+      "slug": "povazsky-inovec",
+      "description": "Výskum jaskýň Považského Inovca a Beckovskej brány.",
+      "aggregated_cave_count": {
+        "value": 77,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.87,
               48.83
             ],
             [
-              20.18,
-              48.97
+              18.029999999999998,
+              48.83
+            ],
+            [
+              18.029999999999998,
+              48.730000000000004
+            ],
+            [
+              17.87,
+              48.730000000000004
+            ],
+            [
+              17.87,
+              48.83
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-021"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     },
     {
-      "id": "area-strazovske-vrchy",
-      "name": "Strážovské vrchy",
-      "slug": "strazovske-vrchy",
-      "description": "Významný vápencovo-dolomitový kras Považia a Horného Nitria.",
+      "id": "area-presovsky-kras",
+      "name": "Šarišský kras & Zlá Diera",
+      "slug": "presovsky-kras",
+      "description": "Prieskum jaskyne Zlá Diera a krasu Šarišskej vrchoviny.",
       "aggregated_cave_count": {
-        "value": 250,
+        "value": 35,
         "estimated": true
       },
       "polygon": {
@@ -261,29 +1393,892 @@
         "coordinates": [
           [
             [
-              18.3,
-              49.08
+              21.16,
+              49.05
             ],
             [
-              18.65,
-              49.06
+              21.319999999999997,
+              49.05
             ],
             [
-              18.6,
-              48.85
+              21.319999999999997,
+              48.95
             ],
             [
-              18.28,
-              48.88
+              21.16,
+              48.95
             ],
             [
-              18.3,
-              49.08
+              21.16,
+              49.05
             ]
           ]
         ]
       },
       "polygon_status": "estimated",
+      "groups": [
+        "sss-033"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-rokos-nitricke-vrchy",
+      "name": "Rokoš & Nitrické vrchy",
+      "slug": "rokos-nitricke-vrchy",
+      "description": "Prieskum jaskynných priestorov masívu Rokoša a Strážovských vrchov.",
+      "aggregated_cave_count": {
+        "value": 47,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.37,
+              48.8
+            ],
+            [
+              18.529999999999998,
+              48.8
+            ],
+            [
+              18.529999999999998,
+              48.7
+            ],
+            [
+              18.37,
+              48.7
+            ],
+            [
+              18.37,
+              48.8
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-035"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-roznava-silica",
+      "name": "Rožňavská kotlina & Slovenský kras",
+      "slug": "roznava-silica",
+      "description": "Prieskum jaskýň v blízkosti Rožňavy a priľahlých planín.",
+      "aggregated_cave_count": {
+        "value": 30,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.450000000000003,
+              48.709999999999994
+            ],
+            [
+              20.61,
+              48.709999999999994
+            ],
+            [
+              20.61,
+              48.61
+            ],
+            [
+              20.450000000000003,
+              48.61
+            ],
+            [
+              20.450000000000003,
+              48.709999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-036"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-silicka-planina",
+      "name": "Silická planina & Rožňava",
+      "slug": "silicka-planina",
+      "description": "Prieskum a mapovanie jaskynných systémov Silickej planiny.",
+      "aggregated_cave_count": {
+        "value": 72,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.450000000000003,
+              48.629999999999995
+            ],
+            [
+              20.61,
+              48.629999999999995
+            ],
+            [
+              20.61,
+              48.53
+            ],
+            [
+              20.450000000000003,
+              48.53
+            ],
+            [
+              20.450000000000003,
+              48.629999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-003"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-slovensky-kras-central",
+      "name": "Stredný Slovenský kras & Silica",
+      "slug": "slovensky-kras-central",
+      "description": "Prieskum a dokumentácia podzemných priestorov v centre Slovenského krasu.",
+      "aggregated_cave_count": {
+        "value": 77,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.42,
+              48.599999999999994
+            ],
+            [
+              20.58,
+              48.599999999999994
+            ],
+            [
+              20.58,
+              48.5
+            ],
+            [
+              20.42,
+              48.5
+            ],
+            [
+              20.42,
+              48.599999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-022"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-slovensky-raj-glac",
+      "name": "Planina Glac & Dobšinská ľadová",
+      "slug": "slovensky-raj-glac",
+      "description": "Prieskum, mapovanie a ochrana jaskýň Národného parku Slovenský raj.",
+      "aggregated_cave_count": {
+        "value": 97,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.220000000000002,
+              48.949999999999996
+            ],
+            [
+              20.38,
+              48.949999999999996
+            ],
+            [
+              20.38,
+              48.85
+            ],
+            [
+              20.220000000000002,
+              48.85
+            ],
+            [
+              20.220000000000002,
+              48.949999999999996
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-038"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-speleodiver-vyvieracky",
+      "name": "Zatopené krasové pramene & Sifóny",
+      "slug": "speleodiver-vyvieracky",
+      "description": "Podvodný speleologický prieskum a mapovanie sifónov.",
+      "aggregated_cave_count": {
+        "value": 95,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.720000000000002,
+              48.9
+            ],
+            [
+              19.88,
+              48.9
+            ],
+            [
+              19.88,
+              48.800000000000004
+            ],
+            [
+              19.720000000000002,
+              48.800000000000004
+            ],
+            [
+              19.720000000000002,
+              48.9
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-040"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-speleopotapanie-sk",
+      "name": "Slovenské zatopené jaskyne & Vyvieračky",
+      "slug": "speleopotapanie-sk",
+      "description": "Špecializovaný speleopotápačský prieskum zatopených priestorov po celom Slovensku.",
+      "aggregated_cave_count": {
+        "value": 42,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.62,
+              48.849999999999994
+            ],
+            [
+              19.779999999999998,
+              48.849999999999994
+            ],
+            [
+              19.779999999999998,
+              48.75
+            ],
+            [
+              19.62,
+              48.75
+            ],
+            [
+              19.62,
+              48.849999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-039"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-strazovske-vrchy-sever",
+      "name": "Strážovské vrchy (Sever) & Váh",
+      "slug": "strazovske-vrchy-sever",
+      "description": "Prieskum jaskýň v okrese Ilava, Dubnica nad Váhom a Trenčianskej kotline.",
+      "aggregated_cave_count": {
+        "value": 57,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.150000000000002,
+              49.01
+            ],
+            [
+              18.31,
+              49.01
+            ],
+            [
+              18.31,
+              48.910000000000004
+            ],
+            [
+              18.150000000000002,
+              48.910000000000004
+            ],
+            [
+              18.150000000000002,
+              49.01
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-016"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-terchova-mala-fatra",
+      "name": "Terchová & Krivánska Fatra",
+      "slug": "terchova-mala-fatra",
+      "description": "Prieskum jaskýň v Krivánskej Malej Fatre a okolí Terchovej.",
+      "aggregated_cave_count": {
+        "value": 58,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.950000000000003,
+              49.3
+            ],
+            [
+              19.11,
+              49.3
+            ],
+            [
+              19.11,
+              49.2
+            ],
+            [
+              18.950000000000003,
+              49.2
+            ],
+            [
+              18.950000000000003,
+              49.3
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-001"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-tisovec-hradova",
+      "name": "Tisovecký kras & Hradová",
+      "slug": "tisovec-hradova",
+      "description": "Prieskum krasových priestorov masívu Hradovej a Muránskej planiny.",
+      "aggregated_cave_count": {
+        "value": 55,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.860000000000003,
+              48.73
+            ],
+            [
+              20.02,
+              48.73
+            ],
+            [
+              20.02,
+              48.63
+            ],
+            [
+              19.860000000000003,
+              48.63
+            ],
+            [
+              19.860000000000003,
+              48.73
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-044"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-trenciansky-kras",
+      "name": "Trenčianska kotlina & Strážov",
+      "slug": "trenciansky-kras",
+      "description": "Prieskum jaskýň v okolí Trenčína a južnej časti Strážovských vrchov.",
+      "aggregated_cave_count": {
+        "value": 87,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.96,
+              48.94
+            ],
+            [
+              18.119999999999997,
+              48.94
+            ],
+            [
+              18.119999999999997,
+              48.84
+            ],
+            [
+              17.96,
+              48.84
+            ],
+            [
+              17.96,
+              48.94
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-045"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-tribec-nitra",
+      "name": "Tribeč & Nitriansky kras",
+      "slug": "tribec-nitra",
+      "description": "Prieskum krasových území v okolí Nitry a Tribeča.",
+      "aggregated_cave_count": {
+        "value": 72,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18,
+              48.36
+            ],
+            [
+              18.159999999999997,
+              48.36
+            ],
+            [
+              18.159999999999997,
+              48.260000000000005
+            ],
+            [
+              18,
+              48.260000000000005
+            ],
+            [
+              18,
+              48.36
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-030"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-tribec-zobor",
+      "name": "Tribeč & Zoborský kras",
+      "slug": "tribec-zobor",
+      "description": "Prieskum krasových javov v pohorí Tribeč.",
+      "aggregated_cave_count": {
+        "value": 88,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.17,
+              48.4
+            ],
+            [
+              18.33,
+              48.4
+            ],
+            [
+              18.33,
+              48.300000000000004
+            ],
+            [
+              18.17,
+              48.300000000000004
+            ],
+            [
+              18.17,
+              48.4
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-046"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-uhrovec-kras",
+      "name": "Uhrovecký kras & Jankov vŕšok",
+      "slug": "uhrovec-kras",
+      "description": "Prieskum jaskýň v okolí Uhrovca a Nitrických vrchov.",
+      "aggregated_cave_count": {
+        "value": 76,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.25,
+              48.79
+            ],
+            [
+              18.409999999999997,
+              48.79
+            ],
+            [
+              18.409999999999997,
+              48.690000000000005
+            ],
+            [
+              18.25,
+              48.690000000000005
+            ],
+            [
+              18.25,
+              48.79
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-049"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-upjs-vychodny-kras",
+      "name": "Východoslovenský kras & Ružín",
+      "slug": "upjs-vychodny-kras",
+      "description": "Vedecký výskum speleológov UPJŠ v oblasti Ružína a Slovenského krasu.",
+      "aggregated_cave_count": {
+        "value": 49,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.020000000000003,
+              48.879999999999995
+            ],
+            [
+              21.18,
+              48.879999999999995
+            ],
+            [
+              21.18,
+              48.78
+            ],
+            [
+              21.020000000000003,
+              48.78
+            ],
+            [
+              21.020000000000003,
+              48.879999999999995
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-050"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-varin-mala-fatra",
+      "name": "Varínka & Malá Fatra (Západ)",
+      "slug": "varin-mala-fatra",
+      "description": "Prieskum jaskýň v doline Varínky a západnej časti Malej Fatry.",
+      "aggregated_cave_count": {
+        "value": 24,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.8,
+              49.25
+            ],
+            [
+              18.959999999999997,
+              49.25
+            ],
+            [
+              18.959999999999997,
+              49.150000000000006
+            ],
+            [
+              18.8,
+              49.150000000000006
+            ],
+            [
+              18.8,
+              49.25
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-051"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-velka-fatra-central",
+      "name": "Stredná Veľká Fatra & Belianska dolina",
+      "slug": "velka-fatra-central",
+      "description": "Prieskum krasu a jaskýň v ústrednej časti Veľkej Fatry.",
+      "aggregated_cave_count": {
+        "value": 99,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19,
+              49.029999999999994
+            ],
+            [
+              19.159999999999997,
+              49.029999999999994
+            ],
+            [
+              19.159999999999997,
+              48.93
+            ],
+            [
+              19,
+              48.93
+            ],
+            [
+              19,
+              49.029999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-052"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-velka-svieckova",
+      "name": "Veľká Sviečková & Šariš",
+      "slug": "velka-svieckova",
+      "description": "Prieskum jaskynného systému Veľká Sviečková na Šariši.",
+      "aggregated_cave_count": {
+        "value": 93,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.07,
+              49.099999999999994
+            ],
+            [
+              21.229999999999997,
+              49.099999999999994
+            ],
+            [
+              21.229999999999997,
+              49
+            ],
+            [
+              21.07,
+              49
+            ],
+            [
+              21.07,
+              49.099999999999994
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-043"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-vratna-mala-fatra",
+      "name": "Vrátna dolina & Malá Fatra",
+      "slug": "vratna-mala-fatra",
+      "description": "Prieskum a výskum jaskýň Malej Fatry v okolí Vrátnej a Terchovej.",
+      "aggregated_cave_count": {
+        "value": 27,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.96,
+              49.26
+            ],
+            [
+              19.119999999999997,
+              49.26
+            ],
+            [
+              19.119999999999997,
+              49.160000000000004
+            ],
+            [
+              18.96,
+              49.160000000000004
+            ],
+            [
+              18.96,
+              49.26
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-026"
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-zilinsky-kras",
+      "name": "Žilinská kotlina & Súľovské vrchy",
+      "slug": "zilinsky-kras",
+      "description": "Prieskum jaskýň Žilinskej kotliny, Súľovských vrchov a Malej Fatry.",
+      "aggregated_cave_count": {
+        "value": 64,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.66,
+              49.269999999999996
+            ],
+            [
+              18.819999999999997,
+              49.269999999999996
+            ],
+            [
+              18.819999999999997,
+              49.17
+            ],
+            [
+              18.66,
+              49.17
+            ],
+            [
+              18.66,
+              49.269999999999996
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "groups": [
+        "sss-053"
+      ],
       "created_at": "2026-08-12",
       "updated_at": "2026-08-12"
     }
@@ -307,7 +2302,14 @@
       "public_contact": {
         "email": "tomashampl@azet.sk",
         "phone": "+421948392752"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-001",
+          "area_id": "area-terchova-mala-fatra",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-002",
@@ -327,7 +2329,14 @@
       "public_contact": {
         "email": "dobosati007@gmail.com",
         "phone": "+421903656664"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-002",
+          "area_id": "area-jasovska-planina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-003",
@@ -347,7 +2356,14 @@
       "public_contact": {
         "email": "piovarci.aragonit@gmail.com",
         "phone": "+421904800011"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-003",
+          "area_id": "area-silicka-planina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-004",
@@ -367,7 +2383,14 @@
       "public_contact": {
         "email": "vizy18@gmail.com",
         "phone": "+421911226472"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-004",
+          "area_id": "area-krasnohorska-planina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-005",
@@ -387,7 +2410,14 @@
       "public_contact": {
         "email": "skokan.alexander@gmail.com",
         "phone": "+421910502457"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-005",
+          "area_id": "area-ardovo-silica",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-006",
@@ -408,7 +2438,14 @@
       "public_contact": {
         "email": "stevo.mlynarik@gmail.com",
         "phone": "+421903514704"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-006",
+          "area_id": "area-ponicky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-007",
@@ -429,7 +2466,14 @@
       "public_contact": {
         "email": "petersevo@gmail.com",
         "phone": "+421908983646"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-007",
+          "area_id": "area-devinske-karpaty",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-008",
@@ -450,7 +2494,14 @@
       "public_contact": {
         "email": "speleobrezno@gmail.com",
         "phone": "+421905269845"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-008",
+          "area_id": "area-horehronie-dumbier",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-009",
@@ -471,7 +2522,14 @@
       "public_contact": {
         "email": "thuroczyjozef@gmail.com",
         "phone": "+421905515979"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-009",
+          "area_id": "area-plesivecka-planina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-010",
@@ -491,7 +2549,14 @@
       "public_contact": {
         "email": "oscachtice@gmail.com",
         "phone": "+421914230387"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-010",
+          "area_id": "area-cachticky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-011",
@@ -512,7 +2577,14 @@
       "public_contact": {
         "email": "jan.smoll007@gmail.com",
         "phone": "+421903512283"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-011",
+          "area_id": "area-cervene-vrchy",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-012",
@@ -532,7 +2604,14 @@
       "public_contact": {
         "email": "zverka@ovsiste.sk",
         "phone": "+421902852502"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-012",
+          "area_id": "area-borcinsky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-013",
@@ -553,7 +2632,14 @@
       "public_contact": {
         "email": "herich@speleodd.sk",
         "phone": "+421944108618"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-013",
+          "area_id": "area-demanovska-dolina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-014",
@@ -574,7 +2660,14 @@
       "public_contact": {
         "email": "ehipmanova@gmail.com",
         "phone": "+421910993703"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-014",
+          "area_id": "area-polana-detva",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-015",
@@ -595,7 +2688,14 @@
       "public_contact": {
         "email": "jozef.psotka@gmail.com",
         "phone": "+421904338683"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-015",
+          "area_id": "area-drienovska-planina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-016",
@@ -616,7 +2716,14 @@
       "public_contact": {
         "email": "pmedzihradsky@gmail.com",
         "phone": "+421905380671"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-016",
+          "area_id": "area-strazovske-vrchy-sever",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-017",
@@ -637,7 +2744,14 @@
       "public_contact": {
         "email": "s.m@speleo.sk",
         "phone": "+421919225273"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-017",
+          "area_id": "area-janska-dolina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-018",
@@ -658,7 +2772,14 @@
       "public_contact": {
         "email": "hufihu@seznam.cz",
         "phone": "+421944592831"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-018",
+          "area_id": "area-hajska-dolina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-019",
@@ -679,7 +2800,14 @@
       "public_contact": {
         "email": "peter.strecansky@gmail.com",
         "phone": "+421465473681"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-019",
+          "area_id": "area-handlovske-vrchy",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-020",
@@ -700,7 +2828,14 @@
       "public_contact": {
         "email": "juraj.szunyog@mondigroup.com",
         "phone": "+421910555654"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-020",
+          "area_id": "area-chocske-vrchy",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-021",
@@ -720,7 +2855,14 @@
       "public_contact": {
         "email": "ivan.demovic1@gmail.com",
         "phone": "+421908420545"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-021",
+          "area_id": "area-povazsky-inovec",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-022",
@@ -741,7 +2883,14 @@
       "public_contact": {
         "email": "zvcave@email.cz",
         "phone": "+421948383178"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-022",
+          "area_id": "area-slovensky-kras-central",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-023",
@@ -761,7 +2910,14 @@
       "public_contact": {
         "email": "knapp.vl@gmail.com",
         "phone": "+421908903798"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-023",
+          "area_id": "area-kozie-chrbty",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-024",
@@ -781,7 +2937,14 @@
       "website": "https://speleolm.sss.sk",
       "public_contact": {
         "email": "lub.luhova@gmail.com"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-024",
+          "area_id": "area-liptovsky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-025",
@@ -801,7 +2964,14 @@
       "public_contact": {
         "email": "vrabecma@gmail.com",
         "phone": "+421902827348"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-025",
+          "area_id": "area-choce-liptov",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-026",
@@ -822,7 +2992,14 @@
       "public_contact": {
         "email": "pavolpokrievka@zoznam.sk",
         "phone": "+421434223701"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-026",
+          "area_id": "area-vratna-mala-fatra",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-027",
@@ -843,7 +3020,14 @@
       "public_contact": {
         "email": "stankov@ke.psg.sk",
         "phone": "+421587343426"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-027",
+          "area_id": "area-krasnohorska-jaskyna",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-028",
@@ -863,7 +3047,14 @@
       "public_contact": {
         "email": "speleomp@gmail.com",
         "phone": "+421905743148"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-028",
+          "area_id": "area-muranska-planina-stred",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-029",
@@ -884,7 +3075,14 @@
       "public_contact": {
         "email": "peter.holubek@smopaj.sk",
         "phone": "+421445522061"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-029",
+          "area_id": "area-nicolaus-liptov",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-030",
@@ -904,7 +3102,14 @@
       "public_contact": {
         "email": "tlanczos@gmail.com",
         "phone": "+421911260644"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-030",
+          "area_id": "area-tribec-nitra",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-031",
@@ -924,7 +3129,14 @@
       "public_contact": {
         "email": "speleo.orava@gmail.com",
         "phone": "+421903950231"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-031",
+          "area_id": "area-oravsky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-032",
@@ -945,7 +3157,14 @@
       "public_contact": {
         "email": "marian.gruz@gmail.com",
         "phone": "+421918432640"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-032",
+          "area_id": "area-plavecky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-033",
@@ -966,7 +3185,14 @@
       "public_contact": {
         "email": "kosc@zladiera.sk",
         "phone": "+421905237565"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-033",
+          "area_id": "area-presovsky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-034",
@@ -986,7 +3212,14 @@
       "public_contact": {
         "email": "ossrs@jaskyne.info",
         "phone": "+421908714306"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-034",
+          "area_id": "area-driencansky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-035",
@@ -1006,7 +3239,14 @@
       "public_contact": {
         "email": "lubomir.kubicek@gmail.com",
         "phone": "+421948879898"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-035",
+          "area_id": "area-rokos-nitricke-vrchy",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-036",
@@ -1027,7 +3267,14 @@
       "public_contact": {
         "email": "mikulas.repaszky@gmail.com",
         "phone": "+421925756833"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-036",
+          "area_id": "area-roznava-silica",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-037",
@@ -1058,6 +3305,13 @@
           "platform": "instagram",
           "url": "https://www.instagram.com/speleork"
         }
+      ],
+      "area_relationships": [
+        {
+          "group_id": "sss-037",
+          "area_id": "area-ludrovska-dolina",
+          "relationship": "primary"
+        }
       ]
     },
     {
@@ -1079,7 +3333,14 @@
       "public_contact": {
         "email": "tulis@tulis.sk",
         "phone": "+421905923625"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-038",
+          "area_id": "area-slovensky-raj-glac",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-039",
@@ -1100,7 +3361,14 @@
       "public_contact": {
         "email": "kubi@kubi.sk",
         "phone": "+421905108699"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-039",
+          "area_id": "area-speleopotapanie-sk",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-040",
@@ -1120,7 +3388,14 @@
       "public_contact": {
         "email": "mgr.kyska@airtrend.sk",
         "phone": "+421948693191"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-040",
+          "area_id": "area-speleodiver-vyvieracky",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-041",
@@ -1151,6 +3426,13 @@
           "platform": "instagram",
           "url": "https://www.instagram.com/speleota3"
         }
+      ],
+      "area_relationships": [
+        {
+          "group_id": "sss-041",
+          "area_id": "area-belianske-tatry",
+          "relationship": "primary"
+        }
       ]
     },
     {
@@ -1172,7 +3454,14 @@
       "public_contact": {
         "email": "bohuslav.kortman@speleostrazov.sk",
         "phone": "+421905488028"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-042",
+          "area_id": "area-mojtinsky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-043",
@@ -1193,7 +3482,14 @@
       "public_contact": {
         "email": "speleosaris@gmail.com",
         "phone": "+421907955243"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-043",
+          "area_id": "area-velka-svieckova",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-044",
@@ -1213,7 +3509,14 @@
       "public_contact": {
         "email": "hutkatisovec@gmail.com",
         "phone": "+421908914017"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-044",
+          "area_id": "area-tisovec-hradova",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-045",
@@ -1233,7 +3536,14 @@
       "public_contact": {
         "email": "sovamiro@gmail.com",
         "phone": "+421918602869"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-045",
+          "area_id": "area-trenciansky-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-046",
@@ -1253,7 +3563,14 @@
       "public_contact": {
         "email": "pqq@post.sk",
         "phone": "+421902949921"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-046",
+          "area_id": "area-tribec-zobor",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-047",
@@ -1274,7 +3591,14 @@
       "public_contact": {
         "email": "sasol@speleott.sk",
         "phone": "+421908895769"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-047",
+          "area_id": "area-male-karpaty-juh",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-048",
@@ -1295,7 +3619,14 @@
       "public_contact": {
         "email": "palopokrievka@gmail.com",
         "phone": "+421902263520"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-048",
+          "area_id": "area-gaderska-dolina",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-049",
@@ -1315,7 +3646,14 @@
       "public_contact": {
         "email": "jzfkvck@gmail.com",
         "phone": "+421387607038"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-049",
+          "area_id": "area-uhrovec-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-050",
@@ -1336,7 +3674,14 @@
       "public_contact": {
         "email": "hochmuth@upjs.sk",
         "phone": "+421908977594"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-050",
+          "area_id": "area-upjs-vychodny-kras",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-051",
@@ -1357,7 +3702,14 @@
       "public_contact": {
         "email": "jkvarin@centrum.sk",
         "phone": "+421905365688"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-051",
+          "area_id": "area-varin-mala-fatra",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-052",
@@ -1377,7 +3729,14 @@
       "public_contact": {
         "email": "zuzuvacekova@gmail.com",
         "phone": "+421910198325"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-052",
+          "area_id": "area-velka-fatra-central",
+          "relationship": "primary"
+        }
+      ]
     },
     {
       "id": "sss-053",
@@ -1397,7 +3756,14 @@
       "public_contact": {
         "email": "jaskyniari@gmail.com",
         "phone": "+421903772579"
-      }
+      },
+      "area_relationships": [
+        {
+          "group_id": "sss-053",
+          "area_id": "area-zilinsky-kras",
+          "relationship": "primary"
+        }
+      ]
     }
   ]
 }

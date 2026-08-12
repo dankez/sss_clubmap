@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: tlanczos@gmail.com
   phone: '+421911260644'
+area_relationships:
+  - group_id: sss-030
+    area_id: area-tribec-nitra
+    relationship: primary

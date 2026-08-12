@@ -1,0 +1,25 @@
+id: area-ludrovska-dolina
+name: Ludrovská dolina & Veľká Fatra
+slug: ludrovska-dolina
+description: Prieskum a dokumentácia jaskýň v Ludrovskej doline a na Červenej skale.
+aggregated_cave_count:
+  value: 60
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.220000000000002
+        - 49.07
+      - - 19.38
+        - 49.07
+      - - 19.38
+        - 48.970000000000006
+      - - 19.220000000000002
+        - 48.970000000000006
+      - - 19.220000000000002
+        - 49.07
+polygon_status: estimated
+groups:
+  - sss-037
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -1,0 +1,25 @@
+id: area-povazsky-inovec
+name: Považský Inovec & Trenčín
+slug: povazsky-inovec
+description: Výskum jaskýň Považského Inovca a Beckovskej brány.
+aggregated_cave_count:
+  value: 77
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 17.87
+        - 48.83
+      - - 18.029999999999998
+        - 48.83
+      - - 18.029999999999998
+        - 48.730000000000004
+      - - 17.87
+        - 48.730000000000004
+      - - 17.87
+        - 48.83
+polygon_status: estimated
+groups:
+  - sss-021
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -1,0 +1,25 @@
+id: area-devinske-karpaty
+name: Devínske & Malé Karpaty
+slug: devinske-karpaty
+description: Prieskum a mapovanie jaskynných priestorov Malých Karpát a Bratislavy.
+aggregated_cave_count:
+  value: 76
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 16.970000000000002
+        - 48.23
+      - - 17.13
+        - 48.23
+      - - 17.13
+        - 48.13
+      - - 16.970000000000002
+        - 48.13
+      - - 16.970000000000002
+        - 48.23
+polygon_status: estimated
+groups:
+  - sss-007
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

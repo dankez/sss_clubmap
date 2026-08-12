@@ -13,3 +13,7 @@ website: https://www.jkhandlova.webnode.sk
 public_contact:
   email: peter.strecansky@gmail.com
   phone: '+421465473681'
+area_relationships:
+  - group_id: sss-019
+    area_id: area-handlovske-vrchy
+    relationship: primary

@@ -1,0 +1,25 @@
+id: area-silicka-planina
+name: Silická planina & Rožňava
+slug: silicka-planina
+description: Prieskum a mapovanie jaskynných systémov Silickej planiny.
+aggregated_cave_count:
+  value: 72
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.450000000000003
+        - 48.629999999999995
+      - - 20.61
+        - 48.629999999999995
+      - - 20.61
+        - 48.53
+      - - 20.450000000000003
+        - 48.53
+      - - 20.450000000000003
+        - 48.629999999999995
+polygon_status: estimated
+groups:
+  - sss-003
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -1,0 +1,267 @@
+{
+  "sss-001": {
+    "area_id": "area-terchova-mala-fatra",
+    "area_name": "Terchová & Krivánska Fatra",
+    "description": "Prieskum jaskýň v Krivánskej Malej Fatre a okolí Terchovej."
+  },
+  "sss-002": {
+    "area_id": "area-jasovska-planina",
+    "area_name": "Jasovská planina & Moldava",
+    "description": "Prieskum a výskum krasu Jasovskej planiny a Medzeva."
+  },
+  "sss-003": {
+    "area_id": "area-silicka-planina",
+    "area_name": "Silická planina & Rožňava",
+    "description": "Prieskum a mapovanie jaskynných systémov Silickej planiny."
+  },
+  "sss-004": {
+    "area_id": "area-krasnohorska-planina",
+    "area_name": "Hrušovská planina & Krásna Hôrka",
+    "description": "Výskum a dokumentácia jaskýň v okolí Krásnohorskej Dlhej Lúky."
+  },
+  "sss-005": {
+    "area_id": "area-ardovo-silica",
+    "area_name": "Ardovský kras & Silica",
+    "description": "Prieskum a dokumentácia Ardovskej jaskyne a južnej časti Silickej planiny."
+  },
+  "sss-006": {
+    "area_id": "area-ponicky-kras",
+    "area_name": "Ponický kras & Bystrické vrchy",
+    "description": "Prieskum krasových javov v okolí Poník, Ľubietovej a Banskej Bystrice."
+  },
+  "sss-007": {
+    "area_id": "area-devinske-karpaty",
+    "area_name": "Devínske & Malé Karpaty",
+    "description": "Prieskum a mapovanie jaskynných priestorov Malých Karpát a Bratislavy."
+  },
+  "sss-008": {
+    "area_id": "area-horehronie-dumbier",
+    "area_name": "Horehronský kras & Ďumbierske Tatry",
+    "description": "Speleologický výskum na Horehroní a južných svahoch Ďumbiera."
+  },
+  "sss-009": {
+    "area_id": "area-plesivecka-planina",
+    "area_name": "Plešivecká planina & Slovenský kras",
+    "description": "Prieskum, mapovanie a dokumentácia jaskýň Plešiveckej a Silickej planiny."
+  },
+  "sss-010": {
+    "area_id": "area-cachticky-kras",
+    "area_name": "Čachtický kras & Malé Karpaty",
+    "description": "Prieskum a ochrana Čachtickej jaskyne a Čachtickej planiny."
+  },
+  "sss-011": {
+    "area_id": "area-cervene-vrchy",
+    "area_name": "Červené vrchy & Západné Tatry",
+    "description": "Vysokohorská speleológia a prieskum hlbokých jaskynných systémov Červených vrchov."
+  },
+  "sss-012": {
+    "area_id": "area-borcinsky-kras",
+    "area_name": "Borčiansky kras & Borka",
+    "description": "Speleologický výskum a prieskum Borčianskeho krasu a Zádielskej tiesňavy."
+  },
+  "sss-013": {
+    "area_id": "area-demanovska-dolina",
+    "area_name": "Demänovská dolina & Nízke Tatry",
+    "description": "Prieskum, mapovanie a prepojovanie Demänovského jaskynného systému."
+  },
+  "sss-014": {
+    "area_id": "area-polana-detva",
+    "area_name": "Poľana & Detviansky kras",
+    "description": "Prieskum pseudokrasových a krasových útvarov Poľany a okolia Detvy."
+  },
+  "sss-015": {
+    "area_id": "area-drienovska-planina",
+    "area_name": "Drienovská planina & Zádiel",
+    "description": "Výskum jaskynných priestorov Drienovskej planiny a Medzeva."
+  },
+  "sss-016": {
+    "area_id": "area-strazovske-vrchy-sever",
+    "area_name": "Strážovské vrchy (Sever) & Váh",
+    "description": "Prieskum jaskýň v okrese Ilava, Dubnica nad Váhom a Trenčianskej kotline."
+  },
+  "sss-017": {
+    "area_id": "area-janska-dolina",
+    "area_name": "Jánska dolina & Nízke Tatry",
+    "description": "Prieskum a mapovanie rozsiahlych podzemných systémov Jánskej doliny (Krakova hoľa, Ohnište)."
+  },
+  "sss-018": {
+    "area_id": "area-hajska-dolina",
+    "area_name": "Hájska dolina & Zádielska planina",
+    "description": "Prieskum a športová speleológia v Hájskej doline a Zádielskej planine."
+  },
+  "sss-019": {
+    "area_id": "area-handlovske-vrchy",
+    "area_name": "Handlovská kotlina & Vtáčnik",
+    "description": "Prieskum krasových a pseudokrasových lokálít Handlovskej kotliny."
+  },
+  "sss-020": {
+    "area_id": "area-chocske-vrchy",
+    "area_name": "Chočské vrchy & Liptovské krasy",
+    "description": "Prieskum a mapovanie jaskýň Chočských vrchov a Kvačianskej doliny."
+  },
+  "sss-021": {
+    "area_id": "area-považsky-inovec",
+    "area_name": "Považský Inovec & Trenčín",
+    "description": "Výskum jaskýň Považského Inovca a Beckovskej brány."
+  },
+  "sss-022": {
+    "area_id": "area-slovensky-kras-central",
+    "area_name": "Stredný Slovenský kras & Silica",
+    "description": "Prieskum a dokumentácia podzemných priestorov v centre Slovenského krasu."
+  },
+  "sss-023": {
+    "area_id": "area-kozie-chrbty",
+    "area_name": "Kozie chrbty & Liptovská Teplička",
+    "description": "Prieskum jaskýň Kozích chrbtov a Čierneho Váhu."
+  },
+  "sss-024": {
+    "area_id": "area-liptovsky-kras",
+    "area_name": "Liptovský kras & Nízke Tatry",
+    "description": "Dokumentácia a výskum krasu Liptovskej kotliny a Nízkych Tatier."
+  },
+  "sss-025": {
+    "area_id": "area-choce-liptov",
+    "area_name": "Liptovský Trnovec & Chočské podhorie",
+    "description": "Prieskum a výskum jaskýň v okolí Liptovskej Mary."
+  },
+  "sss-026": {
+    "area_id": "area-vratna-mala-fatra",
+    "area_name": "Vrátna dolina & Malá Fatra",
+    "description": "Prieskum a výskum jaskýň Malej Fatry v okolí Vrátnej a Terchovej."
+  },
+  "sss-027": {
+    "area_id": "area-krasnohorska-jaskyna",
+    "area_name": "Krásnohorská jaskyňa & Buzgo",
+    "description": "Prevádzka, výskum a ochrana systému Krásnohorskej jaskyne."
+  },
+  "sss-028": {
+    "area_id": "area-muranska-planina-stred",
+    "area_name": "Muránska planina (Stred)",
+    "description": "Prieskum a mapovanie hlbokých priepastí a vyvieračiek Muránskej planiny."
+  },
+  "sss-029": {
+    "area_id": "area-nicolaus-liptov",
+    "area_name": "Liptovský Mikuláš & Nízke Tatry",
+    "description": "Vedecký výskum, dokumentácia a mapovanie jaskýň Liptova."
+  },
+  "sss-030": {
+    "area_id": "area-tribec-nitra",
+    "area_name": "Tribeč & Nitriansky kras",
+    "description": "Prieskum krasových území v okolí Nitry a Tribeča."
+  },
+  "sss-031": {
+    "area_id": "area-oravsky-kras",
+    "area_name": "Oravský kras & Oravská Magura",
+    "description": "Prieskum jaskýň Oravskej vrchoviny, Roháčov a Oravskej Magury."
+  },
+  "sss-032": {
+    "area_id": "area-plavecky-kras",
+    "area_name": "Plavecký kras & Malé Karpaty",
+    "description": "Prieskum a mapovanie Plaveckého jaskynného systému v Malých Karpatoch."
+  },
+  "sss-033": {
+    "area_id": "area-presovsky-kras",
+    "area_name": "Šarišský kras & Zlá Diera",
+    "description": "Prieskum jaskyne Zlá Diera a krasu Šarišskej vrchoviny."
+  },
+  "sss-034": {
+    "area_id": "area-driencansky-kras",
+    "area_name": "Drienčanský kras & Rimava",
+    "description": "Prieskum a výskum Drienčanského krasu v okrese Rimavská Sobota."
+  },
+  "sss-035": {
+    "area_id": "area-rokos-nitricke-vrchy",
+    "area_name": "Rokoš & Nitrické vrchy",
+    "description": "Prieskum jaskynných priestorov masívu Rokoša a Strážovských vrchov."
+  },
+  "sss-036": {
+    "area_id": "area-roznava-silica",
+    "area_name": "Rožňavská kotlina & Slovenský kras",
+    "description": "Prieskum jaskýň v blízkosti Rožňavy a priľahlých planín."
+  },
+  "sss-037": {
+    "area_id": "area-ludrovska-dolina",
+    "area_name": "Ludrovská dolina & Veľká Fatra",
+    "description": "Prieskum a dokumentácia jaskýň v Ludrovskej doline a na Červenej skale."
+  },
+  "sss-038": {
+    "area_id": "area-slovensky-raj-glac",
+    "area_name": "Planina Glac & Dobšinská ľadová",
+    "description": "Prieskum, mapovanie a ochrana jaskýň Národného parku Slovenský raj."
+  },
+  "sss-039": {
+    "area_id": "area-speleopotapanie-sk",
+    "area_name": "Slovenské zatopené jaskyne & Vyvieračky",
+    "description": "Špecializovaný speleopotápačský prieskum zatopených priestorov po celom Slovensku."
+  },
+  "sss-040": {
+    "area_id": "area-speleodiver-vyvieračky",
+    "area_name": "Zatopené krasové pramene & Sifóny",
+    "description": "Podvodný speleologický prieskum a mapovanie sifónov."
+  },
+  "sss-041": {
+    "area_id": "area-belianske-tatry",
+    "area_name": "Belianske Tatry & Spišská Belá",
+    "description": "Vysokohorský speleologický prieskum a mapovanie jaskýň Belianskych Tatier."
+  },
+  "sss-042": {
+    "area_id": "area-mojtinsky-kras",
+    "area_name": "Mojtínsky kras & Suchý vrch",
+    "description": "Prieskum a mapovanie jaskýň Mojtínskej krasovej oblasti v Strážovských vrchoch."
+  },
+  "sss-043": {
+    "area_id": "area-velka-svieckova",
+    "area_name": "Veľká Sviečková & Šariš",
+    "description": "Prieskum jaskynného systému Veľká Sviečková na Šariši."
+  },
+  "sss-044": {
+    "area_id": "area-tisovec-hradova",
+    "area_name": "Tisovecký kras & Hradová",
+    "description": "Prieskum krasových priestorov masívu Hradovej a Muránskej planiny."
+  },
+  "sss-045": {
+    "area_id": "area-trenciansky-kras",
+    "area_name": "Trenčianska kotlina & Strážov",
+    "description": "Prieskum jaskýň v okolí Trenčína a južnej časti Strážovských vrchov."
+  },
+  "sss-046": {
+    "area_id": "area-tribec-zobor",
+    "area_name": "Tribeč & Zoborský kras",
+    "description": "Prieskum krasových javov v pohorí Tribeč."
+  },
+  "sss-047": {
+    "area_id": "area-male-karpaty-juh",
+    "area_name": "Malé Karpaty (Juh & Stred)",
+    "description": "Prieskum a výskum jaskýň Malých Karpát v okolí Trnavy."
+  },
+  "sss-048": {
+    "area_id": "area-gaderska-dolina",
+    "area_name": "Gaderská & Blatnická dolina",
+    "description": "Prieskum jaskýň vo Veľkej Fatre v Gaderskej a Blatnickej doline."
+  },
+  "sss-049": {
+    "area_id": "area-uhrovec-kras",
+    "area_name": "Uhrovecký kras & Jankov vŕšok",
+    "description": "Prieskum jaskýň v okolí Uhrovca a Nitrických vrchov."
+  },
+  "sss-050": {
+    "area_id": "area-upjs-vychodny-kras",
+    "area_name": "Východoslovenský kras & Ružín",
+    "description": "Vedecký výskum speleológov UPJŠ v oblasti Ružína a Slovenského krasu."
+  },
+  "sss-051": {
+    "area_id": "area-varin-mala-fatra",
+    "area_name": "Varínka & Malá Fatra (Západ)",
+    "description": "Prieskum jaskýň v doline Varínky a západnej časti Malej Fatry."
+  },
+  "sss-052": {
+    "area_id": "area-velka-fatra-central",
+    "area_name": "Stredná Veľká Fatra & Belianska dolina",
+    "description": "Prieskum krasu a jaskýň v ústrednej časti Veľkej Fatry."
+  },
+  "sss-053": {
+    "area_id": "area-zilinsky-kras",
+    "area_name": "Žilinská kotlina & Súľovské vrchy",
+    "description": "Prieskum jaskýň Žilinskej kotliny, Súľovských vrchov a Malej Fatry."
+  }
+}

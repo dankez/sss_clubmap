@@ -13,3 +13,7 @@ website: https://www.dubnica.sss.sk
 public_contact:
   email: pmedzihradsky@gmail.com
   phone: '+421905380671'
+area_relationships:
+  - group_id: sss-016
+    area_id: area-strazovske-vrchy-sever
+    relationship: primary

@@ -1,0 +1,25 @@
+id: area-jasovska-planina
+name: Jasovská planina & Moldava
+slug: jasovska-planina
+description: Prieskum a výskum krasu Jasovskej planiny a Medzeva.
+aggregated_cave_count:
+  value: 36
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.900000000000002
+        - 48.66
+      - - 21.06
+        - 48.66
+      - - 21.06
+        - 48.56
+      - - 20.900000000000002
+        - 48.56
+      - - 20.900000000000002
+        - 48.66
+polygon_status: estimated
+groups:
+  - sss-002
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

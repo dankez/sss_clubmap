@@ -13,3 +13,7 @@ website: https://www.speleostrazov.sk
 public_contact:
   email: bohuslav.kortman@speleostrazov.sk
   phone: '+421905488028'
+area_relationships:
+  - group_id: sss-042
+    area_id: area-mojtinsky-kras
+    relationship: primary

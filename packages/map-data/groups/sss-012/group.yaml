@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: zverka@ovsiste.sk
   phone: '+421902852502'
+area_relationships:
+  - group_id: sss-012
+    area_id: area-borcinsky-kras
+    relationship: primary

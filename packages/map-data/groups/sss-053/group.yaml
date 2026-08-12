@@ -12,3 +12,7 @@ updated_at: '2026-08-12'
 public_contact:
   email: jaskyniari@gmail.com
   phone: '+421903772579'
+area_relationships:
+  - group_id: sss-053
+    area_id: area-zilinsky-kras
+    relationship: primary

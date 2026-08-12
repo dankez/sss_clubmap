@@ -1,0 +1,25 @@
+id: area-velka-svieckova
+name: Veľká Sviečková & Šariš
+slug: velka-svieckova
+description: Prieskum jaskynného systému Veľká Sviečková na Šariši.
+aggregated_cave_count:
+  value: 93
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 21.07
+        - 49.099999999999994
+      - - 21.229999999999997
+        - 49.099999999999994
+      - - 21.229999999999997
+        - 49
+      - - 21.07
+        - 49
+      - - 21.07
+        - 49.099999999999994
+polygon_status: estimated
+groups:
+  - sss-043
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

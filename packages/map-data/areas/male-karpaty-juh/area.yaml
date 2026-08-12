@@ -1,0 +1,25 @@
+id: area-male-karpaty-juh
+name: Malé Karpaty (Juh & Stred)
+slug: male-karpaty-juh
+description: Prieskum a výskum jaskýň Malých Karpát v okolí Trnavy.
+aggregated_cave_count:
+  value: 23
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 17.5
+        - 48.43
+      - - 17.659999999999997
+        - 48.43
+      - - 17.659999999999997
+        - 48.330000000000005
+      - - 17.5
+        - 48.330000000000005
+      - - 17.5
+        - 48.43
+polygon_status: estimated
+groups:
+  - sss-047
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

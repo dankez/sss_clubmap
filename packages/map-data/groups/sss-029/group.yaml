@@ -13,3 +13,7 @@ website: https://www.nicolaus.sss.sk
 public_contact:
   email: peter.holubek@smopaj.sk
   phone: '+421445522061'
+area_relationships:
+  - group_id: sss-029
+    area_id: area-nicolaus-liptov
+    relationship: primary

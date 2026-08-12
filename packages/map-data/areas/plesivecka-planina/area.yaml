@@ -1,0 +1,25 @@
+id: area-plesivecka-planina
+name: Plešivecká planina & Slovenský kras
+slug: plesivecka-planina
+description: Prieskum, mapovanie a dokumentácia jaskýň Plešiveckej a Silickej planiny.
+aggregated_cave_count:
+  value: 81
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 20.340000000000003
+        - 48.61
+      - - 20.5
+        - 48.61
+      - - 20.5
+        - 48.510000000000005
+      - - 20.340000000000003
+        - 48.510000000000005
+      - - 20.340000000000003
+        - 48.61
+polygon_status: estimated
+groups:
+  - sss-009
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

@@ -13,3 +13,7 @@ website: https://www.speleobratislava.webnode.sk
 public_contact:
   email: petersevo@gmail.com
   phone: '+421908983646'
+area_relationships:
+  - group_id: sss-007
+    area_id: area-devinske-karpaty
+    relationship: primary

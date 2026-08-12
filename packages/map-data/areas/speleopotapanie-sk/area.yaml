@@ -1,0 +1,25 @@
+id: area-speleopotapanie-sk
+name: Slovenské zatopené jaskyne & Vyvieračky
+slug: speleopotapanie-sk
+description: Špecializovaný speleopotápačský prieskum zatopených priestorov po celom Slovensku.
+aggregated_cave_count:
+  value: 42
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.62
+        - 48.849999999999994
+      - - 19.779999999999998
+        - 48.849999999999994
+      - - 19.779999999999998
+        - 48.75
+      - - 19.62
+        - 48.75
+      - - 19.62
+        - 48.849999999999994
+polygon_status: estimated
+groups:
+  - sss-039
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

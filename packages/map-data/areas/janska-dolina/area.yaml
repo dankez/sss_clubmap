@@ -1,0 +1,25 @@
+id: area-janska-dolina
+name: Jánska dolina & Nízke Tatry
+slug: janska-dolina
+description: Prieskum a mapovanie rozsiahlych podzemných systémov Jánskej doliny (Krakova hoľa, Ohnište).
+aggregated_cave_count:
+  value: 68
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.590000000000003
+        - 49.01
+      - - 19.75
+        - 49.01
+      - - 19.75
+        - 48.910000000000004
+      - - 19.590000000000003
+        - 48.910000000000004
+      - - 19.590000000000003
+        - 49.01
+polygon_status: estimated
+groups:
+  - sss-017
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

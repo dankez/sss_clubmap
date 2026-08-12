@@ -13,3 +13,7 @@ website: https://www.zladiera.sk
 public_contact:
   email: kosc@zladiera.sk
   phone: '+421905237565'
+area_relationships:
+  - group_id: sss-033
+    area_id: area-presovsky-kras
+    relationship: primary

@@ -1,0 +1,25 @@
+id: area-nicolaus-liptov
+name: Liptovský Mikuláš & Nízke Tatry
+slug: nicolaus-liptov
+description: Vedecký výskum, dokumentácia a mapovanie jaskýň Liptova.
+aggregated_cave_count:
+  value: 20
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 19.53
+        - 49.129999999999995
+      - - 19.689999999999998
+        - 49.129999999999995
+      - - 19.689999999999998
+        - 49.03
+      - - 19.53
+        - 49.03
+      - - 19.53
+        - 49.129999999999995
+polygon_status: estimated
+groups:
+  - sss-029
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

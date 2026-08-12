@@ -1,0 +1,25 @@
+id: area-presovsky-kras
+name: Šarišský kras & Zlá Diera
+slug: presovsky-kras
+description: Prieskum jaskyne Zlá Diera a krasu Šarišskej vrchoviny.
+aggregated_cave_count:
+  value: 35
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 21.16
+        - 49.05
+      - - 21.319999999999997
+        - 49.05
+      - - 21.319999999999997
+        - 48.95
+      - - 21.16
+        - 48.95
+      - - 21.16
+        - 49.05
+polygon_status: estimated
+groups:
+  - sss-033
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
