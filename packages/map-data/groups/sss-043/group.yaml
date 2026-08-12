@@ -13,7 +13,12 @@ website: https://www.speleosaris.estranky.cz
 public_contact:
   email: speleosaris@gmail.com
   phone: '+421907955243'
+  address: Sabinov / Prešov, Slovensko
 area_relationships:
   - group_id: sss-043
     area_id: area-velka-svieckova
     relationship: primary
+hq_city: Sabinov / Prešov
+hq_coordinates:
+  - 21.098
+  - 49.102

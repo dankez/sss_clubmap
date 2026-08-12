@@ -3,21 +3,41 @@ name: Plavecký kras & Malé Karpaty
 slug: plavecky-kras
 description: Prieskum a mapovanie Plaveckého jaskynného systému v Malých Karpatoch.
 aggregated_cave_count:
-  value: 73
+  value: 207
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 17.17
-        - 48.529999999999994
-      - - 17.33
-        - 48.529999999999994
-      - - 17.33
-        - 48.43
-      - - 17.17
-        - 48.43
-      - - 17.17
-        - 48.529999999999994
+    - - &ref_0
+        - 17.2442
+        - 48.434
+      - - 17.25291
+        - 48.46511
+      - - 17.19675
+        - 48.46807
+      - - 17.17613
+        - 48.4928
+      - - 17.13792
+        - 48.48681
+      - - 17.13134
+        - 48.45461
+      - - 17.09269
+        - 48.45432
+      - - 17.1092
+        - 48.434
+      - - 17.13128
+        - 48.42606
+      - - 17.11258
+        - 48.3977
+      - - 17.14609
+        - 48.40505
+      - - 17.16796
+        - 48.39907
+      - - 17.21551
+        - 48.38425
+      - - 17.21432
+        - 48.41528
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-032

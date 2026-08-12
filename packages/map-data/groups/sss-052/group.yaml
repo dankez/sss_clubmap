@@ -12,7 +12,12 @@ updated_at: '2026-08-12'
 public_contact:
   email: zuzuvacekova@gmail.com
   phone: '+421910198325'
+  address: Banská Bystrica / V. Fatra, Slovensko
 area_relationships:
   - group_id: sss-052
     area_id: area-velka-fatra-central
     relationship: primary
+hq_city: Banská Bystrica / V. Fatra
+hq_coordinates:
+  - 19.14
+  - 48.74

@@ -3,21 +3,41 @@ name: Ponický kras & Bystrické vrchy
 slug: ponicky-kras
 description: Prieskum krasových javov v okolí Poník, Ľubietovej a Banskej Bystrice.
 aggregated_cave_count:
-  value: 74
+  value: 115
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.180000000000003
-        - 48.769999999999996
-      - - 19.34
-        - 48.769999999999996
-      - - 19.34
-        - 48.67
-      - - 19.180000000000003
-        - 48.67
-      - - 19.180000000000003
-        - 48.769999999999996
+    - - &ref_0
+        - 19.10143
+        - 48.686
+      - - 19.12029
+        - 48.70985
+      - - 19.07897
+        - 48.71356
+      - - 19.06671
+        - 48.7465
+      - - 19.02409
+        - 48.74999
+      - - 19.00364
+        - 48.72141
+      - - 18.95211
+        - 48.71614
+      - - 18.96643
+        - 48.686
+      - - 18.99866
+        - 48.6708
+      - - 18.9948
+        - 48.6432
+      - - 19.03667
+        - 48.65876
+      - - 19.05413
+        - 48.66225
+      - - 19.08781
+        - 48.65104
+      - - 19.07374
+        - 48.67709
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-006

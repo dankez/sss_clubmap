@@ -3,21 +3,41 @@ name: Mojtínsky kras & Suchý vrch
 slug: mojtinsky-kras
 description: Prieskum a mapovanie jaskýň Mojtínskej krasovej oblasti v Strážovských vrchoch.
 aggregated_cave_count:
-  value: 79
+  value: 377
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.330000000000002
-        - 49.029999999999994
-      - - 18.49
-        - 49.029999999999994
-      - - 18.49
-        - 48.93
-      - - 18.330000000000002
-        - 48.93
-      - - 18.330000000000002
-        - 49.029999999999994
+    - - &ref_0
+        - 18.429
+        - 49.066
+      - - 18.42907
+        - 49.09299
+      - - 18.37236
+        - 49.08887
+      - - 18.35969
+        - 49.10891
+      - - 18.33194
+        - 49.10414
+      - - 18.33046
+        - 49.07815
+      - - 18.28771
+        - 49.08439
+      - - 18.294
+        - 49.066
+      - - 18.30744
+        - 49.05394
+      - - 18.28819
+        - 49.01851
+      - - 18.32965
+        - 49.02116
+      - - 18.36198
+        - 49.01639
+      - - 18.41463
+        - 49.00779
+      - - 18.40934
+        - 49.04534
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-042

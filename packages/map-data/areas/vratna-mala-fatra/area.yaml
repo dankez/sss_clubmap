@@ -3,21 +3,41 @@ name: Vrátna dolina & Malá Fatra
 slug: vratna-mala-fatra
 description: Prieskum a výskum jaskýň Malej Fatry v okolí Vrátnej a Terchovej.
 aggregated_cave_count:
-  value: 27
+  value: 105
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.96
-        - 49.26
-      - - 19.119999999999997
-        - 49.26
-      - - 19.119999999999997
-        - 49.160000000000004
-      - - 18.96
-        - 49.160000000000004
-      - - 18.96
-        - 49.26
+    - - &ref_0
+        - 18.7287
+        - 49.173
+      - - 18.73225
+        - 49.20294
+      - - 18.67425
+        - 49.20247
+      - - 18.6565
+        - 49.2241
+      - - 18.6237
+        - 49.21768
+      - - 18.62101
+        - 49.18804
+      - - 18.58179
+        - 49.19137
+      - - 18.5937
+        - 49.173
+      - - 18.61062
+        - 49.16389
+      - - 18.59008
+        - 49.1321
+      - - 18.62646
+        - 49.13636
+      - - 18.65374
+        - 49.12994
+      - - 18.70518
+        - 49.11768
+      - - 18.70342
+        - 49.15232
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-026

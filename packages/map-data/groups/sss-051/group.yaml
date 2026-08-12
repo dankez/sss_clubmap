@@ -13,7 +13,12 @@ website: http://speleovarin.sss.sk
 public_contact:
   email: jkvarin@centrum.sk
   phone: '+421905365688'
+  address: Varín, Slovensko
 area_relationships:
   - group_id: sss-051
     area_id: area-varin-mala-fatra
     relationship: primary
+hq_city: Varín
+hq_coordinates:
+  - 18.874
+  - 49.201

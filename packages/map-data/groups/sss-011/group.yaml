@@ -13,7 +13,12 @@ website: https://www.cervenevrchy-speleo.sk
 public_contact:
   email: jan.smoll007@gmail.com
   phone: '+421903512283'
+  address: Vysoké Tatry / Javorina, Slovensko
 area_relationships:
   - group_id: sss-011
     area_id: area-cervene-vrchy
     relationship: primary
+hq_city: Vysoké Tatry / Javorina
+hq_coordinates:
+  - 20.14
+  - 49.26

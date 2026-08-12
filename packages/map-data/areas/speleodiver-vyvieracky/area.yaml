@@ -3,21 +3,41 @@ name: Zatopené krasové pramene & Sifóny
 slug: speleodiver-vyvieracky
 description: Podvodný speleologický prieskum a mapovanie sifónov.
 aggregated_cave_count:
-  value: 95
+  value: 343
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.720000000000002
-        - 48.9
-      - - 19.88
-        - 48.9
-      - - 19.88
-        - 48.800000000000004
-      - - 19.720000000000002
-        - 48.800000000000004
-      - - 19.720000000000002
-        - 48.9
+    - - &ref_0
+        - 17.05514
+        - 48.21
+      - - 17.06754
+        - 48.22847
+      - - 17.0285
+        - 48.22547
+      - - 17.02555
+        - 48.25541
+      - - 16.99224
+        - 48.26188
+      - - 16.97411
+        - 48.24
+      - - 16.91615
+        - 48.24013
+      - - 16.92014
+        - 48.21
+      - - 16.94591
+        - 48.18942
+      - - 16.94433
+        - 48.1551
+      - - 16.99551
+        - 48.16767
+      - - 17.02228
+        - 48.17413
+      - - 17.05828
+        - 48.16964
+      - - 17.03778
+        - 48.20108
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-040

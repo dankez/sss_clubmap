@@ -13,6 +13,7 @@ website: https://www.speleo-spisskabela.sk
 public_contact:
   email: lplucinsky@gmail.com
   phone: '+421944214107'
+  address: Spišská Belá, Slovensko
 social_links:
   - platform: facebook
     url: https://www.facebook.com/Speleo-SpisskaBela
@@ -22,3 +23,7 @@ area_relationships:
   - group_id: sss-041
     area_id: area-belianske-tatry
     relationship: primary
+hq_city: Spišská Belá
+hq_coordinates:
+  - 20.459
+  - 49.186

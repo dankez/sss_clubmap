@@ -13,6 +13,7 @@ website: https://www.speleork.sk
 public_contact:
   email: jurecka@rknet.sk
   phone: '+421905793351'
+  address: Ružomberok, Slovensko
 social_links:
   - platform: facebook
     url: https://www.facebook.com/speleork
@@ -22,3 +23,7 @@ area_relationships:
   - group_id: sss-037
     area_id: area-ludrovska-dolina
     relationship: primary
+hq_city: Ružomberok
+hq_coordinates:
+  - 19.303
+  - 49.074

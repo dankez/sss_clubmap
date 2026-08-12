@@ -12,7 +12,12 @@ updated_at: '2026-08-12'
 public_contact:
   email: tlanczos@gmail.com
   phone: '+421911260644'
+  address: Nitra, Slovensko
 area_relationships:
   - group_id: sss-030
     area_id: area-tribec-nitra
     relationship: primary
+hq_city: Nitra
+hq_coordinates:
+  - 18.086
+  - 48.306

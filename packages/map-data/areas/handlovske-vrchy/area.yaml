@@ -3,21 +3,41 @@ name: Handlovská kotlina & Vtáčnik
 slug: handlovske-vrchy
 description: Prieskum krasových a pseudokrasových lokálít Handlovskej kotliny.
 aggregated_cave_count:
-  value: 37
+  value: 336
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.680000000000003
-        - 48.769999999999996
-      - - 18.84
-        - 48.769999999999996
-      - - 18.84
-        - 48.67
-      - - 18.680000000000003
-        - 48.67
-      - - 18.680000000000003
-        - 48.769999999999996
+    - - &ref_0
+        - 18.95417
+        - 48.787
+      - - 18.97048
+        - 48.81605
+      - - 18.92148
+        - 48.82167
+      - - 18.90218
+        - 48.8518
+      - - 18.85848
+        - 48.84987
+      - - 18.84371
+        - 48.81734
+      - - 18.80035
+        - 48.81257
+      - - 18.81917
+        - 48.787
+      - - 18.84885
+        - 48.777
+      - - 18.83731
+        - 48.75131
+      - - 18.87214
+        - 48.76405
+      - - 18.88852
+        - 48.76213
+      - - 18.92788
+        - 48.74697
+      - - 18.92198
+        - 48.77352
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-019

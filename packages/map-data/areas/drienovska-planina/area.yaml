@@ -3,21 +3,41 @@ name: Drienovská planina & Zádiel
 slug: drienovska-planina
 description: Výskum jaskynných priestorov Drienovskej planiny a Medzeva.
 aggregated_cave_count:
-  value: 85
+  value: 268
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.57
-        - 48.66
-      - - 20.729999999999997
-        - 48.66
-      - - 20.729999999999997
-        - 48.56
-      - - 20.57
-        - 48.56
-      - - 20.57
-        - 48.66
+    - - &ref_0
+        - 21.40527
+        - 48.675
+      - - 21.41998
+        - 48.69426
+      - - 21.38146
+        - 48.69294
+      - - 21.37684
+        - 48.7242
+      - - 21.34095
+        - 48.73063
+      - - 21.32126
+        - 48.70739
+      - - 21.26393
+        - 48.70584
+      - - 21.27027
+        - 48.675
+      - - 21.29834
+        - 48.65521
+      - - 21.29729
+        - 48.62257
+      - - 21.3468
+        - 48.63646
+      - - 21.37099
+        - 48.64289
+      - - 21.40543
+        - 48.63702
+      - - 21.38556
+        - 48.66679
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-015

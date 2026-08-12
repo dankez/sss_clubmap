@@ -3,21 +3,41 @@ name: Liptovský Trnovec & Chočské podhorie
 slug: choce-liptov
 description: Prieskum a výskum jaskýň v okolí Liptovskej Mary.
 aggregated_cave_count:
-  value: 41
+  value: 88
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.46
-        - 49.16
-      - - 19.619999999999997
-        - 49.16
-      - - 19.619999999999997
-        - 49.06
-      - - 19.46
-        - 49.06
-      - - 19.46
-        - 49.16
+    - - &ref_0
+        - 19.7256
+        - 49.177
+      - - 19.74436
+        - 49.2028
+      - - 19.7007
+        - 49.20768
+      - - 19.68561
+        - 49.24012
+      - - 19.64181
+        - 49.24183
+      - - 19.62271
+        - 49.21152
+      - - 19.57406
+        - 49.20588
+      - - 19.5906
+        - 49.177
+      - - 19.62273
+        - 49.16375
+      - - 19.61653
+        - 49.13731
+      - - 19.65557
+        - 49.15238
+      - - 19.67185
+        - 49.15408
+      - - 19.70688
+        - 49.14115
+      - - 19.69569
+        - 49.16683
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-025

@@ -3,21 +3,41 @@ name: Belianske Tatry & Spišská Belá
 slug: belianske-tatry
 description: Vysokohorský speleologický prieskum a mapovanie jaskýň Belianskych Tatier.
 aggregated_cave_count:
-  value: 98
+  value: 360
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.240000000000002
-        - 49.269999999999996
-      - - 20.4
-        - 49.269999999999996
-      - - 20.4
-        - 49.17
-      - - 20.240000000000002
-        - 49.17
-      - - 20.240000000000002
-        - 49.269999999999996
+    - - &ref_0
+        - 20.65355
+        - 49.136
+      - - 20.66974
+        - 49.16513
+      - - 20.62056
+        - 49.17075
+      - - 20.60118
+        - 49.20078
+      - - 20.55752
+        - 49.19874
+      - - 20.54291
+        - 49.16617
+      - - 20.4997
+        - 49.16146
+      - - 20.51855
+        - 49.136
+      - - 20.54811
+        - 49.12608
+      - - 20.53639
+        - 49.10038
+      - - 20.57114
+        - 49.11303
+      - - 20.58756
+        - 49.11099
+      - - 20.62709
+        - 49.0958
+      - - 20.62133
+        - 49.12241
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-041

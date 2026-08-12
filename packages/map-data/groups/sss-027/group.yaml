@@ -13,7 +13,12 @@ website: https://www.krasnohorska-jaskyna.sk
 public_contact:
   email: stankov@ke.psg.sk
   phone: '+421587343426'
+  address: Krásnohorská Dlhá Lúka, Slovensko
 area_relationships:
   - group_id: sss-027
     area_id: area-krasnohorska-jaskyna
     relationship: primary
+hq_city: Krásnohorská Dlhá Lúka
+hq_coordinates:
+  - 20.585
+  - 48.642

@@ -3,21 +3,41 @@ name: Stredná Veľká Fatra & Belianska dolina
 slug: velka-fatra-central
 description: Prieskum krasu a jaskýň v ústrednej časti Veľkej Fatry.
 aggregated_cave_count:
-  value: 99
+  value: 197
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19
-        - 49.029999999999994
-      - - 19.159999999999997
-        - 49.029999999999994
-      - - 19.159999999999997
-        - 48.93
-      - - 19
-        - 48.93
-      - - 19
-        - 49.029999999999994
+    - - &ref_0
+        - 19.10026
+        - 48.8
+      - - 19.10246
+        - 48.82005
+      - - 19.05521
+        - 48.81272
+      - - 19.05221
+        - 48.83567
+      - - 19.02707
+        - 48.83776
+      - - 19.01916
+        - 48.81742
+      - - 18.96579
+        - 48.82383
+      - - 18.96526
+        - 48.8
+      - - 18.98083
+        - 48.781
+      - - 18.97104
+        - 48.74235
+      - - 19.02217
+        - 48.74793
+      - - 19.05711
+        - 48.75002
+      - - 19.10333
+        - 48.74705
+      - - 19.08742
+        - 48.78478
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-052

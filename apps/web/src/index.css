@@ -1,8 +1,8 @@
 :root {
-  /* Color system - Spec tokens */
-  --color-cave-stone: #211E1B;
-  --color-cave-stone-soft: #2E2925;
-  --color-limestone: #F6F1E7;
+  /* Default Theme: Speleo Emerald & Amber Glow */
+  --color-cave-stone: #1E2522;
+  --color-cave-stone-soft: #28322E;
+  --color-limestone: #F4EFE6;
   --color-limestone-card: #FAF6EE;
   
   --color-lantern-amber: #E0912F;
@@ -15,9 +15,9 @@
   --color-moss-green: #5B7C4E;
   --color-moss-green-light: #EDF3EB;
   
-  --color-rock-grey: #4A453F;
-  --color-rock-grey-light: #70685E;
-  --color-fog: #DAD3C4;
+  --color-rock-grey: #4A524D;
+  --color-rock-grey-light: #7A857F;
+  --color-fog: #D5CEC2;
   --color-fog-light: #EFEBE1;
   --color-rust: #B5502E;
 
@@ -31,12 +31,64 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
   
-  --shadow-card: 0 12px 32px rgba(33, 30, 27, 0.12);
-  --shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.4);
 
-  /* Transition */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-medium: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Theme 1: Speleo Cave Dark Glow */
+.theme-dark-glow {
+  --color-cave-stone: #141210;
+  --color-cave-stone-soft: #201D1A;
+  --color-limestone: #F5EFE6;
+  --color-lantern-amber: #E89B38;
+  --color-cave-water: #377587;
+  --color-fog: #CF98A;
+}
+
+/* Theme 2: Outdoor Topo Atlas (Terrain / Light Topo) */
+.theme-terrain-topo {
+  --color-cave-stone: #F5F2EA;
+  --color-cave-stone-soft: #EBE5D8;
+  --color-limestone: #1F2A24;
+  --color-lantern-amber: #C47A32;
+  --color-cave-water: #265B68;
+  --color-fog: #526057;
+  --color-rock-grey: #7A847D;
+}
+
+/* Theme 3: Slate Clean Light Mineral */
+.theme-slate-clean {
+  --color-cave-stone: #FAFAFC;
+  --color-cave-stone-soft: #F0F2F5;
+  --color-limestone: #1E293B;
+  --color-lantern-amber: #D97706;
+  --color-cave-water: #0D9488;
+  --color-fog: #64748B;
+  --color-rock-grey: #94A3B8;
+}
+
+/* Theme 4: Vintage Editorial Atlas (National Geographic Style) */
+.theme-editorial-atlas {
+  --color-cave-stone: #EFEAD8;
+  --color-cave-stone-soft: #E4DDB;
+  --color-limestone: #2B251F;
+  --color-lantern-amber: #B85B28;
+  --color-cave-water: #2B5A52;
+  --color-fog: #665B50;
+  --color-rock-grey: #8A7B6E;
+}
+
+/* Theme 5: Modern Speleo Emerald */
+.theme-speleo-emerald {
+  --color-cave-stone: #13241C;
+  --color-cave-stone-soft: #1E3328;
+  --color-limestone: #F4EFE6;
+  --color-lantern-amber: #E2963B;
+  --color-cave-water: #3B7C8E;
+  --color-fog: #CAD4CE;
 }
 
 * {
@@ -54,6 +106,7 @@ body {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  transition: background-color var(--transition-medium), color var(--transition-medium);
 }
 
 #root {
@@ -76,7 +129,7 @@ body {
 /* Buttons */
 .btn-primary {
   background-color: var(--color-lantern-amber);
-  color: var(--color-cave-stone);
+  color: #1A140E;
   font-family: var(--font-ui);
   font-weight: 600;
   padding: 0.75rem 1.25rem;
@@ -97,7 +150,7 @@ body {
 
 .btn-secondary {
   background-color: var(--color-cave-water);
-  color: var(--color-limestone);
+  color: #FFFFFF;
   font-family: var(--font-ui);
   font-weight: 500;
   padding: 0.6rem 1.1rem;
@@ -109,39 +162,6 @@ body {
   gap: 0.5rem;
   transition: all var(--transition-fast);
   text-decoration: none;
-}
-
-.btn-secondary:hover {
-  background-color: #234E5C;
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--color-fog);
-  border: 1px solid var(--color-rock-grey);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-family: var(--font-ui);
-  transition: all var(--transition-fast);
-}
-
-.btn-ghost:hover {
-  color: var(--color-limestone);
-  border-color: var(--color-fog);
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-cave-stone);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--color-rock-grey);
-  border-radius: var(--radius-full);
 }
 
 /* MapLibre Canvas Container */
@@ -156,12 +176,20 @@ body {
 
 /* Glass panel */
 .glass-panel {
-  background: rgba(33, 30, 27, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(218, 211, 196, 0.15);
+  background: rgba(30, 37, 34, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(213, 206, 194, 0.16);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-floating);
+}
+
+.theme-terrain-topo .glass-panel,
+.theme-slate-clean .glass-panel,
+.theme-editorial-atlas .glass-panel {
+  background: rgba(245, 242, 234, 0.92);
+  border: 1px solid rgba(82, 96, 87, 0.2);
+  color: var(--color-limestone);
 }
 
 /* Light Card Panel */

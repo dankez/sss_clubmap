@@ -13,7 +13,12 @@ website: https://www.osjm.sk
 public_contact:
   email: zvcave@email.cz
   phone: '+421948383178'
+  address: Silica, Slovensko
 area_relationships:
   - group_id: sss-022
     area_id: area-slovensky-kras-central
     relationship: primary
+hq_city: Silica
+hq_coordinates:
+  - 20.522
+  - 48.553

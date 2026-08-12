@@ -3,21 +3,41 @@ name: Muránska planina (Stred)
 slug: muranska-planina-stred
 description: Prieskum a mapovanie hlbokých priepastí a vyvieračiek Muránskej planiny.
 aggregated_cave_count:
-  value: 82
+  value: 139
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.96
-        - 48.809999999999995
-      - - 20.119999999999997
-        - 48.809999999999995
-      - - 20.119999999999997
-        - 48.71
-      - - 19.96
-        - 48.71
-      - - 19.96
-        - 48.809999999999995
+    - - &ref_0
+        - 20.00077
+        - 48.802
+      - - 20.01964
+        - 48.82596
+      - - 19.97821
+        - 48.82976
+      - - 19.96578
+        - 48.86268
+      - - 19.92306
+        - 48.86608
+      - - 19.90267
+        - 48.83739
+      - - 19.85131
+        - 48.83208
+      - - 19.86577
+        - 48.802
+      - - 19.89801
+        - 48.78691
+      - - 19.89403
+        - 48.75939
+      - - 19.93574
+        - 48.77494
+      - - 19.9531
+        - 48.77834
+      - - 19.98684
+        - 48.76702
+      - - 19.97294
+        - 48.79303
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-028

@@ -3,21 +3,41 @@ name: Chočské vrchy & Liptovské krasy
 slug: chocske-vrchy
 description: Prieskum a mapovanie jaskýň Chočských vrchov a Kvačianskej doliny.
 aggregated_cave_count:
-  value: 70
+  value: 353
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.26
-        - 49.19
-      - - 19.419999999999998
-        - 49.19
-      - - 19.419999999999998
-        - 49.09
-      - - 19.26
-        - 49.09
-      - - 19.26
-        - 49.19
+    - - &ref_0
+        - 19.28227
+        - 49.158
+      - - 19.28241
+        - 49.1851
+      - - 19.22561
+        - 49.18108
+      - - 19.21277
+        - 49.20113
+      - - 19.18489
+        - 49.19628
+      - - 19.18342
+        - 49.17019
+      - - 19.14081
+        - 49.17636
+      - - 19.14727
+        - 49.158
+      - - 19.16078
+        - 49.14605
+      - - 19.14144
+        - 49.11072
+      - - 19.18273
+        - 49.11339
+      - - 19.21493
+        - 49.10854
+      - - 19.26759
+        - 49.09982
+      - - 19.26244
+        - 49.13731
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-020

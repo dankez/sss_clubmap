@@ -13,7 +13,12 @@ website: https://www.speleoraj.sk
 public_contact:
   email: tulis@tulis.sk
   phone: '+421905923625'
+  address: Spišská Nová Ves, Slovensko
 area_relationships:
   - group_id: sss-038
     area_id: area-slovensky-raj-glac
     relationship: primary
+hq_city: Spišská Nová Ves
+hq_coordinates:
+  - 20.565
+  - 48.943

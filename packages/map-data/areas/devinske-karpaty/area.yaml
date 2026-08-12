@@ -3,21 +3,41 @@ name: Devínske & Malé Karpaty
 slug: devinske-karpaty
 description: Prieskum a mapovanie jaskynných priestorov Malých Karpát a Bratislavy.
 aggregated_cave_count:
-  value: 76
+  value: 132
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 16.970000000000002
-        - 48.23
-      - - 17.13
-        - 48.23
-      - - 17.13
-        - 48.13
-      - - 16.970000000000002
-        - 48.13
-      - - 16.970000000000002
-        - 48.23
+    - - &ref_0
+        - 17.31679
+        - 48.208
+      - - 17.32296
+        - 48.23881
+      - - 17.26557
+        - 48.24025
+      - - 17.24596
+        - 48.26339
+      - - 17.21024
+        - 48.25694
+      - - 17.20576
+        - 48.22576
+      - - 17.16723
+        - 48.22719
+      - - 17.18179
+        - 48.208
+      - - 17.20133
+        - 48.19976
+      - - 17.1814
+        - 48.16988
+      - - 17.21592
+        - 48.17565
+      - - 17.24028
+        - 48.1692
+      - - 17.28993
+        - 48.15539
+      - - 17.28886
+        - 48.18814
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-007

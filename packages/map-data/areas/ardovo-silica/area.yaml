@@ -3,21 +3,41 @@ name: Ardovský kras & Silica
 slug: ardovo-silica
 description: Prieskum a dokumentácia Ardovskej jaskyne a južnej časti Silickej planiny.
 aggregated_cave_count:
-  value: 24
+  value: 98
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.340000000000003
-        - 48.58
-      - - 20.5
-        - 48.58
-      - - 20.5
-        - 48.480000000000004
-      - - 20.340000000000003
-        - 48.480000000000004
-      - - 20.340000000000003
-        - 48.58
+    - - &ref_0
+        - 20.59326
+        - 48.478
+      - - 20.59735
+        - 48.49705
+      - - 20.55245
+        - 48.49008
+      - - 20.55049
+        - 48.51448
+      - - 20.5243
+        - 48.51802
+      - - 20.51404
+        - 48.49803
+      - - 20.45878
+        - 48.50343
+      - - 20.45826
+        - 48.478
+      - - 20.47572
+        - 48.458
+      - - 20.46828
+        - 48.41971
+      - - 20.52045
+        - 48.42674
+      - - 20.55434
+        - 48.43028
+      - - 20.59821
+        - 48.42767
+      - - 20.58041
+        - 48.46438
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-005

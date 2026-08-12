@@ -3,21 +3,41 @@ name: Drienčanský kras & Rimava
 slug: driencansky-kras
 description: Prieskum a výskum Drienčanského krasu v okrese Rimavská Sobota.
 aggregated_cave_count:
-  value: 60
+  value: 241
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20
-        - 48.529999999999994
-      - - 20.159999999999997
-        - 48.529999999999994
-      - - 20.159999999999997
-        - 48.43
-      - - 20
-        - 48.43
-      - - 20
-        - 48.529999999999994
+    - - &ref_0
+        - 19.9693
+        - 48.443
+      - - 19.98614
+        - 48.46359
+      - - 19.94738
+        - 48.46422
+      - - 19.94034
+        - 48.49657
+      - - 19.90166
+        - 48.50241
+      - - 19.88091
+        - 48.47735
+      - - 19.82506
+        - 48.47412
+      - - 19.8343
+        - 48.443
+      - - 19.86451
+        - 48.42454
+      - - 19.86321
+        - 48.39385
+      - - 19.9103
+        - 48.40883
+      - - 19.9317
+        - 48.41467
+      - - 19.96508
+        - 48.40699
+      - - 19.94669
+        - 48.43507
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-034

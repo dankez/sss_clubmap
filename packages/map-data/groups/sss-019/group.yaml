@@ -13,7 +13,12 @@ website: https://www.jkhandlova.webnode.sk
 public_contact:
   email: peter.strecansky@gmail.com
   phone: '+421465473681'
+  address: Handlová, Slovensko
 area_relationships:
   - group_id: sss-019
     area_id: area-handlovske-vrchy
     relationship: primary
+hq_city: Handlová
+hq_coordinates:
+  - 18.76
+  - 48.727

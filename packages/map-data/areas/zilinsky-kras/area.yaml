@@ -3,21 +3,41 @@ name: Žilinská kotlina & Súľovské vrchy
 slug: zilinsky-kras
 description: Prieskum jaskýň Žilinskej kotliny, Súľovských vrchov a Malej Fatry.
 aggregated_cave_count:
-  value: 64
+  value: 214
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.66
-        - 49.269999999999996
-      - - 18.819999999999997
-        - 49.269999999999996
-      - - 18.819999999999997
-        - 49.17
-      - - 18.66
-        - 49.17
-      - - 18.66
-        - 49.269999999999996
+    - - &ref_0
+        - 18.90614
+        - 49.165
+      - - 18.92442
+        - 49.18729
+      - - 18.88458
+        - 49.18973
+      - - 18.87473
+        - 49.22264
+      - - 18.83365
+        - 49.22737
+      - - 18.8127
+        - 49.20036
+      - - 18.75902
+        - 49.19582
+      - - 18.77114
+        - 49.165
+      - - 18.80279
+        - 49.14824
+      - - 18.80041
+        - 49.11936
+      - - 18.84469
+        - 49.13489
+      - - 18.86369
+        - 49.13963
+      - - 18.89687
+        - 49.13
+      - - 18.88065
+        - 49.15677
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-053

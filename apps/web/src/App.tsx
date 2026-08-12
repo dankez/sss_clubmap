@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Header } from './components/Header';
+import { useState, useEffect } from 'react';
+import { Header, ThemeId } from './components/Header';
 import { MapView } from './components/MapView';
 import { AreaCard } from './components/AreaCard';
 import { GroupCard } from './components/GroupCard';
@@ -14,9 +14,15 @@ export function App() {
   const [selectedArea, setSelectedArea] = useState<AreaData | null>(null);
   const [selectedGroup, setSelectedGroup] = useState<GroupData | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState<ThemeId>('speleo-emerald');
 
-  const areas: AreaData[] = sssDataBundle.areas as AreaData[];
-  const groups: GroupData[] = sssDataBundle.groups as GroupData[];
+  const areas = (sssDataBundle.areas as unknown) as AreaData[];
+  const groups = (sssDataBundle.groups as unknown) as GroupData[];
+
+  // Update body theme class whenever theme changes
+  useEffect(() => {
+    document.body.className = `theme-${currentTheme}`;
+  }, [currentTheme]);
 
   const handleSelectArea = (area: AreaData | null) => {
     setSelectedArea(area);
@@ -27,13 +33,26 @@ export function App() {
 
   const handleSelectGroup = (group: GroupData | null) => {
     setSelectedGroup(group);
+    if (group && group.area_relationships && group.area_relationships.length > 0) {
+      const linkedAreaId = group.area_relationships[0].area_id;
+      const foundArea = areas.find((a) => a.id === linkedAreaId);
+      if (foundArea) {
+        setSelectedArea(foundArea);
+      }
+    }
   };
 
-  const activeTabClass = activeTab === 'groups' ? 'groups-open' : '';
+  // Filter ONLY groups active in selected area
+  const activeAreaGroups = selectedArea
+    ? groups.filter((g) =>
+        g.area_relationships?.some((rel) => rel.area_id === selectedArea.id) ||
+        (selectedArea.id && g.id && selectedArea.id.includes(g.id))
+      )
+    : [];
 
   return (
-    <div className={`app-root ${activeTabClass}`}>
-      {/* Top Floating Atlas Navigation Header */}
+    <div className="app-root">
+      {/* Top Floating Atlas Navigation Header with 5 Themes */}
       <Header
         activeTab={activeTab}
         setActiveTab={(tab) => {
@@ -46,23 +65,26 @@ export function App() {
         onOpenSearch={() => setIsSearchOpen(true)}
         groupsCount={groups.length}
         areasCount={areas.length}
+        currentTheme={currentTheme}
+        onThemeChange={setCurrentTheme}
       />
 
-      {/* Main Map Canvas */}
+      {/* Main Map Canvas with POIs & Organic Polygons */}
       <MapView
         areas={areas}
         groups={groups}
         selectedArea={selectedArea}
         selectedGroup={selectedGroup}
+        currentTheme={currentTheme}
         onSelectArea={handleSelectArea}
         onSelectGroup={handleSelectGroup}
       />
 
-      {/* Area Contextual Floating Card */}
+      {/* Area Contextual Floating Card with EXACT filtered groups */}
       {selectedArea && (
         <AreaCard
           area={selectedArea}
-          groups={groups}
+          groups={activeAreaGroups}
           onClose={() => setSelectedArea(null)}
           onSelectGroup={handleSelectGroup}
         />

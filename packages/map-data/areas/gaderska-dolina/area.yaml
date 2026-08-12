@@ -3,21 +3,41 @@ name: Gaderská & Blatnická dolina
 slug: gaderska-dolina
 description: Prieskum jaskýň vo Veľkej Fatre v Gaderskej a Blatnickej doline.
 aggregated_cave_count:
-  value: 83
+  value: 129
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.880000000000003
-        - 48.97
-      - - 19.04
-        - 48.97
-      - - 19.04
-        - 48.870000000000005
-      - - 18.880000000000003
-        - 48.870000000000005
-      - - 18.880000000000003
-        - 48.97
+    - - &ref_0
+        - 18.91263
+        - 49.014
+      - - 18.91604
+        - 49.04387
+      - - 18.85803
+        - 49.04329
+      - - 18.84041
+        - 49.06485
+      - - 18.80778
+        - 49.05844
+      - - 18.80517
+        - 49.0289
+      - - 18.76589
+        - 49.03234
+      - - 18.77763
+        - 49.014
+      - - 18.79441
+        - 49.00482
+      - - 18.77386
+        - 48.97292
+      - - 18.81037
+        - 48.9771
+      - - 18.83782
+        - 48.9707
+      - - 18.88934
+        - 48.95854
+      - - 18.88752
+        - 48.99329
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-048

@@ -13,7 +13,12 @@ website: https://www.speleostrazov.sk
 public_contact:
   email: bohuslav.kortman@speleostrazov.sk
   phone: '+421905488028'
+  address: Považská Bystrica / Mojtín, Slovensko
 area_relationships:
   - group_id: sss-042
     area_id: area-mojtinsky-kras
     relationship: primary
+hq_city: Považská Bystrica / Mojtín
+hq_coordinates:
+  - 18.445
+  - 49.116

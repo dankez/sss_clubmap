@@ -3,21 +3,41 @@ name: Borčiansky kras & Borka
 slug: borcinsky-kras
 description: Speleologický výskum a prieskum Borčianskeho krasu a Zádielskej tiesňavy.
 aggregated_cave_count:
-  value: 38
+  value: 217
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.700000000000003
-        - 48.68
-      - - 20.86
-        - 48.68
-      - - 20.86
-        - 48.580000000000005
-      - - 20.700000000000003
-        - 48.580000000000005
-      - - 20.700000000000003
-        - 48.68
+    - - &ref_0
+        - 17.07212
+        - 48.07
+      - - 17.08886
+        - 48.0905
+      - - 17.05014
+        - 48.09102
+      - - 17.04325
+        - 48.12332
+      - - 17.00473
+        - 48.12921
+      - - 16.98402
+        - 48.10426
+      - - 16.92806
+        - 48.10112
+      - - 16.93712
+        - 48.07
+      - - 16.96722
+        - 48.05145
+      - - 16.96597
+        - 48.02065
+      - - 17.01321
+        - 48.03557
+      - - 17.03477
+        - 48.04147
+      - - 17.06819
+        - 48.03389
+      - - 17.0497
+        - 48.06207
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-012

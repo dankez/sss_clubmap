@@ -12,7 +12,12 @@ updated_at: '2026-08-12'
 public_contact:
   email: mgr.kyska@airtrend.sk
   phone: '+421948693191'
+  address: Bratislava (Speleodiver), Slovensko
 area_relationships:
   - group_id: sss-040
     area_id: area-speleodiver-vyvieracky
     relationship: primary
+hq_city: Bratislava (Speleodiver)
+hq_coordinates:
+  - 17.11
+  - 48.15

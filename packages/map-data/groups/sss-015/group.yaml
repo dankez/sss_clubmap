@@ -13,7 +13,12 @@ website: https://www.drienka.netkosice.sk
 public_contact:
   email: jozef.psotka@gmail.com
   phone: '+421904338683'
+  address: Košice, Slovensko
 area_relationships:
   - group_id: sss-015
     area_id: area-drienovska-planina
     relationship: primary
+hq_city: Košice
+hq_coordinates:
+  - 21.24
+  - 48.725

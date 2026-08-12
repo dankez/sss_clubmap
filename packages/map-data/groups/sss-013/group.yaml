@@ -13,7 +13,12 @@ website: https://www.speleodd.sk
 public_contact:
   email: herich@speleodd.sk
   phone: '+421944108618'
+  address: Demänovská Dolina, Slovensko
 area_relationships:
   - group_id: sss-013
     area_id: area-demanovska-dolina
     relationship: primary
+hq_city: Demänovská Dolina
+hq_coordinates:
+  - 19.58
+  - 48.99

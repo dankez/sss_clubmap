@@ -1,5 +1,7 @@
 import React from 'react';
-import { Compass, Search, Map, Users, Info } from 'lucide-react';
+import { Compass, Search, Map, Users, Info, Palette } from 'lucide-react';
+
+export type ThemeId = 'speleo-emerald' | 'dark-glow' | 'terrain-topo' | 'slate-clean' | 'editorial-atlas';
 
 interface HeaderProps {
   activeTab: 'map' | 'areas' | 'groups' | 'about';
@@ -7,6 +9,8 @@ interface HeaderProps {
   onOpenSearch: () => void;
   groupsCount: number;
   areasCount: number;
+  currentTheme: ThemeId;
+  onThemeChange: (theme: ThemeId) => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -15,6 +19,8 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenSearch,
   groupsCount,
   areasCount,
+  currentTheme,
+  onThemeChange,
 }) => {
   return (
     <header className="header-bar">
@@ -61,9 +67,26 @@ export const Header: React.FC<HeaderProps> = ({
       </nav>
 
       <div className="header-actions">
+        {/* Live Theme Switcher */}
+        <div className="theme-switcher">
+          <Palette size={15} className="theme-icon" />
+          <select
+            className="theme-select font-ui"
+            value={currentTheme}
+            onChange={(e) => onThemeChange(e.target.value as ThemeId)}
+            title="Vyberte vizuálnu tému mapy"
+          >
+            <option value="speleo-emerald">🌿 Speleo Emerald</option>
+            <option value="dark-glow">🦇 Dark Cave Glow</option>
+            <option value="terrain-topo">🗺️ Outdoor Topo Atlas</option>
+            <option value="slate-clean">✨ Slate Clean Light</option>
+            <option value="editorial-atlas">📜 Vintage NatGeo Atlas</option>
+          </select>
+        </div>
+
         <button className="search-btn" onClick={onOpenSearch}>
           <Search size={16} />
-          <span className="search-placeholder">Nájsť oblasť alebo skupinu...</span>
+          <span className="search-placeholder">Nájsť...</span>
           <kbd className="search-kbd">⌘K</kbd>
         </button>
       </div>
@@ -77,17 +100,17 @@ export const Header: React.FC<HeaderProps> = ({
           width: calc(100% - 32px);
           max-width: 1280px;
           height: 64px;
-          background: rgba(33, 30, 27, 0.88);
+          background: rgba(30, 37, 34, 0.88);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border: 1px solid rgba(218, 211, 196, 0.16);
+          border: 1px solid rgba(213, 206, 194, 0.16);
           border-radius: var(--radius-lg);
           padding: 0 1.25rem;
           display: flex;
           align-items: center;
           justify-content: space-between;
           z-index: 10;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+          box-shadow: var(--shadow-floating);
         }
 
         .header-logo {
@@ -101,7 +124,7 @@ export const Header: React.FC<HeaderProps> = ({
           width: 38px;
           height: 38px;
           border-radius: var(--radius-sm);
-          background: rgba(224, 145, 47, 0.12);
+          background: rgba(224, 145, 47, 0.15);
           border: 1px solid rgba(224, 145, 47, 0.3);
           display: flex;
           align-items: center;
@@ -176,19 +199,44 @@ export const Header: React.FC<HeaderProps> = ({
           font-weight: 600;
         }
 
-        .nav-item.active .nav-badge {
-          background: var(--color-cave-stone);
-          color: var(--color-lantern-amber);
-        }
-
         .header-actions {
           display: flex;
           align-items: center;
+          gap: 0.75rem;
+        }
+
+        .theme-switcher {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(213, 206, 194, 0.16);
+          padding: 0.35rem 0.65rem;
+          border-radius: var(--radius-md);
+        }
+
+        .theme-icon {
+          color: var(--color-lantern-amber);
+        }
+
+        .theme-select {
+          background: transparent;
+          border: none;
+          outline: none;
+          color: var(--color-limestone);
+          font-size: 0.8rem;
+          cursor: pointer;
+          font-weight: 500;
+        }
+
+        .theme-select option {
+          background: #1E2522;
+          color: #F4EFE6;
         }
 
         .search-btn {
           background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(218, 211, 196, 0.15);
+          border: 1px solid rgba(213, 206, 194, 0.15);
           color: var(--color-fog);
           border-radius: var(--radius-md);
           padding: 0.45rem 0.85rem;
@@ -218,14 +266,11 @@ export const Header: React.FC<HeaderProps> = ({
           color: var(--color-fog);
         }
 
-        @media (max-width: 860px) {
-          .header-nav span:not(.nav-badge) {
-            display: none;
+        @media (max-width: 900px) {
+          .theme-select {
+            font-size: 0.75rem;
           }
           .search-placeholder, .search-kbd {
-            display: none;
-          }
-          .logo-subtitle {
             display: none;
           }
         }

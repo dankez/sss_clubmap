@@ -3,21 +3,41 @@ name: Stredný Slovenský kras & Silica
 slug: slovensky-kras-central
 description: Prieskum a dokumentácia podzemných priestorov v centre Slovenského krasu.
 aggregated_cave_count:
-  value: 77
+  value: 37
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.42
-        - 48.599999999999994
-      - - 20.58
-        - 48.599999999999994
-      - - 20.58
-        - 48.5
-      - - 20.42
-        - 48.5
-      - - 20.42
-        - 48.599999999999994
+    - - &ref_0
+        - 20.4899
+        - 48.613
+      - - 20.50778
+        - 48.64054
+      - - 20.46153
+        - 48.64605
+      - - 20.44409
+        - 48.67753
+      - - 20.39995
+        - 48.67741
+      - - 20.38278
+        - 48.64579
+      - - 20.33686
+        - 48.64033
+      - - 20.3549
+        - 48.613
+      - - 20.38615
+        - 48.60149
+      - - 20.37736
+        - 48.57568
+      - - 20.41405
+        - 48.58979
+      - - 20.42999
+        - 48.58967
+      - - 20.46695
+        - 48.57542
+      - - 20.4585
+        - 48.60128
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-022

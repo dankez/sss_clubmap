@@ -3,21 +3,41 @@ name: Demänovská dolina & Nízke Tatry
 slug: demanovska-dolina
 description: Prieskum, mapovanie a prepojovanie Demänovského jaskynného systému.
 aggregated_cave_count:
-  value: 66
+  value: 234
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.5
-        - 49.04
-      - - 19.659999999999997
-        - 49.04
-      - - 19.659999999999997
-        - 48.940000000000005
-      - - 19.5
-        - 48.940000000000005
-      - - 19.5
-        - 49.04
+    - - &ref_0
+        - 19.78466
+        - 49.05
+      - - 19.79628
+        - 49.08091
+      - - 19.74217
+        - 49.08526
+      - - 19.7212
+        - 49.11192
+      - - 19.6805
+        - 49.10696
+      - - 19.67117
+        - 49.0741
+      - - 19.63157
+        - 49.07197
+      - - 19.64966
+        - 49.05
+      - - 19.67465
+        - 49.04186
+      - - 19.658
+        - 49.01489
+      - - 19.69116
+        - 49.02418
+      - - 19.71054
+        - 49.01922
+      - - 19.75534
+        - 49.00374
+      - - 19.7532
+        - 49.03292
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-013

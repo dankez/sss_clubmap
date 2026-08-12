@@ -16,6 +16,8 @@ export interface GroupData {
   short_description?: string;
   description?: string;
   website?: string;
+  hq_city?: string;
+  hq_coordinates?: number[];
   public_contact?: PublicContact;
   social_links?: SocialLink[];
   activities?: string[];

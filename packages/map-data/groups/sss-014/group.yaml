@@ -13,7 +13,12 @@ website: https://www.speleodetva.sss.sk
 public_contact:
   email: ehipmanova@gmail.com
   phone: '+421910993703'
+  address: Detva, Slovensko
 area_relationships:
   - group_id: sss-014
     area_id: area-polana-detva
     relationship: primary
+hq_city: Detva
+hq_coordinates:
+  - 19.419
+  - 48.56

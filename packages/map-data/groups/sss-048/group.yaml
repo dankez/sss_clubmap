@@ -13,7 +13,12 @@ website: https://www.speleoturiec.sk
 public_contact:
   email: palopokrievka@gmail.com
   phone: '+421902263520'
+  address: Martin, Slovensko
 area_relationships:
   - group_id: sss-048
     area_id: area-gaderska-dolina
     relationship: primary
+hq_city: Martin
+hq_coordinates:
+  - 18.923
+  - 49.064

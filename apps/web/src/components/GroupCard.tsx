@@ -49,7 +49,12 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           </div>
           <div>
             <h2 className="group-name font-display">{group.name}</h2>
-            <span className="group-id-code">ID: {group.id}</span>
+            <div className="group-location-line">
+              <MapPin size={13} className="pin-icon" />
+              <span className="group-hq-city">{group.hq_city || 'Slovensko'}</span>
+              <span className="dot-sep">•</span>
+              <span className="group-id-code">ID: {group.id}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -214,6 +219,28 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           font-size: 1.35rem;
           line-height: 1.25;
           color: var(--color-limestone);
+        }
+
+        .group-location-line {
+          display: flex;
+          align-items: center;
+          gap: 0.35rem;
+          margin-top: 0.2rem;
+        }
+
+        .pin-icon {
+          color: var(--color-lantern-amber);
+        }
+
+        .group-hq-city {
+          font-size: 0.82rem;
+          font-weight: 600;
+          color: var(--color-lantern-amber);
+        }
+
+        .dot-sep {
+          color: var(--color-fog);
+          font-size: 0.75rem;
         }
 
         .group-id-code {

@@ -3,21 +3,41 @@ name: Trenčianska kotlina & Strážov
 slug: trenciansky-kras
 description: Prieskum jaskýň v okolí Trenčína a južnej časti Strážovských vrchov.
 aggregated_cave_count:
-  value: 87
+  value: 78
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 17.96
-        - 48.94
-      - - 18.119999999999997
-        - 48.94
-      - - 18.119999999999997
-        - 48.84
-      - - 17.96
-        - 48.84
-      - - 17.96
-        - 48.94
+    - - &ref_0
+        - 18.14961
+        - 48.844
+      - - 18.15105
+        - 48.87259
+      - - 18.09331
+        - 48.87018
+      - - 18.078
+        - 48.89074
+      - - 18.04799
+        - 48.88492
+      - - 18.04633
+        - 48.8571
+      - - 18.0056
+        - 48.86211
+      - - 18.01461
+        - 48.844
+      - - 18.02942
+        - 48.83354
+      - - 18.00914
+        - 48.79981
+      - - 18.04796
+        - 48.80299
+      - - 18.07803
+        - 48.79718
+      - - 18.1305
+        - 48.78674
+      - - 18.12724
+        - 48.82306
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-045

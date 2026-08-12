@@ -13,7 +13,12 @@ website: http://speleomalafatra.webnode.sk
 public_contact:
   email: pavolpokrievka@zoznam.sk
   phone: '+421434223701'
+  address: Žilina, Slovensko
 area_relationships:
   - group_id: sss-026
     area_id: area-vratna-mala-fatra
     relationship: primary
+hq_city: Žilina
+hq_coordinates:
+  - 18.739
+  - 49.223

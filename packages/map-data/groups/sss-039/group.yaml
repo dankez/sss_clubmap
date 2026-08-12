@@ -13,7 +13,12 @@ website: https://www.kubi.sk
 public_contact:
   email: kubi@kubi.sk
   phone: '+421905108699'
+  address: Trenčín (Sekcia), Slovensko
 area_relationships:
   - group_id: sss-039
     area_id: area-speleopotapanie-sk
     relationship: primary
+hq_city: Trenčín (Sekcia)
+hq_coordinates:
+  - 17.935
+  - 48.89

@@ -3,21 +3,41 @@ name: Hrušovská planina & Krásna Hôrka
 slug: krasnohorska-planina
 description: Výskum a dokumentácia jaskýň v okolí Krásnohorskej Dlhej Lúky.
 aggregated_cave_count:
-  value: 68
+  value: 81
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 20.53
-        - 48.669999999999995
-      - - 20.689999999999998
-        - 48.669999999999995
-      - - 20.689999999999998
-        - 48.57
-      - - 20.53
-        - 48.57
-      - - 20.53
-        - 48.669999999999995
+    - - &ref_0
+        - 20.58076
+        - 48.708
+      - - 20.58445
+        - 48.738
+      - - 20.52647
+        - 48.73765
+      - - 20.50858
+        - 48.75936
+      - - 20.47562
+        - 48.75292
+      - - 20.47284
+        - 48.72318
+      - - 20.43369
+        - 48.7264
+      - - 20.44576
+        - 48.708
+      - - 20.46282
+        - 48.69895
+      - - 20.4423
+        - 48.66728
+      - - 20.47854
+        - 48.67162
+      - - 20.50566
+        - 48.66518
+      - - 20.55701
+        - 48.65282
+      - - 20.55532
+        - 48.68735
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-004

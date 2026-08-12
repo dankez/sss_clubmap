@@ -12,7 +12,12 @@ updated_at: '2026-08-12'
 website: https://speleolm.sss.sk
 public_contact:
   email: lub.luhova@gmail.com
+  address: Liptovský Mikuláš, Slovensko
 area_relationships:
   - group_id: sss-024
     area_id: area-liptovsky-kras
     relationship: primary
+hq_city: Liptovský Mikuláš
+hq_coordinates:
+  - 19.612
+  - 49.084

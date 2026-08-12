@@ -42,6 +42,16 @@ properties:
         type: string
       address:
         type: string
+  hq_city:
+    type: string
+    description: City or municipality of the group headquarters.
+  hq_coordinates:
+    type: array
+    description: "Coordinates [lng, lat] of group HQ POI marker."
+    items:
+      type: number
+    minItems: 2
+    maxItems: 2
   social_links:
     type: array
     items:

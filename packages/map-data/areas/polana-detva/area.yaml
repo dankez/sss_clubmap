@@ -3,21 +3,41 @@ name: Poľana & Detviansky kras
 slug: polana-detva
 description: Prieskum pseudokrasových a krasových útvarov Poľany a okolia Detvy.
 aggregated_cave_count:
-  value: 49
+  value: 251
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.44
-        - 48.61
-      - - 19.599999999999998
-        - 48.61
-      - - 19.599999999999998
-        - 48.510000000000005
-      - - 19.44
-        - 48.510000000000005
-      - - 19.44
-        - 48.61
+    - - &ref_0
+        - 19.3926
+        - 48.51
+      - - 19.39215
+        - 48.53348
+      - - 19.33922
+        - 48.5269
+      - - 19.3318
+        - 48.54737
+      - - 19.30681
+        - 48.54561
+      - - 19.30352
+        - 48.52294
+      - - 19.25575
+        - 48.53031
+      - - 19.2576
+        - 48.51
+      - - 19.27051
+        - 48.49443
+      - - 19.25505
+        - 48.45654
+      - - 19.30176
+        - 48.45963
+      - - 19.33685
+        - 48.45787
+      - - 19.38769
+        - 48.45258
+      - - 19.37738
+        - 48.49126
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-014

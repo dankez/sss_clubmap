@@ -3,21 +3,41 @@ name: Rokoš & Nitrické vrchy
 slug: rokos-nitricke-vrchy
 description: Prieskum jaskynných priestorov masívu Rokoša a Strážovských vrchov.
 aggregated_cave_count:
-  value: 47
+  value: 258
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.37
-        - 48.8
-      - - 18.529999999999998
-        - 48.8
-      - - 18.529999999999998
-        - 48.7
-      - - 18.37
-        - 48.7
-      - - 18.37
-        - 48.8
+    - - &ref_0
+        - 18.46191
+        - 48.671
+      - - 18.47337
+        - 48.70194
+      - - 18.41912
+        - 48.70621
+      - - 18.39815
+        - 48.73276
+      - - 18.35758
+        - 48.72773
+      - - 18.34841
+        - 48.6949
+      - - 18.3089
+        - 48.69286
+      - - 18.32691
+        - 48.671
+      - - 18.35174
+        - 48.66289
+      - - 18.33495
+        - 48.63585
+      - - 18.36811
+        - 48.64502
+      - - 18.38762
+        - 48.63998
+      - - 18.43259
+        - 48.62453
+      - - 18.43053
+        - 48.65381
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-035

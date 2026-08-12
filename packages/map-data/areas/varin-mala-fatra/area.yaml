@@ -3,21 +3,41 @@ name: Varínka & Malá Fatra (Západ)
 slug: varin-mala-fatra
 description: Prieskum jaskýň v doline Varínky a západnej časti Malej Fatry.
 aggregated_cave_count:
-  value: 24
+  value: 180
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 18.8
-        - 49.25
-      - - 18.959999999999997
-        - 49.25
-      - - 18.959999999999997
-        - 49.150000000000006
-      - - 18.8
-        - 49.150000000000006
-      - - 18.8
-        - 49.25
+    - - &ref_0
+        - 19.08388
+        - 49.151
+      - - 19.08973
+        - 49.18173
+      - - 19.03222
+        - 49.18295
+      - - 19.0128
+        - 49.2059
+      - - 18.97742
+        - 49.19943
+      - - 18.97318
+        - 49.16841
+      - - 18.93461
+        - 49.17007
+      - - 18.94888
+        - 49.151
+      - - 18.9681
+        - 49.14268
+      - - 18.94805
+        - 49.11259
+      - - 18.98276
+        - 49.11816
+      - - 19.00746
+        - 49.11168
+      - - 19.05735
+        - 49.09804
+      - - 19.05624
+        - 49.13102
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-051

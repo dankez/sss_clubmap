@@ -13,7 +13,12 @@ website: https://www.speleopp.sk
 public_contact:
   email: marian.gruz@gmail.com
   phone: '+421918432640'
+  address: Plavecké Podhradie, Slovensko
 area_relationships:
   - group_id: sss-032
     area_id: area-plavecky-kras
     relationship: primary
+hq_city: Plavecké Podhradie
+hq_coordinates:
+  - 17.256
+  - 48.484

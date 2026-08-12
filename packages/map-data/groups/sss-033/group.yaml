@@ -13,7 +13,12 @@ website: https://www.zladiera.sk
 public_contact:
   email: kosc@zladiera.sk
   phone: '+421905237565'
+  address: Prešov, Slovensko
 area_relationships:
   - group_id: sss-033
     area_id: area-presovsky-kras
     relationship: primary
+hq_city: Prešov
+hq_coordinates:
+  - 21.239
+  - 48.998

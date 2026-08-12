@@ -3,21 +3,41 @@ name: Horehronský kras & Ďumbierske Tatry
 slug: horehronie-dumbier
 description: Speleologický výskum na Horehroní a južných svahoch Ďumbiera.
 aggregated_cave_count:
-  value: 71
+  value: 149
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.560000000000002
-        - 48.86
-      - - 19.72
-        - 48.86
-      - - 19.72
-        - 48.760000000000005
-      - - 19.560000000000002
-        - 48.760000000000005
-      - - 19.560000000000002
-        - 48.86
+    - - &ref_0
+        - 19.60602
+        - 48.754
+      - - 19.60798
+        - 48.77422
+      - - 19.56039
+        - 48.76686
+      - - 19.5572
+        - 48.78963
+      - - 19.53216
+        - 48.7915
+      - - 19.52458
+        - 48.77107
+      - - 19.4715
+        - 48.7776
+      - - 19.47102
+        - 48.754
+      - - 19.48635
+        - 48.73517
+      - - 19.47622
+        - 48.6965
+      - - 19.52716
+        - 48.70188
+      - - 19.5622
+        - 48.70376
+      - - 19.60875
+        - 48.70071
+      - - 19.59313
+        - 48.73855
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-008

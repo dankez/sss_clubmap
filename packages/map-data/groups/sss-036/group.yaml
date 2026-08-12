@@ -13,7 +13,12 @@ website: https://www.speleoroznava.webnode.sk
 public_contact:
   email: mikulas.repaszky@gmail.com
   phone: '+421925756833'
+  address: Rožňava, Slovensko
 area_relationships:
   - group_id: sss-036
     area_id: area-roznava-silica
     relationship: primary
+hq_city: Rožňava
+hq_coordinates:
+  - 20.525
+  - 48.658

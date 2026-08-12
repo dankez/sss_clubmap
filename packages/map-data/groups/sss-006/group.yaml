@@ -13,7 +13,12 @@ website: https://www.speleo.sk
 public_contact:
   email: stevo.mlynarik@gmail.com
   phone: '+421903514704'
+  address: Banská Bystrica, Slovensko
 area_relationships:
   - group_id: sss-006
     area_id: area-ponicky-kras
     relationship: primary
+hq_city: Banská Bystrica
+hq_coordinates:
+  - 19.146
+  - 48.736

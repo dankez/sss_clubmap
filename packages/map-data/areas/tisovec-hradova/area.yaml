@@ -3,21 +3,41 @@ name: Tisovecký kras & Hradová
 slug: tisovec-hradova
 description: Prieskum krasových priestorov masívu Hradovej a Muránskej planiny.
 aggregated_cave_count:
-  value: 55
+  value: 61
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.860000000000003
-        - 48.73
-      - - 20.02
-        - 48.73
-      - - 20.02
-        - 48.63
-      - - 19.860000000000003
-        - 48.63
-      - - 19.860000000000003
-        - 48.73
+    - - &ref_0
+        - 19.9113
+        - 48.628
+      - - 19.9291
+        - 48.65564
+      - - 19.88268
+        - 48.66117
+      - - 19.86511
+        - 48.69258
+      - - 19.82097
+        - 48.69235
+      - - 19.80394
+        - 48.66065
+      - - 19.75819
+        - 48.65523
+      - - 19.7763
+        - 48.628
+      - - 19.80747
+        - 48.61659
+      - - 19.79851
+        - 48.59081
+      - - 19.83507
+        - 48.60484
+      - - 19.85101
+        - 48.60461
+      - - 19.88811
+        - 48.59029
+      - - 19.87982
+        - 48.61618
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-044

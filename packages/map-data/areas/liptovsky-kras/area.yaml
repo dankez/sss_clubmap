@@ -3,21 +3,41 @@ name: Liptovský kras & Nízke Tatry
 slug: liptovsky-kras
 description: Dokumentácia a výskum krasu Liptovskej kotliny a Nízkych Tatier.
 aggregated_cave_count:
-  value: 84
+  value: 71
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.540000000000003
-        - 49.129999999999995
-      - - 19.7
-        - 49.129999999999995
-      - - 19.7
-        - 49.03
-      - - 19.540000000000003
-        - 49.03
-      - - 19.540000000000003
-        - 49.129999999999995
+    - - &ref_0
+        - 19.56221
+        - 49.034
+      - - 19.569
+        - 49.0523
+      - - 19.52667
+        - 49.04626
+      - - 19.52521
+        - 49.07259
+      - - 19.49708
+        - 49.07759
+      - - 19.48389
+        - 49.0575
+      - - 19.42693
+        - 49.06131
+      - - 19.42721
+        - 49.034
+      - - 19.44737
+        - 49.01325
+      - - 19.4425
+        - 48.9759
+      - - 19.49517
+        - 48.98485
+      - - 19.52712
+        - 48.98985
+      - - 19.56806
+        - 48.98713
+      - - 19.54857
+        - 49.02226
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-024

@@ -12,7 +12,12 @@ updated_at: '2026-08-12'
 public_contact:
   email: zverka@ovsiste.sk
   phone: '+421902852502'
+  address: Bratislava - Ovsište, Slovensko
 area_relationships:
   - group_id: sss-012
     area_id: area-borcinsky-kras
     relationship: primary
+hq_city: Bratislava - Ovsište
+hq_coordinates:
+  - 17.125
+  - 48.12

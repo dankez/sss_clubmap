@@ -3,21 +3,41 @@ name: Červené vrchy & Západné Tatry
 slug: cervene-vrchy
 description: Vysokohorská speleológia a prieskum hlbokých jaskynných systémov Červených vrchov.
 aggregated_cave_count:
-  value: 89
+  value: 200
   estimated: true
 polygon:
   type: Polygon
   coordinates:
-    - - - 19.82
-        - 49.279999999999994
-      - - 19.979999999999997
-        - 49.279999999999994
-      - - 19.979999999999997
-        - 49.18
-      - - 19.82
-        - 49.18
-      - - 19.82
-        - 49.279999999999994
+    - - &ref_0
+        - 20.3273
+        - 49.21
+      - - 20.32771
+        - 49.23174
+      - - 20.27736
+        - 49.22452
+      - - 20.2723
+        - 49.24593
+      - - 20.24768
+        - 49.24599
+      - - 20.24248
+        - 49.22465
+      - - 20.19197
+        - 49.23184
+      - - 20.1923
+        - 49.21
+      - - 20.20608
+        - 49.19269
+      - - 20.19319
+        - 49.15415
+      - - 20.24226
+        - 49.15819
+      - - 20.27772
+        - 49.15825
+      - - 20.32665
+        - 49.15428
+      - - 20.3136
+        - 49.19279
+      - *ref_0
 polygon_status: estimated
 groups:
   - sss-011
