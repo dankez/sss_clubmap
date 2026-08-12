@@ -1,0 +1,15 @@
+id: sss-011
+name: Speleologický klub Červené vrchy Slovakia
+slug: speleologicky-klub-cervene-vrchy-slovakia
+short_description: Speleologický klub Červené vrchy Slovakia pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.cervenevrchy-speleo.sk
+public_contact:
+  email: jan.smoll007@gmail.com
+  phone: '+421903512283'

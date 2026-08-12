@@ -1,0 +1,15 @@
+id: sss-039
+name: Sekcia speleopotápania
+slug: sekcia-speleopotapania
+short_description: Sekcia speleopotápania pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.kubi.sk
+public_contact:
+  email: kubi@kubi.sk
+  phone: '+421905108699'

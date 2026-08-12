@@ -1,0 +1,15 @@
+id: sss-016
+name: Jaskyniarsky klub Dubnica nad Váhom
+slug: jaskyniarsky-klub-dubnica-nad-vahom
+short_description: Jaskyniarsky klub Dubnica nad Váhom pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.dubnica.sss.sk
+public_contact:
+  email: pmedzihradsky@gmail.com
+  phone: '+421905380671'

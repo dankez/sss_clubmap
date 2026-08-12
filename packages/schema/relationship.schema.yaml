@@ -1,0 +1,52 @@
+$id: "https://sss-map.local/schemas/relationship.schema.yaml"
+$schema: "http://json-schema.org/draft-07/schema#"
+title: GroupAreaRelationship
+description: Many-to-many relationship between a group and an area.
+type: object
+required:
+  - group_id
+  - area_id
+  - relationship
+properties:
+  group_id:
+    type: string
+    pattern: "^sss-[0-9]{3}$"
+  area_id:
+    type: string
+    pattern: "^area-[a-z0-9-]+$"
+  relationship:
+    type: string
+    enum:
+      - primary
+      - cooperation
+      - historical
+      - interest
+  evidence:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - type
+        - reference
+      properties:
+        type:
+          type: string
+          enum:
+            - website
+            - pdf
+            - email
+            - other
+        reference:
+          type: string
+        url:
+          type: string
+          format: uri
+        page:
+          type: integer
+  since:
+    oneOf:
+      - type: string
+        format: date
+      - type: "null"
+additionalProperties: false

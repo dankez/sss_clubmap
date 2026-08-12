@@ -1,0 +1,15 @@
+id: sss-015
+name: Speleoklub Drienka Košice
+slug: speleoklub-drienka-kosice
+short_description: Speleoklub Drienka Košice pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.drienka.netkosice.sk
+public_contact:
+  email: jozef.psotka@gmail.com
+  phone: '+421904338683'

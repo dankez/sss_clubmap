@@ -1,0 +1,23 @@
+id: area-mala-fatra
+name: Malá Fatra
+slug: mala-fatra
+description: Krasové útvary v kryštaliniku a obalových jednotkách Malej Fatry.
+aggregated_cave_count:
+  value: 150
+  estimated: true
+polygon:
+  type: Polygon
+  coordinates:
+    - - - 18.9
+        - 49.26
+      - - 19.22
+        - 49.25
+      - - 19.18
+        - 49.1
+      - - 18.88
+        - 49.12
+      - - 18.9
+        - 49.26
+polygon_status: estimated
+created_at: '2026-08-12'
+updated_at: '2026-08-12'

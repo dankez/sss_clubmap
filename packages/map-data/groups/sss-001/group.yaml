@@ -1,0 +1,14 @@
+id: sss-001
+name: Jaskyniarska skupina Adama Vallu
+slug: jaskyniarska-skupina-adama-vallu
+short_description: Jaskyniarska skupina Adama Vallu pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: tomashampl@azet.sk
+  phone: '+421948392752'

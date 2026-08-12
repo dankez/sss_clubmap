@@ -1,0 +1,14 @@
+id: sss-002
+name: Moldavský jaskyniarsky klub Adonis Ten
+slug: moldavsky-jaskyniarsky-klub-adonis-ten
+short_description: Moldavský jaskyniarsky klub Adonis Ten pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: dobosati007@gmail.com
+  phone: '+421903656664'

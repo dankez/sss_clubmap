@@ -1,0 +1,20 @@
+id: sss-041
+name: Jaskyniarska skupina Spišská Belá
+slug: jaskyniarska-skupina-spisska-bela
+short_description: Jaskyniarska skupina Spišská Belá pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.speleo-spisskabela.sk
+public_contact:
+  email: lplucinsky@gmail.com
+  phone: '+421944214107'
+social_links:
+  - platform: facebook
+    url: https://www.facebook.com/Speleo-SpisskaBela
+  - platform: instagram
+    url: https://www.instagram.com/speleota3

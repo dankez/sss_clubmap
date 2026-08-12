@@ -1,0 +1,14 @@
+id: sss-034
+name: Oblastná speleologická skupina Rimavská Sobota
+slug: oblastna-speleologicka-skupina-rimavska-sobota
+short_description: Oblastná speleologická skupina Rimavská Sobota pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: ossrs@jaskyne.info
+  phone: '+421908714306'

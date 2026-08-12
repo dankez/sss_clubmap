@@ -1,0 +1,173 @@
+:root {
+  /* Color system - Spec tokens */
+  --color-cave-stone: #211E1B;
+  --color-cave-stone-soft: #2E2925;
+  --color-limestone: #F6F1E7;
+  --color-limestone-card: #FAF6EE;
+  
+  --color-lantern-amber: #E0912F;
+  --color-lantern-amber-hover: #C77D20;
+  --color-lantern-amber-light: #FBF0DF;
+  
+  --color-cave-water: #2C5F6F;
+  --color-cave-water-light: #E7EFF2;
+  
+  --color-moss-green: #5B7C4E;
+  --color-moss-green-light: #EDF3EB;
+  
+  --color-rock-grey: #4A453F;
+  --color-rock-grey-light: #70685E;
+  --color-fog: #DAD3C4;
+  --color-fog-light: #EFEBE1;
+  --color-rust: #B5502E;
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Radius & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  
+  --shadow-card: 0 12px 32px rgba(33, 30, 27, 0.12);
+  --shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* Transition */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-medium: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--color-cave-stone);
+  color: var(--color-limestone);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* Typography Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-lantern-amber);
+  color: var(--color-cave-stone);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-lantern-amber-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--color-cave-water);
+  color: var(--color-limestone);
+  font-family: var(--font-ui);
+  font-weight: 500;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #234E5C;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-fog);
+  border: 1px solid var(--color-rock-grey);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  transition: all var(--transition-fast);
+}
+
+.btn-ghost:hover {
+  color: var(--color-limestone);
+  border-color: var(--color-fog);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cave-stone);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rock-grey);
+  border-radius: var(--radius-full);
+}
+
+/* MapLibre Canvas Container */
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(33, 30, 27, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(218, 211, 196, 0.15);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-floating);
+}
+
+/* Light Card Panel */
+.light-card {
+  background-color: var(--color-limestone);
+  color: var(--color-cave-stone);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}

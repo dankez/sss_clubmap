@@ -1,0 +1,148 @@
+
+# 2026-08-11 15:49:05.528399
++Execute the following plan autonomously. Do not ask questions.
++
++CRITICAL: Modify the filesystem in the current working directory.
++Do not only describe, display, or print the requested files.
++Create or edit the physical files using Aider edits.
++Complete the edit response so Aider can apply the changes.
++Do not implement later steps yet. Do not ask for confirmation.
++
++Plan:
++
++# SSS Map - AI Agent Execution Plan
++
++This plan details the complete implementation of the SSS Map application, adhering strictly to the provided "AI Agent Master Specification". The project will be built as a small, beautiful, trustworthy public product, prioritizing visual clarity, geographic understanding, and user experience over feature quantity.
++
++## Technical Stack:
++*   **Frontend**: TypeScript, React, Vite, MapLibre GL JS, modern CSS (CSS modules/lightweight styling).
++*   **Backend/API**: Node.js, TypeScript, Fastify (for data processing/API if dynamic data is needed beyond static builds).
++*   **Data**: YAML source files, Git for versioning, normalized JSON for frontend consumption.
++*   **Validation**: JSON Schema (or Zod).
++*   **WordPress Integration**: Custom plugin for shortcode embedding.
++
++## Monorepo Structure:
++```
++sss-map/
++├── apps/
++│   ├── web/        (Public-facing React application)
++│   └── admin/      (Simple React admin interface)
++├── packages/
++│   ├── schema/     (YAML/JSON Schemas for data validation)
++│   ├── map-data/   (Contains raw YAML data: groups, areas, assets)
++│   └── ui/         (Shared React components, design tokens, utility styles)
++├── wordpress/
++│   └── sss-map-plugin/ (WordPress plugin for embedding)
++├── scripts/
++│   ├── validate-data.ts  (Script to validate YAML data)
++│   ├── build-data.ts     (Processes YAML, AI ingestion, generates static JSON for frontend)
++│   └── ai-ingest.ts      (Handles PDF parsing and data suggestion)
++├── docs/
++└── README.md
++```
++
++## Execution Phases (following "AI Agent Behavior" and "Implementation Priority"):
++
++### Phase 1: Understand (Completed by reading the specification)
++
++### Phase 2: Schema (P0 - Foundation)
++1.  **Define Group Schema**: Create `packages/schema/group.schema.yaml` defining fields like `id`, `name`, `logo`, `short_description`, `website`, `public_contact`, `activities`, `area_relationships`, `verified_at`, etc. Ensure all data types and constraints are specified.
++2.  **Define Area Schema**: Create `packages/schema/area.schema.yaml` defining fields like `id`, `name`, `description`, `image`, `aggregated_cave_count`, `polygon`, `groups`, `polygon_status`, etc.
++3.  **Define Relationship Schema**: Specify the many-to-many `group ↔ area` relationship schema, including `relationship` types (primary, cooperation).
++4.  **Implement Schema Validation**: Set up a validation mechanism (e.g., using `jsonschema` or `zod` in `scripts/validate-data.ts`) to validate YAML files against these schemas.
++
++### Phase 3: Seed Data (P0 - Foundation)
++1.  **Create Initial Group Folders**: For each group in "Appendix A — Initial group seed", create a directory `packages/map-data/groups/group-XXX/`.
++2.  **Parse and Normalize Seed Contacts**: Write a script (`scripts/ai-ingest.ts` initial part) to parse the supplied contact list (Section 39) and populate `group.yaml` files within their respective folders. Normalize phone numbers, emails, and URLs.
++3.  **Assign Stable Group IDs**: Assign unique, stable IDs (e.g., `sss-001`, `sss-002`) to each group and store them in `group.yaml`.
++4.  **Mark Unverified Data**: Initially mark `verified_at: null` for all seed data. Preserve all supplied values as `seed_data` internally.
++5.  **Process Seed External Links**: Extract URLs from "Appendix B" and "Appendix C" and store them as `website` or `social_links` in the respective `group.yaml` files. Mark them as unverified.
++
++### Phase 4: Data Pipeline (P0 - Foundation)
++1.  **YAML Loader**: Implement a utility in `scripts/build-data.ts` to recursively load all `*.yaml` files from `packages/map-data/`.
++2.  **Integrate Validation**: Ensure `scripts/build-data.ts` calls `scripts/validate-data.ts` to validate all loaded YAML data. Invalid data must halt the build.
++3.  **AI Ingestion for PDF (Spravodaj)**: Develop the core AI ingestion logic in `scripts/ai-ingest.ts` to:
++    *   Download and parse `https://sss.sk/wp-content/uploads/2026/06/Spravodaj_1_2026_vnutro_NET_web.pdf`.
++    *   Identify groups, area names, and aggregate cave information.
++    *   Extract page references as `evidence.yaml` for each generated suggestion.
++    *   Propose area relationships for groups based on content.
++    *   Generate approximate GeoJSON polygons for areas (marked `polygon_status: "estimated"`).
++    *   Output AI suggestions as draft YAML files or a reviewable format.
++4.  **Normalize and Index Data**: Process the loaded and AI-augmented data to resolve relationships (group ↔ area), aggregate information, and create a flattened, normalized JSON structure (e.g., `public-data.json`) optimized for frontend consumption.
++5.  **Build Output**: Configure `scripts/build-data.ts` to output this `public-data.json` to `apps/web/public/` or a similar static asset directory.
++
++### Phase 5: Map (P0 - Core UI)
++1.  **Frontend Project Setup**: Initialize `apps/web` with TypeScript, React, Vite, and MapLibre GL JS.
++2.  **Map Initialization**: Create the main map component, displaying Slovakia as the initial view.
++3.  **Base Map Style**: Implement a subdued, illustrated natural atlas base map using the specified color palette and design tokens (`--color-bg`, `--color-stone`, `--color-water`, etc.). Avoid bright, corporate styles.
++4.  **Area Polygon Rendering**: Load area GeoJSON polygons from the `public-data.json`. Render them using the specified translucent palette (`.area-primary`, `.area-secondary`), ensuring readability with overlaps.
++5.  **Map Hierarchy and Labels**: Implement logic to display map elements based on zoom level:
++    *   **Country Zoom**: Major geographical structures, high-level group presence indicators.
++    *   **Regional Zoom**: Area polygons, area labels (Plus Jakarta Sans), groups active in the area.
++    *   **Detailed Zoom**: Group polygons, contextual group labels (when useful). Implement collision handling for labels.
++    *   **Safety**: Ensure no exact cave entrances or sensitive locations are displayed at any zoom level.
++6.  **Map Interactions (Desktop)**:
++    *   **Hover**: Implement subtle highlight (brighter border) for areas/groups, displaying a tooltip with aggregated info (e.g., "Slovenský kras, 500+ jaskýň").
++    *   **Click**: Open a contextual detail card (floating panel) for the clicked area or group.
++7.  **Map Interactions (Mobile)**:
++    *   **Tap**: Open a bottom sheet for the clicked area or group.
++    *   Ensure large touch targets and minimal controls.
++8.  **Slovak Diacritics**: Verify correct rendering of Slovak diacritics in all map labels and tooltips.
++9.  **Performance**: Optimize polygon rendering for different zoom levels (simplify geometry at low zoom). Implement lazy loading of map data.
++
++### Phase 6: Public Presentation (P0 - Core UI)
++1.  **Design Token System**: Implement the specified color system (`:root` CSS variables) and typography scale (`--font-xs` to `--font-4xl`) in `packages/ui/`.
++2.  **Typography Integration**: Apply Plus Jakarta Sans for UI/body and Source Serif 4 for editorial headings (e.g., large area titles). Ensure correct rendering of all Slovak diacritics.
++3.  **Group Presentation Card**: Develop a React component (`packages/ui/GroupCard.tsx`) for group details, following the specified design (logo, name, location, activities, short description, CTA). Integrate images/logos with rounded corners and subtle shadows.
++4.  **Area Presentation Card**: Develop a React component (`packages/ui/AreaCard.tsx`) for area details, including hero image, large title, description, aggregated cave count, and a list of `GroupCard` components.
++5.  **Contact-to-Action (CTA)**: Implement the "Kontaktovať skupinu" button, linking to email/website. Ensure it's highly visible.
++6.  **Empty States Handling**: Ensure `GroupCard` and `AreaCard` gracefully handle missing data (e.g., no description, no website) by omitting the relevant blocks rather than displaying "—".
++7.  **Public Navigation**: Implement the minimal desktop header navigation (SSS, Mapa, Oblasti, Skupiny, O speleológii) and a mobile hamburger menu/minimal bottom navigation.
++8.  **Landing Experience**: Create the initial `/` route with the "SLOVENSKO POD POVRCHOM" overlay and "Preskúmať mapu" CTA, leading directly to the map.
++9.  **Accessibility**: Implement WCAG 2.2 AA best practices: keyboard navigation, visible focus states, sufficient text contrast, semantic HTML, alt text for images, accessible labels for buttons.
++10. **Responsive Design**: Implement responsive layouts for desktop, tablet, and mobile, ensuring the map remains dominant and detail views adapt (floating panels for desktop, bottom sheets for mobile).
++11. **Performance**: Optimize images (WebP/AVIF), lazy load components, minimize JavaScript bundle size.
++
++### Phase 7: Visual Polish (P2 - Iterative throughout P0/P1)
++1.  **Refine Visuals**: Continuously review and refine all UI elements against the "Definition of 
++
++Acceptance criteria:
++- All group IDs are stable and follow `sss-XXX` format.
++- All YAML data validates against defined schemas.
++- No duplicate IDs across groups or areas.
++- No broken internal references (e.g., group referencing non-existent area).
++- Seed contacts are reviewed and marked as verified or unverified.
++- External websites are verified for validity and reachability where possible.
++- Sensitive information (e.g., exact cave entrance GPS) is absent from public data.
++- Area polygons are marked `estimated` if derived from AI or approximate sources.
++- Aggregated cave counts have internal evidence/source references.
++- Group descriptions have internal source references.
++- The map correctly displays Slovakia upon loading.
++- Speleological areas are visually distinct and use the specified polygon coloring.
++- Overlapping polygons are understandable and do not obscure each other.
++- No sensitive cave entrances or underground routes are displayed.
++- The map is fully functional and responsive on mobile devices.
++- Map readability is maintained at all supported zoom levels.
++- Visitors can navigate from the map to a group's detail card.
++- Visitors can reach a group's contact information (email, website) with minimal clicks.
++- The search functionality correctly finds groups and areas.
++- The UI gracefully handles missing data fields (e.g., no description, no website).
++- Keyboard navigation is fully functional across the application.
++- All UI elements correctly render Slovak diacritics.
++- The specified color palette is consistently applied throughout the application.
++- The map is the dominant visual element on all relevant screens.
++- Group and area cards have an editorial, non-database-like appearance.
++- Animations and transitions are subtle and enhance the user experience without being distracting.
++- All images are optimized for web and display correctly.
++- The mobile experience is specifically designed, not just a scaled-down desktop version.
++- The application successfully builds for production.
++- Schema validation runs automatically as part of the data pipeline.
++- All data changes are tracked and versioned in Git.
++- No sensitive secrets or API keys are committed to the repository.
++- The frontend does not expose any private API keys or sensitive backend information.
++- The WordPress shortcodes successfully embed the map and group components.
++- Public data can be fully rebuilt from the Git-based YAML source.
++
++Plan type: execution_plan
++
++After execution, ALL acceptance criteria must be satisfied.

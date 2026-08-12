@@ -1,0 +1,15 @@
+id: sss-019
+name: Jaskyniarsky klub Handlová
+slug: jaskyniarsky-klub-handlova
+short_description: Jaskyniarsky klub Handlová pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.jkhandlova.webnode.sk
+public_contact:
+  email: peter.strecansky@gmail.com
+  phone: '+421465473681'

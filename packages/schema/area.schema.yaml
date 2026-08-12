@@ -1,0 +1,114 @@
+$id: "https://sss-map.local/schemas/area.schema.yaml"
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Area
+description: Schema for a speleological area in the SSS Map.
+type: object
+required:
+  - id
+  - name
+  - slug
+  - polygon_status
+properties:
+  id:
+    type: string
+    pattern: "^area-[a-z0-9-]+$"
+    description: Stable unique identifier, e.g. area-slovensky-kras.
+  name:
+    type: string
+    minLength: 1
+  slug:
+    type: string
+    pattern: "^[a-z0-9-]+$"
+  description:
+    type: string
+  image:
+    type: string
+    format: uri
+  aggregated_cave_count:
+    type: object
+    additionalProperties: false
+    required:
+      - value
+    properties:
+      value:
+        type: integer
+        minimum: 0
+      source:
+        type: string
+      estimated:
+        type: boolean
+      evidence:
+        type: array
+        items:
+          type: object
+          additionalProperties: false
+          required:
+            - reference
+          properties:
+            reference:
+              type: string
+            url:
+              type: string
+              format: uri
+            page:
+              type: integer
+  polygon:
+    oneOf:
+      - type: "null"
+      - type: object
+        additionalProperties: false
+        required:
+          - type
+          - coordinates
+        properties:
+          type:
+            type: string
+            enum:
+              - Polygon
+              - MultiPolygon
+          coordinates:
+            type: array
+  polygon_status:
+    type: string
+    enum:
+      - verified
+      - estimated
+      - approximate
+      - missing
+    description: Status of the area polygon. Must be estimated if derived from AI or approximate sources.
+  groups:
+    type: array
+    description: Group IDs active in this area.
+    items:
+      type: string
+      pattern: "^sss-[0-9]{3}$"
+  sources:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - type
+        - reference
+      properties:
+        type:
+          type: string
+          enum:
+            - website
+            - pdf
+            - email
+            - other
+        reference:
+          type: string
+        url:
+          type: string
+          format: uri
+        page:
+          type: integer
+  created_at:
+    type: string
+    format: date
+  updated_at:
+    type: string
+    format: date
+additionalProperties: false

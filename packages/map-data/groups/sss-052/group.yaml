@@ -1,0 +1,14 @@
+id: sss-052
+name: Oblastná skupina Veľká Fatra
+slug: oblastna-skupina-velka-fatra
+short_description: Oblastná skupina Veľká Fatra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: zuzuvacekova@gmail.com
+  phone: '+421910198325'

@@ -1,0 +1,15 @@
+id: sss-051
+name: Jaskyniarsky klub Varín
+slug: jaskyniarsky-klub-varin
+short_description: Jaskyniarsky klub Varín pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: http://speleovarin.sss.sk
+public_contact:
+  email: jkvarin@centrum.sk
+  phone: '+421905365688'

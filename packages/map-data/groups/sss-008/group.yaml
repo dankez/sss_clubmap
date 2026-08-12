@@ -1,0 +1,15 @@
+id: sss-008
+name: Speleo Brezno
+slug: speleo-brezno
+short_description: Speleo Brezno pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: http://osbr.sss.sk
+public_contact:
+  email: speleobrezno@gmail.com
+  phone: '+421905269845'

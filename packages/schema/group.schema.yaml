@@ -1,0 +1,112 @@
+$id: "https://sss-map.local/schemas/group.schema.yaml"
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Group
+description: Schema for a speleological group in the SSS Map.
+type: object
+required:
+  - id
+  - name
+  - slug
+  - verified_at
+  - polygon_status
+properties:
+  id:
+    type: string
+    pattern: "^sss-[0-9]{3}$"
+    description: Stable unique identifier, e.g. sss-001.
+  name:
+    type: string
+    minLength: 1
+  slug:
+    type: string
+    pattern: "^[a-z0-9-]+$"
+  logo:
+    type: string
+    format: uri
+    description: URL or path to the group logo.
+  short_description:
+    type: string
+  description:
+    type: string
+  website:
+    type: string
+    format: uri
+  public_contact:
+    type: object
+    additionalProperties: false
+    properties:
+      email:
+        type: string
+        format: email
+      phone:
+        type: string
+      address:
+        type: string
+  social_links:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - platform
+        - url
+      properties:
+        platform:
+          type: string
+        url:
+          type: string
+          format: uri
+  activities:
+    type: array
+    items:
+      type: string
+  area_relationships:
+    type: array
+    description: Many-to-many relationships between this group and speleological areas.
+    items:
+      $ref: "relationship.schema.yaml"
+  verified_at:
+    oneOf:
+      - type: string
+        format: date
+      - type: "null"
+    description: Date when the group record was verified. Null means unverified.
+  polygon_status:
+    type: string
+    enum:
+      - verified
+      - estimated
+      - approximate
+      - missing
+    description: Status of the group's operating area polygon.
+  sources:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - type
+        - reference
+      properties:
+        type:
+          type: string
+          enum:
+            - website
+            - pdf
+            - email
+            - phone
+            - other
+        reference:
+          type: string
+        url:
+          type: string
+          format: uri
+        page:
+          type: integer
+  created_at:
+    type: string
+    format: date
+  updated_at:
+    type: string
+    format: date
+additionalProperties: false

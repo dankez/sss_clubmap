@@ -1,0 +1,14 @@
+id: sss-031
+name: Oblastná skupina Orava
+slug: oblastna-skupina-orava
+short_description: Oblastná skupina Orava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: speleo.orava@gmail.com
+  phone: '+421903950231'

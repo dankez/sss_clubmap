@@ -1,0 +1,14 @@
+id: sss-025
+name: Jaskyniarsky klub Liptovský Trnovec
+slug: jaskyniarsky-klub-liptovsky-trnovec
+short_description: Jaskyniarsky klub Liptovský Trnovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: vrabecma@gmail.com
+  phone: '+421902827348'

@@ -1,0 +1,1403 @@
+{
+  "generated_at": "2026-08-12T06:13:04.586Z",
+  "areas_count": 7,
+  "groups_count": 53,
+  "areas": [
+    {
+      "id": "area-cachticky-kras",
+      "name": "Čachtický kras",
+      "slug": "cachticky-kras",
+      "description": "Najsevernejší kras Malých Karpát s rozsiahlou Čachtickou jaskyňou.",
+      "aggregated_cave_count": {
+        "value": 80,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.7,
+              48.78
+            ],
+            [
+              17.85,
+              48.77
+            ],
+            [
+              17.86,
+              48.67
+            ],
+            [
+              17.69,
+              48.68
+            ],
+            [
+              17.7,
+              48.78
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-demanovska-dolina",
+      "name": "Demänovská dolina",
+      "slug": "demanovska-dolina",
+      "description": "Svetoznámy Demänovský jaskynný systém s dĺžkou vyše 43 km undergroundových priestorov.",
+      "aggregated_cave_count": {
+        "value": 300,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.52,
+              49.03
+            ],
+            [
+              19.64,
+              49.03
+            ],
+            [
+              19.65,
+              48.95
+            ],
+            [
+              19.53,
+              48.95
+            ],
+            [
+              19.52,
+              49.03
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-mala-fatra",
+      "name": "Malá Fatra",
+      "slug": "mala-fatra",
+      "description": "Krasové útvary v kryštaliniku a obalových jednotkách Malej Fatry.",
+      "aggregated_cave_count": {
+        "value": 150,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.9,
+              49.26
+            ],
+            [
+              19.22,
+              49.25
+            ],
+            [
+              19.18,
+              49.1
+            ],
+            [
+              18.88,
+              49.12
+            ],
+            [
+              18.9,
+              49.26
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-muranska-planina",
+      "name": "Muránska planina",
+      "slug": "muranska-planina",
+      "description": "Divoký kras s rozsiahlym systémom priepastí, jaskýň a vyvieračiek.",
+      "aggregated_cave_count": {
+        "value": 500,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.9,
+              48.85
+            ],
+            [
+              20.18,
+              48.82
+            ],
+            [
+              20.15,
+              48.7
+            ],
+            [
+              19.88,
+              48.72
+            ],
+            [
+              19.9,
+              48.85
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-slovensky-kras",
+      "name": "Slovenský kras",
+      "slug": "slovensky-kras",
+      "description": "Najväčšia krasová oblasť na Slovensku s výnimočnými planinami a vyše 1000 jaskyňami.",
+      "aggregated_cave_count": {
+        "value": 1000,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.35,
+              48.65
+            ],
+            [
+              20.85,
+              48.68
+            ],
+            [
+              20.92,
+              48.52
+            ],
+            [
+              20.6,
+              48.48
+            ],
+            [
+              20.35,
+              48.55
+            ],
+            [
+              20.35,
+              48.65
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-slovensky-raj",
+      "name": "Slovenský raj",
+      "slug": "slovensky-raj",
+      "description": "Unikátne rokliny, Dobšinská ľadová jaskyňa a krasové planiny Glac a Pelc.",
+      "aggregated_cave_count": {
+        "value": 400,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.18,
+              48.97
+            ],
+            [
+              20.45,
+              48.96
+            ],
+            [
+              20.42,
+              48.82
+            ],
+            [
+              20.16,
+              48.83
+            ],
+            [
+              20.18,
+              48.97
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    },
+    {
+      "id": "area-strazovske-vrchy",
+      "name": "Strážovské vrchy",
+      "slug": "strazovske-vrchy",
+      "description": "Významný vápencovo-dolomitový kras Považia a Horného Nitria.",
+      "aggregated_cave_count": {
+        "value": 250,
+        "estimated": true
+      },
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.3,
+              49.08
+            ],
+            [
+              18.65,
+              49.06
+            ],
+            [
+              18.6,
+              48.85
+            ],
+            [
+              18.28,
+              48.88
+            ],
+            [
+              18.3,
+              49.08
+            ]
+          ]
+        ]
+      },
+      "polygon_status": "estimated",
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12"
+    }
+  ],
+  "groups": [
+    {
+      "id": "sss-001",
+      "name": "Jaskyniarska skupina Adama Vallu",
+      "slug": "jaskyniarska-skupina-adama-vallu",
+      "short_description": "Jaskyniarska skupina Adama Vallu pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "tomashampl@azet.sk",
+        "phone": "+421948392752"
+      }
+    },
+    {
+      "id": "sss-002",
+      "name": "Moldavský jaskyniarsky klub Adonis Ten",
+      "slug": "moldavsky-jaskyniarsky-klub-adonis-ten",
+      "short_description": "Moldavský jaskyniarsky klub Adonis Ten pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "dobosati007@gmail.com",
+        "phone": "+421903656664"
+      }
+    },
+    {
+      "id": "sss-003",
+      "name": "Jaskyniarska skupina Aragonit",
+      "slug": "jaskyniarska-skupina-aragonit",
+      "short_description": "Jaskyniarska skupina Aragonit pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "piovarci.aragonit@gmail.com",
+        "phone": "+421904800011"
+      }
+    },
+    {
+      "id": "sss-004",
+      "name": "Jaskyniarska skupina Arachnos – Slovenský kras",
+      "slug": "jaskyniarska-skupina-arachnos-slovensky-kras",
+      "short_description": "Jaskyniarska skupina Arachnos – Slovenský kras pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "vizy18@gmail.com",
+        "phone": "+421911226472"
+      }
+    },
+    {
+      "id": "sss-005",
+      "name": "Speleoklub Badizer Ardovo",
+      "slug": "speleoklub-badizer-ardovo",
+      "short_description": "Speleoklub Badizer Ardovo pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "skokan.alexander@gmail.com",
+        "phone": "+421910502457"
+      }
+    },
+    {
+      "id": "sss-006",
+      "name": "Speleoklub Banská Bystrica",
+      "slug": "speleoklub-banska-bystrica",
+      "short_description": "Speleoklub Banská Bystrica pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleo.sk",
+      "public_contact": {
+        "email": "stevo.mlynarik@gmail.com",
+        "phone": "+421903514704"
+      }
+    },
+    {
+      "id": "sss-007",
+      "name": "Speleo Bratislava",
+      "slug": "speleo-bratislava",
+      "short_description": "Speleo Bratislava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleobratislava.webnode.sk",
+      "public_contact": {
+        "email": "petersevo@gmail.com",
+        "phone": "+421908983646"
+      }
+    },
+    {
+      "id": "sss-008",
+      "name": "Speleo Brezno",
+      "slug": "speleo-brezno",
+      "short_description": "Speleo Brezno pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "http://osbr.sss.sk",
+      "public_contact": {
+        "email": "speleobrezno@gmail.com",
+        "phone": "+421905269845"
+      }
+    },
+    {
+      "id": "sss-009",
+      "name": "Speleoklub Cassovia",
+      "slug": "speleoklub-cassovia",
+      "short_description": "Speleoklub Cassovia pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.cassovia.sss.sk",
+      "public_contact": {
+        "email": "thuroczyjozef@gmail.com",
+        "phone": "+421905515979"
+      }
+    },
+    {
+      "id": "sss-010",
+      "name": "Oblastná skupina Čachtice",
+      "slug": "oblastna-skupina-cachtice",
+      "short_description": "Oblastná skupina Čachtice pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "oscachtice@gmail.com",
+        "phone": "+421914230387"
+      }
+    },
+    {
+      "id": "sss-011",
+      "name": "Speleologický klub Červené vrchy Slovakia",
+      "slug": "speleologicky-klub-cervene-vrchy-slovakia",
+      "short_description": "Speleologický klub Červené vrchy Slovakia pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.cervenevrchy-speleo.sk",
+      "public_contact": {
+        "email": "jan.smoll007@gmail.com",
+        "phone": "+421903512283"
+      }
+    },
+    {
+      "id": "sss-012",
+      "name": "CUC Bratislava",
+      "slug": "cuc-bratislava",
+      "short_description": "CUC Bratislava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "zverka@ovsiste.sk",
+        "phone": "+421902852502"
+      }
+    },
+    {
+      "id": "sss-013",
+      "name": "Jaskyniarsky klub Demänovská Dolina",
+      "slug": "jaskyniarsky-klub-demanovska-dolina",
+      "short_description": "Jaskyniarsky klub Demänovská Dolina pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleodd.sk",
+      "public_contact": {
+        "email": "herich@speleodd.sk",
+        "phone": "+421944108618"
+      }
+    },
+    {
+      "id": "sss-014",
+      "name": "Speleo-Detva",
+      "slug": "speleo-detva",
+      "short_description": "Speleo-Detva pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleodetva.sss.sk",
+      "public_contact": {
+        "email": "ehipmanova@gmail.com",
+        "phone": "+421910993703"
+      }
+    },
+    {
+      "id": "sss-015",
+      "name": "Speleoklub Drienka Košice",
+      "slug": "speleoklub-drienka-kosice",
+      "short_description": "Speleoklub Drienka Košice pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.drienka.netkosice.sk",
+      "public_contact": {
+        "email": "jozef.psotka@gmail.com",
+        "phone": "+421904338683"
+      }
+    },
+    {
+      "id": "sss-016",
+      "name": "Jaskyniarsky klub Dubnica nad Váhom",
+      "slug": "jaskyniarsky-klub-dubnica-nad-vahom",
+      "short_description": "Jaskyniarsky klub Dubnica nad Váhom pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.dubnica.sss.sk",
+      "public_contact": {
+        "email": "pmedzihradsky@gmail.com",
+        "phone": "+421905380671"
+      }
+    },
+    {
+      "id": "sss-017",
+      "name": "Speleoklub Ďumbier",
+      "slug": "speleoklub-dumbier",
+      "short_description": "Speleoklub Ďumbier pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.jmn.sk",
+      "public_contact": {
+        "email": "s.m@speleo.sk",
+        "phone": "+421919225273"
+      }
+    },
+    {
+      "id": "sss-018",
+      "name": "MEANDER – Hájsky klub športovej speleológie",
+      "slug": "meander-hajsky-klub-sportovej-speleologie",
+      "short_description": "MEANDER – Hájsky klub športovej speleológie pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.hkss.sss.sk",
+      "public_contact": {
+        "email": "hufihu@seznam.cz",
+        "phone": "+421944592831"
+      }
+    },
+    {
+      "id": "sss-019",
+      "name": "Jaskyniarsky klub Handlová",
+      "slug": "jaskyniarsky-klub-handlova",
+      "short_description": "Jaskyniarsky klub Handlová pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.jkhandlova.webnode.sk",
+      "public_contact": {
+        "email": "peter.strecansky@gmail.com",
+        "phone": "+421465473681"
+      }
+    },
+    {
+      "id": "sss-020",
+      "name": "Speleoclub Chočské vrchy",
+      "slug": "speleoclub-chocske-vrchy",
+      "short_description": "Speleoclub Chočské vrchy pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.schv.sk",
+      "public_contact": {
+        "email": "juraj.szunyog@mondigroup.com",
+        "phone": "+421910555654"
+      }
+    },
+    {
+      "id": "sss-021",
+      "name": "Oblastná skupina Inovec",
+      "slug": "oblastna-skupina-inovec",
+      "short_description": "Oblastná skupina Inovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "ivan.demovic1@gmail.com",
+        "phone": "+421908420545"
+      }
+    },
+    {
+      "id": "sss-022",
+      "name": "Oblastná skupina Jána Majku",
+      "slug": "oblastna-skupina-jana-majku",
+      "short_description": "Oblastná skupina Jána Majku pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.osjm.sk",
+      "public_contact": {
+        "email": "zvcave@email.cz",
+        "phone": "+421948383178"
+      }
+    },
+    {
+      "id": "sss-023",
+      "name": "Oblastná skupina Liptovská Teplička",
+      "slug": "oblastna-skupina-liptovska-teplicka",
+      "short_description": "Oblastná skupina Liptovská Teplička pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "knapp.vl@gmail.com",
+        "phone": "+421908903798"
+      }
+    },
+    {
+      "id": "sss-024",
+      "name": "Oblastná skupina Liptovský Mikuláš",
+      "slug": "oblastna-skupina-liptovsky-mikulas",
+      "short_description": "Oblastná skupina Liptovský Mikuláš pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://speleolm.sss.sk",
+      "public_contact": {
+        "email": "lub.luhova@gmail.com"
+      }
+    },
+    {
+      "id": "sss-025",
+      "name": "Jaskyniarsky klub Liptovský Trnovec",
+      "slug": "jaskyniarsky-klub-liptovsky-trnovec",
+      "short_description": "Jaskyniarsky klub Liptovský Trnovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "vrabecma@gmail.com",
+        "phone": "+421902827348"
+      }
+    },
+    {
+      "id": "sss-026",
+      "name": "Speleoklub Malá Fatra",
+      "slug": "speleoklub-mala-fatra",
+      "short_description": "Speleoklub Malá Fatra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "http://speleomalafatra.webnode.sk",
+      "public_contact": {
+        "email": "pavolpokrievka@zoznam.sk",
+        "phone": "+421434223701"
+      }
+    },
+    {
+      "id": "sss-027",
+      "name": "Speleoklub Minotaurus",
+      "slug": "speleoklub-minotaurus",
+      "short_description": "Speleoklub Minotaurus pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.krasnohorska-jaskyna.sk",
+      "public_contact": {
+        "email": "stankov@ke.psg.sk",
+        "phone": "+421587343426"
+      }
+    },
+    {
+      "id": "sss-028",
+      "name": "Speleoklub Muránska planina",
+      "slug": "speleoklub-muranska-planina",
+      "short_description": "Speleoklub Muránska planina pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "speleomp@gmail.com",
+        "phone": "+421905743148"
+      }
+    },
+    {
+      "id": "sss-029",
+      "name": "Speleoklub Nicolaus",
+      "slug": "speleoklub-nicolaus",
+      "short_description": "Speleoklub Nicolaus pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.nicolaus.sss.sk",
+      "public_contact": {
+        "email": "peter.holubek@smopaj.sk",
+        "phone": "+421445522061"
+      }
+    },
+    {
+      "id": "sss-030",
+      "name": "Speleoklub Nitra",
+      "slug": "speleoklub-nitra",
+      "short_description": "Speleoklub Nitra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "tlanczos@gmail.com",
+        "phone": "+421911260644"
+      }
+    },
+    {
+      "id": "sss-031",
+      "name": "Oblastná skupina Orava",
+      "slug": "oblastna-skupina-orava",
+      "short_description": "Oblastná skupina Orava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "speleo.orava@gmail.com",
+        "phone": "+421903950231"
+      }
+    },
+    {
+      "id": "sss-032",
+      "name": "Jaskyniari Plavecké Podhradie",
+      "slug": "jaskyniari-plavecke-podhradie",
+      "short_description": "Jaskyniari Plavecké Podhradie pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleopp.sk",
+      "public_contact": {
+        "email": "marian.gruz@gmail.com",
+        "phone": "+421918432640"
+      }
+    },
+    {
+      "id": "sss-033",
+      "name": "Oblastná skupina Prešov",
+      "slug": "oblastna-skupina-presov",
+      "short_description": "Oblastná skupina Prešov pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.zladiera.sk",
+      "public_contact": {
+        "email": "kosc@zladiera.sk",
+        "phone": "+421905237565"
+      }
+    },
+    {
+      "id": "sss-034",
+      "name": "Oblastná speleologická skupina Rimavská Sobota",
+      "slug": "oblastna-speleologicka-skupina-rimavska-sobota",
+      "short_description": "Oblastná speleologická skupina Rimavská Sobota pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "ossrs@jaskyne.info",
+        "phone": "+421908714306"
+      }
+    },
+    {
+      "id": "sss-035",
+      "name": "Speleoklub Rokoš",
+      "slug": "speleoklub-rokos",
+      "short_description": "Speleoklub Rokoš pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "lubomir.kubicek@gmail.com",
+        "phone": "+421948879898"
+      }
+    },
+    {
+      "id": "sss-036",
+      "name": "Speleo Rožňava",
+      "slug": "speleo-roznava",
+      "short_description": "Speleo Rožňava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleoroznava.webnode.sk",
+      "public_contact": {
+        "email": "mikulas.repaszky@gmail.com",
+        "phone": "+421925756833"
+      }
+    },
+    {
+      "id": "sss-037",
+      "name": "Oblastná skupina Ružomberok",
+      "slug": "oblastna-skupina-ruzomberok",
+      "short_description": "Oblastná skupina Ružomberok pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleork.sk",
+      "public_contact": {
+        "email": "jurecka@rknet.sk",
+        "phone": "+421905793351"
+      },
+      "social_links": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/speleork"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/speleork"
+        }
+      ]
+    },
+    {
+      "id": "sss-038",
+      "name": "Speleologický klub Slovenský raj",
+      "slug": "speleologicky-klub-slovensky-raj",
+      "short_description": "Speleologický klub Slovenský raj pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleoraj.sk",
+      "public_contact": {
+        "email": "tulis@tulis.sk",
+        "phone": "+421905923625"
+      }
+    },
+    {
+      "id": "sss-039",
+      "name": "Sekcia speleopotápania",
+      "slug": "sekcia-speleopotapania",
+      "short_description": "Sekcia speleopotápania pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.kubi.sk",
+      "public_contact": {
+        "email": "kubi@kubi.sk",
+        "phone": "+421905108699"
+      }
+    },
+    {
+      "id": "sss-040",
+      "name": "Speleodiver",
+      "slug": "speleodiver",
+      "short_description": "Speleodiver pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "mgr.kyska@airtrend.sk",
+        "phone": "+421948693191"
+      }
+    },
+    {
+      "id": "sss-041",
+      "name": "Jaskyniarska skupina Spišská Belá",
+      "slug": "jaskyniarska-skupina-spisska-bela",
+      "short_description": "Jaskyniarska skupina Spišská Belá pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleo-spisskabela.sk",
+      "public_contact": {
+        "email": "lplucinsky@gmail.com",
+        "phone": "+421944214107"
+      },
+      "social_links": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Speleo-SpisskaBela"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/speleota3"
+        }
+      ]
+    },
+    {
+      "id": "sss-042",
+      "name": "Jaskyniarsky klub Strážovské vrchy",
+      "slug": "jaskyniarsky-klub-strazovske-vrchy",
+      "short_description": "Jaskyniarsky klub Strážovské vrchy pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleostrazov.sk",
+      "public_contact": {
+        "email": "bohuslav.kortman@speleostrazov.sk",
+        "phone": "+421905488028"
+      }
+    },
+    {
+      "id": "sss-043",
+      "name": "Speleoklub Šariš",
+      "slug": "speleoklub-saris",
+      "short_description": "Speleoklub Šariš pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleosaris.estranky.cz",
+      "public_contact": {
+        "email": "speleosaris@gmail.com",
+        "phone": "+421907955243"
+      }
+    },
+    {
+      "id": "sss-044",
+      "name": "Speleoklub Tisovec",
+      "slug": "speleoklub-tisovec",
+      "short_description": "Speleoklub Tisovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "hutkatisovec@gmail.com",
+        "phone": "+421908914017"
+      }
+    },
+    {
+      "id": "sss-045",
+      "name": "Trenčiansky speleoklub",
+      "slug": "trenciansky-speleoklub",
+      "short_description": "Trenčiansky speleoklub pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "sovamiro@gmail.com",
+        "phone": "+421918602869"
+      }
+    },
+    {
+      "id": "sss-046",
+      "name": "Speleoklub Tribeč",
+      "slug": "speleoklub-tribec",
+      "short_description": "Speleoklub Tribeč pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "pqq@post.sk",
+        "phone": "+421902949921"
+      }
+    },
+    {
+      "id": "sss-047",
+      "name": "Speleoklub Trnava",
+      "slug": "speleoklub-trnava",
+      "short_description": "Speleoklub Trnava pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleott.sk",
+      "public_contact": {
+        "email": "sasol@speleott.sk",
+        "phone": "+421908895769"
+      }
+    },
+    {
+      "id": "sss-048",
+      "name": "Jaskyniarsky klub Speleo Turiec",
+      "slug": "jaskyniarsky-klub-speleo-turiec",
+      "short_description": "Jaskyniarsky klub Speleo Turiec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "https://www.speleoturiec.sk",
+      "public_contact": {
+        "email": "palopokrievka@gmail.com",
+        "phone": "+421902263520"
+      }
+    },
+    {
+      "id": "sss-049",
+      "name": "Oblastná skupina Uhrovec",
+      "slug": "oblastna-skupina-uhrovec",
+      "short_description": "Oblastná skupina Uhrovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "jzfkvck@gmail.com",
+        "phone": "+421387607038"
+      }
+    },
+    {
+      "id": "sss-050",
+      "name": "Speleoklub Univerzity P. J. Šafárika, Košice",
+      "slug": "speleoklub-univerzity-p-j-safarika-kosice",
+      "short_description": "Speleoklub Univerzity P. J. Šafárika, Košice pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "http://speleoupjs.sk",
+      "public_contact": {
+        "email": "hochmuth@upjs.sk",
+        "phone": "+421908977594"
+      }
+    },
+    {
+      "id": "sss-051",
+      "name": "Jaskyniarsky klub Varín",
+      "slug": "jaskyniarsky-klub-varin",
+      "short_description": "Jaskyniarsky klub Varín pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "website": "http://speleovarin.sss.sk",
+      "public_contact": {
+        "email": "jkvarin@centrum.sk",
+        "phone": "+421905365688"
+      }
+    },
+    {
+      "id": "sss-052",
+      "name": "Oblastná skupina Veľká Fatra",
+      "slug": "oblastna-skupina-velka-fatra",
+      "short_description": "Oblastná skupina Veľká Fatra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "zuzuvacekova@gmail.com",
+        "phone": "+421910198325"
+      }
+    },
+    {
+      "id": "sss-053",
+      "name": "Žilinský jaskyniarsky klub",
+      "slug": "zilinsky-jaskyniarsky-klub",
+      "short_description": "Žilinský jaskyniarsky klub pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.",
+      "verified_at": null,
+      "polygon_status": "missing",
+      "sources": [
+        {
+          "type": "other",
+          "reference": "sss-adresar"
+        }
+      ],
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "public_contact": {
+        "email": "jaskyniari@gmail.com",
+        "phone": "+421903772579"
+      }
+    }
+  ]
+}

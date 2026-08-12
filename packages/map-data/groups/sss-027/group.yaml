@@ -1,0 +1,15 @@
+id: sss-027
+name: Speleoklub Minotaurus
+slug: speleoklub-minotaurus
+short_description: Speleoklub Minotaurus pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.krasnohorska-jaskyna.sk
+public_contact:
+  email: stankov@ke.psg.sk
+  phone: '+421587343426'

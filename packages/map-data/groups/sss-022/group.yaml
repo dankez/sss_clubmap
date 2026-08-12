@@ -1,0 +1,15 @@
+id: sss-022
+name: Oblastná skupina Jána Majku
+slug: oblastna-skupina-jana-majku
+short_description: Oblastná skupina Jána Majku pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.osjm.sk
+public_contact:
+  email: zvcave@email.cz
+  phone: '+421948383178'

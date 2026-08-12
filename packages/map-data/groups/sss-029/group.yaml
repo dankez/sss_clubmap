@@ -1,0 +1,15 @@
+id: sss-029
+name: Speleoklub Nicolaus
+slug: speleoklub-nicolaus
+short_description: Speleoklub Nicolaus pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+website: https://www.nicolaus.sss.sk
+public_contact:
+  email: peter.holubek@smopaj.sk
+  phone: '+421445522061'

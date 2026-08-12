@@ -1,0 +1,14 @@
+id: sss-046
+name: Speleoklub Tribeč
+slug: speleoklub-tribec
+short_description: Speleoklub Tribeč pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+verified_at: null
+polygon_status: missing
+sources:
+  - type: other
+    reference: sss-adresar
+created_at: '2026-08-12'
+updated_at: '2026-08-12'
+public_contact:
+  email: pqq@post.sk
+  phone: '+421902949921'
