@@ -1,12 +1,13 @@
 id: sss-037
 name: Oblastná skupina Ružomberok
 slug: oblastna-skupina-ruzomberok
-short_description: Oblastná skupina Ružomberok pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Oblastná skupina Ružomberok pôsobí v oblasti speleológia a výskumu
+  jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.speleork.sk
@@ -15,15 +16,16 @@ public_contact:
   phone: '+421905793351'
   address: Ružomberok, Slovensko
 social_links:
-  - platform: facebook
-    url: https://www.facebook.com/speleork
-  - platform: instagram
-    url: https://www.instagram.com/speleork
+- platform: facebook
+  url: https://www.facebook.com/speleork
+- platform: instagram
+  url: https://www.instagram.com/speleork
 area_relationships:
-  - group_id: sss-037
-    area_id: area-ludrovska-dolina
-    relationship: primary
+- group_id: sss-037
+  area_id: area-ludrovska-dolina
+  relationship: primary
 hq_city: Ružomberok
 hq_coordinates:
-  - 19.303
-  - 49.074
+- 19.303
+- 49.074
+logo_url: /logos/sss-037.png

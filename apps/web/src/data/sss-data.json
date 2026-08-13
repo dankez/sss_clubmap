@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T06:38:22.568Z",
+  "generated_at": "2026-08-13T07:14:01.539Z",
   "areas_count": 53,
   "groups_count": 53,
   "areas": [
@@ -4435,7 +4435,8 @@
       "hq_coordinates": [
         19.032,
         49.257
-      ]
+      ],
+      "logo_url": "/logos/sss-001.png"
     },
     {
       "id": "sss-002",
@@ -4468,7 +4469,8 @@
       "hq_coordinates": [
         20.999,
         48.614
-      ]
+      ],
+      "logo_url": "/logos/sss-002.png"
     },
     {
       "id": "sss-003",
@@ -4501,7 +4503,8 @@
       "hq_coordinates": [
         20.531,
         48.663
-      ]
+      ],
+      "logo_url": "/logos/sss-003.png"
     },
     {
       "id": "sss-004",
@@ -4534,7 +4537,8 @@
       "hq_coordinates": [
         20.591,
         48.648
-      ]
+      ],
+      "logo_url": "/logos/sss-004.png"
     },
     {
       "id": "sss-005",
@@ -4601,7 +4605,8 @@
       "hq_coordinates": [
         19.146,
         48.736
-      ]
+      ],
+      "logo_url": "/logos/sss-006.png"
     },
     {
       "id": "sss-007",
@@ -4635,7 +4640,8 @@
       "hq_coordinates": [
         17.107,
         48.148
-      ]
+      ],
+      "logo_url": "/logos/sss-007.png"
     },
     {
       "id": "sss-008",
@@ -4669,7 +4675,8 @@
       "hq_coordinates": [
         19.645,
         48.804
-      ]
+      ],
+      "logo_url": "/logos/sss-008.png"
     },
     {
       "id": "sss-009",
@@ -4703,7 +4710,8 @@
       "hq_coordinates": [
         21.258,
         48.716
-      ]
+      ],
+      "logo_url": "/logos/sss-009.png"
     },
     {
       "id": "sss-010",
@@ -4736,7 +4744,8 @@
       "hq_coordinates": [
         17.787,
         48.716
-      ]
+      ],
+      "logo_url": "/logos/sss-010.png"
     },
     {
       "id": "sss-011",
@@ -4770,7 +4779,8 @@
       "hq_coordinates": [
         20.14,
         49.26
-      ]
+      ],
+      "logo_url": "/logos/sss-011.png"
     },
     {
       "id": "sss-012",
@@ -4837,7 +4847,8 @@
       "hq_coordinates": [
         19.58,
         48.99
-      ]
+      ],
+      "logo_url": "/logos/sss-013.png"
     },
     {
       "id": "sss-014",
@@ -4871,7 +4882,8 @@
       "hq_coordinates": [
         19.419,
         48.56
-      ]
+      ],
+      "logo_url": "/logos/sss-014.png"
     },
     {
       "id": "sss-015",
@@ -4905,7 +4917,8 @@
       "hq_coordinates": [
         21.24,
         48.725
-      ]
+      ],
+      "logo_url": "/logos/sss-015.png"
     },
     {
       "id": "sss-016",
@@ -4939,7 +4952,8 @@
       "hq_coordinates": [
         18.167,
         48.959
-      ]
+      ],
+      "logo_url": "/logos/sss-016.png"
     },
     {
       "id": "sss-017",
@@ -4973,7 +4987,8 @@
       "hq_coordinates": [
         19.676,
         49.047
-      ]
+      ],
+      "logo_url": "/logos/sss-017.png"
     },
     {
       "id": "sss-018",
@@ -5007,7 +5022,8 @@
       "hq_coordinates": [
         20.858,
         48.627
-      ]
+      ],
+      "logo_url": "/logos/sss-018.png"
     },
     {
       "id": "sss-019",
@@ -5041,7 +5057,8 @@
       "hq_coordinates": [
         18.76,
         48.727
-      ]
+      ],
+      "logo_url": "/logos/sss-019.png"
     },
     {
       "id": "sss-020",
@@ -5075,7 +5092,8 @@
       "hq_coordinates": [
         19.298,
         49.208
-      ]
+      ],
+      "logo_url": "/logos/sss-020.png"
     },
     {
       "id": "sss-021",
@@ -5142,7 +5160,8 @@
       "hq_coordinates": [
         20.522,
         48.553
-      ]
+      ],
+      "logo_url": "/logos/sss-022.png"
     },
     {
       "id": "sss-023",
@@ -5208,7 +5227,8 @@
       "hq_coordinates": [
         19.612,
         49.084
-      ]
+      ],
+      "logo_url": "/logos/sss-024.png"
     },
     {
       "id": "sss-025",
@@ -5241,7 +5261,8 @@
       "hq_coordinates": [
         19.544,
         49.117
-      ]
+      ],
+      "logo_url": "/logos/sss-025.png"
     },
     {
       "id": "sss-026",
@@ -5342,7 +5363,8 @@
       "hq_coordinates": [
         20.045,
         48.742
-      ]
+      ],
+      "logo_url": "/logos/sss-028.png"
     },
     {
       "id": "sss-029",
@@ -5376,7 +5398,8 @@
       "hq_coordinates": [
         19.62,
         49.08
-      ]
+      ],
+      "logo_url": "/logos/sss-029.png"
     },
     {
       "id": "sss-030",
@@ -5409,7 +5432,8 @@
       "hq_coordinates": [
         18.086,
         48.306
-      ]
+      ],
+      "logo_url": "/logos/sss-030.png"
     },
     {
       "id": "sss-031",
@@ -5442,7 +5466,8 @@
       "hq_coordinates": [
         19.48,
         49.4
-      ]
+      ],
+      "logo_url": "/logos/sss-031.png"
     },
     {
       "id": "sss-032",
@@ -5476,7 +5501,8 @@
       "hq_coordinates": [
         17.256,
         48.484
-      ]
+      ],
+      "logo_url": "/logos/sss-032.png"
     },
     {
       "id": "sss-033",
@@ -5543,7 +5569,8 @@
       "hq_coordinates": [
         20.022,
         48.383
-      ]
+      ],
+      "logo_url": "/logos/sss-034.png"
     },
     {
       "id": "sss-035",
@@ -5610,7 +5637,8 @@
       "hq_coordinates": [
         20.525,
         48.658
-      ]
+      ],
+      "logo_url": "/logos/sss-036.png"
     },
     {
       "id": "sss-037",
@@ -5654,7 +5682,8 @@
       "hq_coordinates": [
         19.303,
         49.074
-      ]
+      ],
+      "logo_url": "/logos/sss-037.png"
     },
     {
       "id": "sss-038",
@@ -5688,7 +5717,8 @@
       "hq_coordinates": [
         20.565,
         48.943
-      ]
+      ],
+      "logo_url": "/logos/sss-038.png"
     },
     {
       "id": "sss-039",
@@ -5722,7 +5752,8 @@
       "hq_coordinates": [
         17.935,
         48.89
-      ]
+      ],
+      "logo_url": "/logos/sss-039.png"
     },
     {
       "id": "sss-040",
@@ -5755,7 +5786,8 @@
       "hq_coordinates": [
         17.11,
         48.15
-      ]
+      ],
+      "logo_url": "/logos/sss-040.png"
     },
     {
       "id": "sss-041",
@@ -5799,7 +5831,8 @@
       "hq_coordinates": [
         20.459,
         49.186
-      ]
+      ],
+      "logo_url": "/logos/sss-041.png"
     },
     {
       "id": "sss-042",
@@ -5833,7 +5866,8 @@
       "hq_coordinates": [
         18.445,
         49.116
-      ]
+      ],
+      "logo_url": "/logos/sss-042.png"
     },
     {
       "id": "sss-043",
@@ -5867,7 +5901,8 @@
       "hq_coordinates": [
         21.098,
         49.102
-      ]
+      ],
+      "logo_url": "/logos/sss-043.png"
     },
     {
       "id": "sss-044",
@@ -5900,7 +5935,8 @@
       "hq_coordinates": [
         19.943,
         48.678
-      ]
+      ],
+      "logo_url": "/logos/sss-044.png"
     },
     {
       "id": "sss-045",
@@ -5966,7 +6002,8 @@
       "hq_coordinates": [
         18.09,
         48.31
-      ]
+      ],
+      "logo_url": "/logos/sss-046.png"
     },
     {
       "id": "sss-047",
@@ -6000,7 +6037,8 @@
       "hq_coordinates": [
         17.585,
         48.377
-      ]
+      ],
+      "logo_url": "/logos/sss-047.png"
     },
     {
       "id": "sss-048",
@@ -6034,7 +6072,8 @@
       "hq_coordinates": [
         18.923,
         49.064
-      ]
+      ],
+      "logo_url": "/logos/sss-048.png"
     },
     {
       "id": "sss-049",
@@ -6135,7 +6174,8 @@
       "hq_coordinates": [
         18.874,
         49.201
-      ]
+      ],
+      "logo_url": "/logos/sss-051.png"
     },
     {
       "id": "sss-052",
@@ -6168,7 +6208,8 @@
       "hq_coordinates": [
         19.14,
         48.74
-      ]
+      ],
+      "logo_url": "/logos/sss-052.png"
     },
     {
       "id": "sss-053",

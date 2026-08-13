@@ -1,32 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GroupData } from '../types';
-import { X, Globe, Mail, Phone, ExternalLink, Check, ShieldCheck, MapPin } from 'lucide-react';
+import { X, Globe, Mail, ExternalLink, ShieldCheck, MapPin, Edit, MessageSquare, Lock } from 'lucide-react';
 
 interface GroupCardProps {
   group: GroupData;
   onClose: () => void;
+  onOpenContactForm: (group: GroupData) => void;
+  isLoggedIn?: boolean;
+  onOpenAdminEdit?: (group: GroupData) => void;
 }
 
-export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
-  const [copied, setCopied] = useState(false);
-
-  const primaryEmail = group.public_contact?.email;
-  const primaryPhone = group.public_contact?.phone;
-
-  const handleContactClick = () => {
-    if (primaryEmail) {
-      window.location.href = `mailto:${primaryEmail}`;
-    } else if (group.website) {
-      window.open(group.website, '_blank');
-    } else if (primaryPhone) {
-      window.location.href = `tel:${primaryPhone}`;
-    } else {
-      navigator.clipboard.writeText(group.name);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  };
-
+export const GroupCard: React.FC<GroupCardProps> = ({
+  group,
+  onClose,
+  onOpenContactForm,
+  isLoggedIn = false,
+  onOpenAdminEdit,
+}) => {
   return (
     <div className="group-card-overlay glass-panel">
       <button className="close-btn" onClick={onClose} aria-label="Zatvoriť">
@@ -41,11 +31,24 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
               <ShieldCheck size={12} /> Overené
             </span>
           )}
+          {isLoggedIn && onOpenAdminEdit && (
+            <button
+              className="admin-edit-badge"
+              onClick={() => onOpenAdminEdit(group)}
+              title="Upraviť údaje karty (Admin)"
+            >
+              <Edit size={12} /> Upraviť kartu
+            </button>
+          )}
         </div>
 
         <div className="group-main-identity">
           <div className="group-logo-avatar font-display">
-            {group.name.substring(0, 2).toUpperCase()}
+            {group.logo_url ? (
+              <img src={group.logo_url} alt={group.name} className="group-logo-img" />
+            ) : (
+              group.name.substring(0, 2).toUpperCase()
+            )}
           </div>
           <div>
             <h2 className="group-name font-display">{group.name}</h2>
@@ -71,25 +74,21 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
         <span className="chip">Ochrana prírody</span>
       </div>
 
-      {/* Contact Details List */}
+      {/* Contact Details List (Private items masked) */}
       <div className="contacts-block">
-        {primaryEmail && (
-          <div className="contact-line">
-            <Mail size={15} className="contact-icon" />
-            <a href={`mailto:${primaryEmail}`} className="contact-link">
-              {primaryEmail}
-            </a>
-          </div>
-        )}
+        <div className="contact-line clickable" onClick={() => onOpenContactForm(group)}>
+          <Mail size={15} className="contact-icon" />
+          <span className="contact-masked font-ui">
+            Chránený e-mail SSS <span className="masked-hint">(Odoslať cez formulár)</span>
+          </span>
+        </div>
 
-        {primaryPhone && (
-          <div className="contact-line">
-            <Phone size={15} className="contact-icon" />
-            <a href={`tel:${primaryPhone}`} className="contact-link">
-              {primaryPhone}
-            </a>
-          </div>
-        )}
+        <div className="contact-line muted">
+          <Lock size={14} className="contact-icon-muted" />
+          <span className="contact-muted-text font-ui">
+            Telefón: Nezverejnené (Ochrana súkromia)
+          </span>
+        </div>
 
         {group.website && (
           <div className="contact-line">
@@ -102,23 +101,21 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
         )}
       </div>
 
-      {/* Dominant Amber CTA */}
+      {/* Primary Actions: Contact Form & Admin Edit */}
       <div className="cta-container">
-        <button className="btn-primary cta-btn" onClick={handleContactClick}>
-          {copied ? (
-            <>
-              <Check size={18} /> Názov skopírovaný!
-            </>
-          ) : (
-            <>
-              <Mail size={18} /> Kontaktovať skupinu
-            </>
-          )}
+        <button className="btn-primary cta-btn" onClick={() => onOpenContactForm(group)}>
+          <MessageSquare size={17} /> Otvoriť kontaktný formulár
         </button>
+
+        {isLoggedIn && onOpenAdminEdit && (
+          <button className="btn-admin-edit" onClick={() => onOpenAdminEdit(group)}>
+            <Edit size={16} /> Upraviť polia & logo (Admin)
+          </button>
+        )}
       </div>
 
       <div className="safety-note">
-        <MapPin size={12} /> Presné GPS súradnice vchodov nie sú zobrazené z dôvodu ochrany jaskýň.
+        <MapPin size={12} /> Súkromné kontakty a presné súradnice sú chránené proti zberu spamu.
       </div>
 
       <style>{`
@@ -126,7 +123,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           position: absolute;
           bottom: 28px;
           right: 28px;
-          width: 400px;
+          width: 410px;
           max-width: calc(100vw - 56px);
           max-height: calc(100vh - 120px);
           overflow-y: auto;
@@ -173,6 +170,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           align-items: center;
           gap: 0.5rem;
           margin-bottom: 0.75rem;
+          flex-wrap: wrap;
         }
 
         .type-badge {
@@ -194,6 +192,20 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           gap: 0.25rem;
         }
 
+        .admin-edit-badge {
+          font-size: 0.7rem;
+          background: rgba(224, 145, 47, 0.2);
+          color: var(--color-lantern-amber);
+          border: 1px solid rgba(224, 145, 47, 0.4);
+          padding: 2px 8px;
+          border-radius: 99px;
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
         .group-main-identity {
           display: flex;
           align-items: center;
@@ -202,8 +214,8 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
         }
 
         .group-logo-avatar {
-          width: 46px;
-          height: 46px;
+          width: 52px;
+          height: 52px;
           border-radius: var(--radius-md);
           background: var(--color-lantern-amber);
           color: var(--color-cave-stone);
@@ -213,6 +225,15 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
+          overflow: hidden;
+        }
+
+        .group-logo-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          background: #FFFFFF;
+          padding: 3px;
         }
 
         .group-name {
@@ -277,7 +298,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           padding: 0.85rem;
           display: flex;
           flex-direction: column;
-          gap: 0.5rem;
+          gap: 0.6rem;
           margin-bottom: 1.25rem;
         }
 
@@ -288,9 +309,39 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
           font-size: 0.85rem;
         }
 
+        .contact-line.clickable {
+          cursor: pointer;
+        }
+
+        .contact-line.clickable:hover .contact-masked {
+          color: var(--color-lantern-amber);
+        }
+
         .contact-icon {
           color: var(--color-lantern-amber);
           flex-shrink: 0;
+        }
+
+        .contact-icon-muted {
+          color: var(--color-rock-grey-light);
+          flex-shrink: 0;
+        }
+
+        .contact-masked {
+          color: var(--color-limestone);
+          font-size: 0.85rem;
+          font-weight: 500;
+        }
+
+        .masked-hint {
+          font-size: 0.75rem;
+          color: var(--color-lantern-amber);
+          margin-left: 4px;
+        }
+
+        .contact-muted-text {
+          font-size: 0.8rem;
+          color: var(--color-rock-grey-light);
         }
 
         .contact-link {
@@ -308,15 +359,38 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onClose }) => {
         }
 
         .cta-container {
-          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
           margin-bottom: 0.85rem;
         }
 
         .cta-btn {
           width: 100%;
           justify-content: center;
-          font-size: 0.95rem;
-          padding: 0.85rem 1rem;
+          font-size: 0.92rem;
+          padding: 0.75rem 1rem;
+        }
+
+        .btn-admin-edit {
+          background: rgba(224, 145, 47, 0.15);
+          border: 1px solid var(--color-lantern-amber);
+          color: var(--color-lantern-amber);
+          padding: 0.6rem 1rem;
+          border-radius: var(--radius-md);
+          font-size: 0.85rem;
+          font-weight: 600;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.4rem;
+          transition: all 0.2s;
+        }
+
+        .btn-admin-edit:hover {
+          background: var(--color-lantern-amber);
+          color: #1A140E;
         }
 
         .safety-note {

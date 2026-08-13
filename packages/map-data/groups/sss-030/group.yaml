@@ -1,12 +1,13 @@
 id: sss-030
 name: Speleoklub Nitra
 slug: speleoklub-nitra
-short_description: Speleoklub Nitra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Speleoklub Nitra pôsobí v oblasti speleológia a výskumu jaskýň
+  na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 public_contact:
@@ -14,10 +15,11 @@ public_contact:
   phone: '+421911260644'
   address: Nitra, Slovensko
 area_relationships:
-  - group_id: sss-030
-    area_id: area-tribec-nitra
-    relationship: primary
+- group_id: sss-030
+  area_id: area-tribec-nitra
+  relationship: primary
 hq_city: Nitra
 hq_coordinates:
-  - 18.086
-  - 48.306
+- 18.086
+- 48.306
+logo_url: /logos/sss-030.png

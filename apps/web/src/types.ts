@@ -24,6 +24,18 @@ export interface GroupData {
   area_relationships?: Array<{ area_id: string; relationship: string }>;
   verified_at: string | null;
   polygon_status: string;
+  logo_url?: string;
+  polygon?: {
+    type: string;
+    coordinates: number[][][];
+  };
+}
+
+export interface AdminCredentials {
+  username: string;
+  email: string;
+  passwordHash?: string;
+  passwordRaw?: string;
 }
 
 export interface AreaData {

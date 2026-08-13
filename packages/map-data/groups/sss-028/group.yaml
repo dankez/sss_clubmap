@@ -1,12 +1,13 @@
 id: sss-028
 name: Speleoklub Muránska planina
 slug: speleoklub-muranska-planina
-short_description: Speleoklub Muránska planina pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Speleoklub Muránska planina pôsobí v oblasti speleológia a výskumu
+  jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 public_contact:
@@ -14,10 +15,11 @@ public_contact:
   phone: '+421905743148'
   address: Muráň, Slovensko
 area_relationships:
-  - group_id: sss-028
-    area_id: area-muranska-planina-stred
-    relationship: primary
+- group_id: sss-028
+  area_id: area-muranska-planina-stred
+  relationship: primary
 hq_city: Muráň
 hq_coordinates:
-  - 20.045
-  - 48.742
+- 20.045
+- 48.742
+logo_url: /logos/sss-028.png

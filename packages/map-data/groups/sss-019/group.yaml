@@ -1,12 +1,13 @@
 id: sss-019
 name: Jaskyniarsky klub Handlová
 slug: jaskyniarsky-klub-handlova
-short_description: Jaskyniarsky klub Handlová pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Jaskyniarsky klub Handlová pôsobí v oblasti speleológia a výskumu
+  jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.jkhandlova.webnode.sk
@@ -15,10 +16,11 @@ public_contact:
   phone: '+421465473681'
   address: Handlová, Slovensko
 area_relationships:
-  - group_id: sss-019
-    area_id: area-handlovske-vrchy
-    relationship: primary
+- group_id: sss-019
+  area_id: area-handlovske-vrchy
+  relationship: primary
 hq_city: Handlová
 hq_coordinates:
-  - 18.76
-  - 48.727
+- 18.76
+- 48.727
+logo_url: /logos/sss-019.png

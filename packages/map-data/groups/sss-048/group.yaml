@@ -1,12 +1,13 @@
 id: sss-048
 name: Jaskyniarsky klub Speleo Turiec
 slug: jaskyniarsky-klub-speleo-turiec
-short_description: Jaskyniarsky klub Speleo Turiec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Jaskyniarsky klub Speleo Turiec pôsobí v oblasti speleológia a
+  výskumu jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.speleoturiec.sk
@@ -15,10 +16,11 @@ public_contact:
   phone: '+421902263520'
   address: Martin, Slovensko
 area_relationships:
-  - group_id: sss-048
-    area_id: area-gaderska-dolina
-    relationship: primary
+- group_id: sss-048
+  area_id: area-gaderska-dolina
+  relationship: primary
 hq_city: Martin
 hq_coordinates:
-  - 18.923
-  - 49.064
+- 18.923
+- 49.064
+logo_url: /logos/sss-048.png

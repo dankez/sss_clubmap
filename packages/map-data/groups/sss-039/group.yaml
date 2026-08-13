@@ -1,12 +1,13 @@
 id: sss-039
 name: Sekcia speleopotápania
 slug: sekcia-speleopotapania
-short_description: Sekcia speleopotápania pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Sekcia speleopotápania pôsobí v oblasti speleológia a výskumu jaskýň
+  na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.kubi.sk
@@ -15,10 +16,11 @@ public_contact:
   phone: '+421905108699'
   address: Trenčín (Sekcia), Slovensko
 area_relationships:
-  - group_id: sss-039
-    area_id: area-speleopotapanie-sk
-    relationship: primary
+- group_id: sss-039
+  area_id: area-speleopotapanie-sk
+  relationship: primary
 hq_city: Trenčín (Sekcia)
 hq_coordinates:
-  - 17.935
-  - 48.89
+- 17.935
+- 48.89
+logo_url: /logos/sss-039.png

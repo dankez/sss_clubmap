@@ -1,12 +1,13 @@
 id: sss-024
 name: Oblastná skupina Liptovský Mikuláš
 slug: oblastna-skupina-liptovsky-mikulas
-short_description: Oblastná skupina Liptovský Mikuláš pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Oblastná skupina Liptovský Mikuláš pôsobí v oblasti speleológia
+  a výskumu jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://speleolm.sss.sk
@@ -14,10 +15,11 @@ public_contact:
   email: lub.luhova@gmail.com
   address: Liptovský Mikuláš, Slovensko
 area_relationships:
-  - group_id: sss-024
-    area_id: area-liptovsky-kras
-    relationship: primary
+- group_id: sss-024
+  area_id: area-liptovsky-kras
+  relationship: primary
 hq_city: Liptovský Mikuláš
 hq_coordinates:
-  - 19.612
-  - 49.084
+- 19.612
+- 49.084
+logo_url: /logos/sss-024.png

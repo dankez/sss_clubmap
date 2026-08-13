@@ -1,12 +1,13 @@
 id: sss-046
 name: Speleoklub Tribeč
 slug: speleoklub-tribec
-short_description: Speleoklub Tribeč pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Speleoklub Tribeč pôsobí v oblasti speleológia a výskumu jaskýň
+  na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 public_contact:
@@ -14,10 +15,11 @@ public_contact:
   phone: '+421902949921'
   address: Nitra, Slovensko
 area_relationships:
-  - group_id: sss-046
-    area_id: area-tribec-zobor
-    relationship: primary
+- group_id: sss-046
+  area_id: area-tribec-zobor
+  relationship: primary
 hq_city: Nitra
 hq_coordinates:
-  - 18.09
-  - 48.31
+- 18.09
+- 48.31
+logo_url: /logos/sss-046.png

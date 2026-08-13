@@ -62,7 +62,11 @@ export const GroupsListModal: React.FC<GroupsListModalProps> = ({
             >
               <div className="group-card-top">
                 <div className="group-avatar font-display">
-                  {group.name.substring(0, 2).toUpperCase()}
+                  {group.logo_url ? (
+                    <img src={group.logo_url} alt={group.name} className="group-avatar-img" />
+                  ) : (
+                    group.name.substring(0, 2).toUpperCase()
+                  )}
                 </div>
                 <div className="group-title-block">
                   <h3 className="group-card-title font-display">{group.name}</h3>
@@ -217,8 +221,8 @@ export const GroupsListModal: React.FC<GroupsListModalProps> = ({
         }
 
         .group-avatar {
-          width: 40px;
-          height: 40px;
+          width: 42px;
+          height: 42px;
           border-radius: var(--radius-md);
           background: var(--color-cave-water);
           color: var(--color-limestone);
@@ -228,6 +232,15 @@ export const GroupsListModal: React.FC<GroupsListModalProps> = ({
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
+          overflow: hidden;
+        }
+
+        .group-avatar-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          background: #FFFFFF;
+          padding: 2px;
         }
 
         .group-title-block {

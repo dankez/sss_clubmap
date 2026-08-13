@@ -1,7 +1,8 @@
 import React from 'react';
-import { Compass, Search, Map, Users, Info, Palette } from 'lucide-react';
+import { Search, Map, Users, Palette, Shield, UserCheck, Mountain, MapPin, Layers, Globe } from 'lucide-react';
+import { MapLayerId } from './LayerControlWidget';
 
-export type ThemeId = 'speleo-emerald' | 'dark-glow' | 'terrain-topo' | 'slate-clean' | 'editorial-atlas';
+export type ThemeId = 'slate-clean' | 'speleo-emerald' | 'dark-glow' | 'terrain-topo' | 'editorial-atlas';
 
 interface HeaderProps {
   activeTab: 'map' | 'areas' | 'groups' | 'about';
@@ -11,6 +12,18 @@ interface HeaderProps {
   areasCount: number;
   currentTheme: ThemeId;
   onThemeChange: (theme: ThemeId) => void;
+  currentMapLayer: MapLayerId;
+  onLayerChange: (layerId: MapLayerId) => void;
+  is3D: boolean;
+  onToggle3D: () => void;
+  showPolygons: boolean;
+  onTogglePolygons: () => void;
+  showPois: boolean;
+  onTogglePois: () => void;
+  onOpenWpModal: () => void;
+  onOpenAdminModal: () => void;
+  isLoggedIn: boolean;
+  adminEmail: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -21,12 +34,25 @@ export const Header: React.FC<HeaderProps> = ({
   areasCount,
   currentTheme,
   onThemeChange,
+  currentMapLayer,
+  onLayerChange,
+  is3D,
+  onToggle3D,
+  showPolygons,
+  onTogglePolygons,
+  showPois,
+  onTogglePois,
+  onOpenWpModal,
+  onOpenAdminModal,
+  isLoggedIn,
+  adminEmail,
 }) => {
   return (
     <header className="header-bar">
+      {/* Brand Logo & Title with Official SSS Logo */}
       <div className="header-logo" onClick={() => setActiveTab('map')}>
         <div className="logo-icon">
-          <Compass className="icon-amber" size={24} />
+          <img src="/logos/sss_logo_official.png" alt="SSS" className="sss-logo-head-img" />
         </div>
         <div className="logo-text">
           <span className="logo-title font-display">SSS Map</span>
@@ -34,17 +60,20 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
+      {/* Main Navigation Tabs */}
       <nav className="header-nav">
         <button
           className={`nav-item ${activeTab === 'map' ? 'active' : ''}`}
           onClick={() => setActiveTab('map')}
+          title="Zobraziť mapu"
         >
-          <Map size={16} />
+          <Map size={15} />
           <span>Mapa</span>
         </button>
         <button
           className={`nav-item ${activeTab === 'areas' ? 'active' : ''}`}
           onClick={() => setActiveTab('areas')}
+          title="Zobraziť oblasti"
         >
           <span>Oblasti</span>
           <span className="nav-badge">{areasCount}</span>
@@ -52,87 +81,174 @@ export const Header: React.FC<HeaderProps> = ({
         <button
           className={`nav-item ${activeTab === 'groups' ? 'active' : ''}`}
           onClick={() => setActiveTab('groups')}
+          title="Zobraziť zoznam skupín"
         >
-          <Users size={16} />
+          <Users size={15} />
           <span>Skupiny</span>
           <span className="nav-badge">{groupsCount}</span>
         </button>
         <button
-          className={`nav-item ${activeTab === 'about' ? 'active' : ''}`}
+          className={`nav-item nav-item-sss ${activeTab === 'about' ? 'active' : ''}`}
           onClick={() => setActiveTab('about')}
+          title="O Slovenskej Speleologickej Spoločnosti (sss.sk)"
         >
-          <Info size={16} />
-          <span>O speleológii</span>
+          <img src="/logos/sss_logo_official.png" alt="SSS Logo" className="nav-sss-mini-logo" />
+          <span>O SSS</span>
         </button>
       </nav>
 
+      {/* Action Controls - Toggles & Icon Dropdowns */}
       <div className="header-actions">
-        {/* Live Theme Switcher */}
-        <div className="theme-switcher">
-          <Palette size={15} className="theme-icon" />
+        {/* Toggle Polygons ON/OFF Button */}
+        <button
+          className={`icon-action-btn ${showPolygons ? 'is-active-toggle' : ''}`}
+          onClick={onTogglePolygons}
+          title={showPolygons ? 'Vypnúť polygóny oblastí' : 'Zapnúť polygóny oblastí'}
+        >
+          <Layers size={16} />
+        </button>
+
+        {/* Toggle POI Logos ON/OFF Button */}
+        <button
+          className={`icon-action-btn ${showPois ? 'is-active-toggle' : ''}`}
+          onClick={onTogglePois}
+          title={showPois ? 'Vypnúť POI logá klubov' : 'Zapnúť POI logá klubov'}
+        >
+          <MapPin size={16} />
+        </button>
+
+        {/* True 3D Map View Toggle Button */}
+        <button
+          className={`icon-action-btn btn-3d ${is3D ? 'is-3d-active' : ''}`}
+          onClick={onToggle3D}
+          title={is3D ? 'Prepnúť do 2D zobrazenia' : 'Prepnúť do reálneho 3D terénu (DEM)'}
+        >
+          <span className="btn-3d-text">3D</span>
+        </button>
+
+        {/* Map Layer Switcher Icon Dropdown */}
+        <div className="icon-dropdown-box" title="Podkladová mapa terénu (OpenTopoMap, Vrstevnice)">
+          <Mountain size={16} className="action-icon layer-icon-color" />
           <select
-            className="theme-select font-ui"
+            className="icon-select font-ui"
+            value={currentMapLayer}
+            onChange={(e) => onLayerChange(e.target.value as MapLayerId)}
+          >
+            <option value="opentopomap">🏔️ Terén & Vrstevnice (OpenTopoMap)</option>
+            <option value="arcgis-topo">🗺️ ArcGIS World Topo</option>
+            <option value="cyclosm">🚴 Outdoor Topo & Relief</option>
+            <option value="slate-clean">✨ Slate Clean Light</option>
+            <option value="dark-glow">🦇 Dark Cave Glow</option>
+          </select>
+        </div>
+
+        {/* Visual Theme Switcher Icon Dropdown */}
+        <div className="icon-dropdown-box" title="Vizuálna téma UI">
+          <Palette size={16} className="action-icon theme-icon-color" />
+          <select
+            className="icon-select font-ui"
             value={currentTheme}
             onChange={(e) => onThemeChange(e.target.value as ThemeId)}
-            title="Vyberte vizuálnu tému mapy"
           >
+            <option value="slate-clean">✨ Slate Clean Light</option>
             <option value="speleo-emerald">🌿 Speleo Emerald</option>
             <option value="dark-glow">🦇 Dark Cave Glow</option>
             <option value="terrain-topo">🗺️ Outdoor Topo Atlas</option>
-            <option value="slate-clean">✨ Slate Clean Light</option>
             <option value="editorial-atlas">📜 Vintage NatGeo Atlas</option>
           </select>
         </div>
 
-        <button className="search-btn" onClick={onOpenSearch}>
+        {/* WordPress Shortcode Generator Button */}
+        <button
+          className="icon-action-btn wp-btn"
+          onClick={onOpenWpModal}
+          title="Generátor WordPress Shortcode & WebSupport Plugin"
+        >
+          <Globe size={16} className="wp-globe-icon" />
+        </button>
+
+        {/* Global Quick Search Button */}
+        <button className="icon-action-btn search-btn" onClick={onOpenSearch} title="Rýchle vyhľadávanie (⌘K)">
           <Search size={16} />
-          <span className="search-placeholder">Nájsť...</span>
-          <kbd className="search-kbd">⌘K</kbd>
+        </button>
+
+        {/* Admin Portal Button */}
+        <button
+          className={`icon-action-btn admin-btn ${isLoggedIn ? 'is-logged-in' : ''}`}
+          onClick={onOpenAdminModal}
+          title={isLoggedIn ? `Prihlásený ako ${adminEmail}` : 'Prihlásiť sa ako správca'}
+        >
+          {isLoggedIn ? <UserCheck size={16} /> : <Shield size={16} />}
         </button>
       </div>
 
       <style>{`
         .header-bar {
           position: absolute;
-          top: 16px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: calc(100% - 32px);
-          max-width: 1280px;
-          height: 64px;
-          background: rgba(30, 37, 34, 0.88);
+          top: 0;
+          left: 0;
+          width: 100vw;
+          max-width: 100%;
+          height: 48px;
+          background: rgba(26, 32, 29, 0.94);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border: 1px solid rgba(213, 206, 194, 0.16);
-          border-radius: var(--radius-lg);
-          padding: 0 1.25rem;
+          border-bottom: 1px solid rgba(213, 206, 194, 0.15);
+          padding: 0 1rem;
           display: flex;
           align-items: center;
           justify-content: space-between;
           z-index: 10;
-          box-shadow: var(--shadow-floating);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .theme-slate-clean .header-bar {
+          background: rgba(255, 255, 255, 0.94);
+          border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .theme-slate-clean .logo-title { color: #0F172A; }
+        .theme-slate-clean .logo-subtitle { color: #64748B; }
+
+        .theme-slate-clean .header-nav {
+          background: rgba(226, 232, 240, 0.7);
+        }
+
+        .theme-slate-clean .nav-item {
+          color: #475569;
+        }
+
+        .theme-slate-clean .nav-item.active {
+          color: #0F172A;
+          background: #FFFFFF;
         }
 
         .header-logo {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.6rem;
           cursor: pointer;
         }
 
         .logo-icon {
-          width: 38px;
-          height: 38px;
+          width: 32px;
+          height: 32px;
           border-radius: var(--radius-sm);
-          background: rgba(224, 145, 47, 0.15);
+          background: rgba(255, 255, 255, 0.9);
           border: 1px solid rgba(224, 145, 47, 0.3);
           display: flex;
           align-items: center;
           justify-content: center;
+          overflow: hidden;
+          padding: 2px;
         }
 
-        .icon-amber {
-          color: var(--color-lantern-amber);
+        .sss-logo-head-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
 
         .logo-text {
@@ -141,25 +257,25 @@ export const Header: React.FC<HeaderProps> = ({
         }
 
         .logo-title {
-          font-size: 1.15rem;
+          font-size: 1.05rem;
           font-weight: 600;
           color: var(--color-limestone);
-          letter-spacing: -0.01em;
+          line-height: 1.1;
         }
 
         .logo-subtitle {
-          font-size: 0.7rem;
+          font-size: 0.65rem;
           color: var(--color-fog);
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.04em;
         }
 
         .header-nav {
           display: flex;
           align-items: center;
-          gap: 0.35rem;
+          gap: 0.25rem;
           background: rgba(0, 0, 0, 0.25);
-          padding: 4px;
+          padding: 3px;
           border-radius: var(--radius-md);
         }
 
@@ -168,10 +284,10 @@ export const Header: React.FC<HeaderProps> = ({
           border: none;
           color: var(--color-fog);
           font-family: var(--font-ui);
-          font-size: 0.875rem;
+          font-size: 0.82rem;
           font-weight: 500;
-          padding: 0.45rem 0.85rem;
-          border-radius: 10px;
+          padding: 0.35rem 0.7rem;
+          border-radius: 8px;
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -181,7 +297,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         .nav-item:hover {
           color: var(--color-limestone);
-          background: rgba(255, 255, 255, 0.06);
+          background: rgba(255, 255, 255, 0.08);
         }
 
         .nav-item.active {
@@ -190,11 +306,20 @@ export const Header: React.FC<HeaderProps> = ({
           font-weight: 600;
         }
 
+        .nav-sss-mini-logo {
+          width: 18px;
+          height: 18px;
+          object-fit: contain;
+          border-radius: 3px;
+          background: #FFFFFF;
+          padding: 1px;
+        }
+
         .nav-badge {
           background: rgba(224, 145, 47, 0.2);
           color: var(--color-lantern-amber);
-          font-size: 0.72rem;
-          padding: 1px 6px;
+          font-size: 0.7rem;
+          padding: 1px 5px;
           border-radius: 99px;
           font-weight: 600;
         }
@@ -202,77 +327,124 @@ export const Header: React.FC<HeaderProps> = ({
         .header-actions {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-        }
-
-        .theme-switcher {
-          display: flex;
-          align-items: center;
           gap: 0.4rem;
-          background: rgba(255, 255, 255, 0.06);
-          border: 1px solid rgba(213, 206, 194, 0.16);
-          padding: 0.35rem 0.65rem;
-          border-radius: var(--radius-md);
         }
 
-        .theme-icon {
+        .btn-3d-text {
+          font-family: var(--font-display);
+          font-weight: 800;
+          font-size: 0.78rem;
+          letter-spacing: 0.04em;
+        }
+
+        .icon-action-btn.is-active-toggle {
+          background: rgba(13, 148, 136, 0.25) !important;
+          border-color: #0D9488 !important;
+          color: #0D9488 !important;
+        }
+
+        .btn-3d.is-3d-active {
+          background: var(--color-lantern-amber) !important;
+          color: #1A140E !important;
+          border-color: var(--color-lantern-amber) !important;
+          box-shadow: 0 0 14px rgba(224, 145, 47, 0.5);
+        }
+
+        .wp-btn {
+          color: var(--color-lantern-amber) !important;
+          border-color: rgba(224, 145, 47, 0.3) !important;
+        }
+
+        .wp-btn:hover {
+          background: rgba(224, 145, 47, 0.2) !important;
+        }
+
+        .wp-globe-icon {
           color: var(--color-lantern-amber);
         }
 
-        .theme-select {
-          background: transparent;
-          border: none;
-          outline: none;
-          color: var(--color-limestone);
-          font-size: 0.8rem;
-          cursor: pointer;
-          font-weight: 500;
-        }
-
-        .theme-select option {
-          background: #1E2522;
-          color: #F4EFE6;
-        }
-
-        .search-btn {
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(213, 206, 194, 0.15);
-          color: var(--color-fog);
-          border-radius: var(--radius-md);
-          padding: 0.45rem 0.85rem;
+        .icon-dropdown-box {
+          position: relative;
           display: flex;
           align-items: center;
-          gap: 0.6rem;
+          justify-content: center;
+          width: 34px;
+          height: 34px;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(213, 206, 194, 0.18);
+          border-radius: var(--radius-md);
           cursor: pointer;
-          font-size: 0.85rem;
-          transition: all var(--transition-fast);
+          transition: all 0.2s;
         }
 
-        .search-btn:hover {
+        .theme-slate-clean .icon-dropdown-box {
+          background: rgba(241, 245, 249, 0.9);
+          border-color: rgba(148, 163, 184, 0.35);
+        }
+
+        .icon-dropdown-box:hover {
           border-color: var(--color-lantern-amber);
-          color: var(--color-limestone);
-          background: rgba(224, 145, 47, 0.08);
+          background: rgba(224, 145, 47, 0.12);
         }
 
-        .search-placeholder {
-          font-size: 0.82rem;
+        .action-icon {
+          pointer-events: none;
         }
 
-        .search-kbd {
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: 4px;
-          padding: 1px 5px;
-          font-size: 0.7rem;
+        .layer-icon-color { color: #0D9488; }
+        .theme-icon-color { color: var(--color-lantern-amber); }
+
+        .icon-select {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .icon-select option {
+          background: #1E2522;
+          color: #F4EFE6;
+          padding: 8px;
+        }
+
+        .icon-action-btn {
+          width: 34px;
+          height: 34px;
+          border-radius: var(--radius-md);
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(213, 206, 194, 0.18);
           color: var(--color-fog);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
         }
 
-        @media (max-width: 900px) {
-          .theme-select {
-            font-size: 0.75rem;
-          }
-          .search-placeholder, .search-kbd {
-            display: none;
-          }
+        .theme-slate-clean .icon-action-btn {
+          background: rgba(241, 245, 249, 0.9);
+          border-color: rgba(148, 163, 184, 0.35);
+          color: #475569;
+        }
+
+        .icon-action-btn:hover {
+          border-color: var(--color-lantern-amber);
+          color: var(--color-lantern-amber);
+          background: rgba(224, 145, 47, 0.12);
+        }
+
+        .admin-btn.is-logged-in {
+          background: rgba(91, 124, 78, 0.25);
+          border-color: rgba(91, 124, 78, 0.5);
+          color: #8FD8A0;
+        }
+
+        @media (max-width: 768px) {
+          .logo-subtitle { display: none; }
+          .nav-item span { display: none; }
         }
       `}</style>
     </header>

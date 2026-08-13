@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ShieldAlert, Compass, Users, MapPin } from 'lucide-react';
+import { X, ShieldAlert, Compass, Users, MapPin, ExternalLink, Globe } from 'lucide-react';
 
 interface AboutModalProps {
   isOpen: boolean;
@@ -17,12 +17,35 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
         </button>
 
         <div className="about-hero">
-          <span className="about-subtitle">SLOVENSKO POD POVRCHOM</span>
-          <h1 className="about-title font-display">Slovenská Speleologická Spoločnosť</h1>
+          <div className="about-hero-header">
+            <img
+              src="/logos/sss_logo_official.png"
+              alt="Oficiálne logo SSS"
+              className="official-sss-logo-img"
+            />
+            <div>
+              <span className="about-subtitle">SLOVENSKO POD POVRCHOM</span>
+              <h1 className="about-title font-display">Slovenská Speleologická Spoločnosť</h1>
+            </div>
+          </div>
+
           <p className="about-lead font-ui">
             Slovensko patrí medzi krajiny s najbohatším a najrozmanitejším krasovým podzemím v Európe.
             Naša mapa spája verejnosť s výskumníkmi, dokumentátormi a ochrancami podzemného sveta.
           </p>
+
+          <div className="sss-link-box">
+            <a
+              href="https://sss.sk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sss-web-link-btn font-ui"
+            >
+              <Globe size={16} />
+              <span>Oficiálny web SSS (sss.sk)</span>
+              <ExternalLink size={14} />
+            </a>
+          </div>
         </div>
 
         <div className="about-grid">
@@ -69,7 +92,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
           height: 100vh;
           background: rgba(0, 0, 0, 0.75);
           backdrop-filter: blur(8px);
-          z-index: 100;
+          z-index: 9999;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -78,12 +101,13 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
 
         .about-modal {
           width: 900px;
-          max-width: 100%;
+          max-width: 95%;
           max-height: 88vh;
           overflow-y: auto;
           padding: 2.5rem;
           background: rgba(33, 30, 27, 0.96);
           position: relative;
+          border-radius: var(--radius-lg);
         }
 
         .close-btn {
@@ -109,7 +133,25 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
 
         .about-hero {
           margin-bottom: 2rem;
-          max-width: 720px;
+          max-width: 780px;
+        }
+
+        .about-hero-header {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+          margin-bottom: 1rem;
+        }
+
+        .official-sss-logo-img {
+          width: 64px;
+          height: 64px;
+          object-fit: contain;
+          background: #FFFFFF;
+          border-radius: 12px;
+          padding: 4px;
+          border: 2px solid var(--color-lantern-amber);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         }
 
         .about-subtitle {
@@ -121,15 +163,44 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
         }
 
         .about-title {
-          font-size: 2.3rem;
+          font-size: 2.1rem;
           color: var(--color-limestone);
-          margin: 0.25rem 0 0.75rem 0;
+          margin: 0.15rem 0 0 0;
+          line-height: 1.15;
         }
 
         .about-lead {
           font-size: 1.05rem;
           line-height: 1.6;
           color: var(--color-fog);
+          margin-bottom: 1.25rem;
+        }
+
+        .sss-link-box {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
+
+        .sss-web-link-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: var(--color-lantern-amber);
+          color: #1A140E;
+          font-weight: 600;
+          font-size: 0.9rem;
+          padding: 0.55rem 1.1rem;
+          border-radius: var(--radius-md);
+          text-decoration: none;
+          transition: all 0.2s ease;
+          box-shadow: 0 4px 12px rgba(224, 145, 47, 0.3);
+        }
+
+        .sss-web-link-btn:hover {
+          background: #F59E0B;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(224, 145, 47, 0.45);
         }
 
         .about-grid {

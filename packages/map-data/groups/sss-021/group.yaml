@@ -1,12 +1,13 @@
 id: sss-021
 name: Oblastná skupina Inovec
 slug: oblastna-skupina-inovec
-short_description: Oblastná skupina Inovec pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Oblastná skupina Inovec pôsobí v oblasti speleológia a výskumu
+  jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 public_contact:
@@ -14,10 +15,10 @@ public_contact:
   phone: '+421908420545'
   address: Beckov / Nové Mesto, Slovensko
 area_relationships:
-  - group_id: sss-021
-    area_id: area-povazsky-inovec
-    relationship: primary
+- group_id: sss-021
+  area_id: area-povazsky-inovec
+  relationship: primary
 hq_city: Beckov / Nové Mesto
 hq_coordinates:
-  - 17.896
-  - 48.789
+- 17.896
+- 48.789

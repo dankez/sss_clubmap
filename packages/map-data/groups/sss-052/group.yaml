@@ -1,12 +1,13 @@
 id: sss-052
 name: Oblastná skupina Veľká Fatra
 slug: oblastna-skupina-velka-fatra
-short_description: Oblastná skupina Veľká Fatra pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Oblastná skupina Veľká Fatra pôsobí v oblasti speleológia a výskumu
+  jaskýň na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 public_contact:
@@ -14,10 +15,11 @@ public_contact:
   phone: '+421910198325'
   address: Banská Bystrica / V. Fatra, Slovensko
 area_relationships:
-  - group_id: sss-052
-    area_id: area-velka-fatra-central
-    relationship: primary
+- group_id: sss-052
+  area_id: area-velka-fatra-central
+  relationship: primary
 hq_city: Banská Bystrica / V. Fatra
 hq_coordinates:
-  - 19.14
-  - 48.74
+- 19.14
+- 48.74
+logo_url: /logos/sss-052.png

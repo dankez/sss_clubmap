@@ -1,12 +1,13 @@
 id: sss-017
 name: Speleoklub Ďumbier
 slug: speleoklub-dumbier
-short_description: Speleoklub Ďumbier pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Speleoklub Ďumbier pôsobí v oblasti speleológia a výskumu jaskýň
+  na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.jmn.sk
@@ -15,10 +16,11 @@ public_contact:
   phone: '+421919225273'
   address: Liptovský Ján, Slovensko
 area_relationships:
-  - group_id: sss-017
-    area_id: area-janska-dolina
-    relationship: primary
+- group_id: sss-017
+  area_id: area-janska-dolina
+  relationship: primary
 hq_city: Liptovský Ján
 hq_coordinates:
-  - 19.676
-  - 49.047
+- 19.676
+- 49.047
+logo_url: /logos/sss-017.png

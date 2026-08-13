@@ -1,12 +1,13 @@
 id: sss-043
 name: Speleoklub Šariš
 slug: speleoklub-saris
-short_description: Speleoklub Šariš pôsobí v oblasti speleológia a výskumu jaskýň na Slovensku.
+short_description: Speleoklub Šariš pôsobí v oblasti speleológia a výskumu jaskýň
+  na Slovensku.
 verified_at: null
 polygon_status: missing
 sources:
-  - type: other
-    reference: sss-adresar
+- type: other
+  reference: sss-adresar
 created_at: '2026-08-12'
 updated_at: '2026-08-12'
 website: https://www.speleosaris.estranky.cz
@@ -15,10 +16,11 @@ public_contact:
   phone: '+421907955243'
   address: Sabinov / Prešov, Slovensko
 area_relationships:
-  - group_id: sss-043
-    area_id: area-velka-svieckova
-    relationship: primary
+- group_id: sss-043
+  area_id: area-velka-svieckova
+  relationship: primary
 hq_city: Sabinov / Prešov
 hq_coordinates:
-  - 21.098
-  - 49.102
+- 21.098
+- 49.102
+logo_url: /logos/sss-043.png
