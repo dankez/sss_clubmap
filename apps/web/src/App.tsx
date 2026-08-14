@@ -5,6 +5,7 @@ import { AreaCard } from './components/AreaCard';
 import { GroupCard } from './components/GroupCard';
 import { SearchModal } from './components/SearchModal';
 import { GroupsListModal } from './components/GroupsListModal';
+import { AreasListModal } from './components/AreasListModal';
 import { AboutModal } from './components/AboutModal';
 import { AdminModal } from './components/AdminModal';
 import { PolygonEditorBar } from './components/PolygonEditorBar';
@@ -111,8 +112,10 @@ export function App() {
       };
     }
 
-    // Apply Custom Manually Drawn Polygon
-    if (customGroupPolygons[g.id]) {
+    // Apply Custom Manually Drawn Polygon or explicit deletion
+    if (customGroupPolygons[g.id] === null) {
+      delete merged.polygon;
+    } else if (customGroupPolygons[g.id]) {
       merged.polygon = {
         type: 'Polygon',
         coordinates: customGroupPolygons[g.id]
@@ -273,7 +276,27 @@ export function App() {
     alert(`Polygón bol úspešne priradený skupine "${targetGroup?.name || groupId}"!`);
   };
 
+  const handleDeletePolygon = (groupId: string) => {
+    const targetGroup = groups.find((g) => g.id === groupId);
+    const confirmed = window.confirm(`Naozaj chcete natrvalo zmazať priradený polygón pre skupinu "${targetGroup?.name || groupId}"?`);
+    if (!confirmed) return;
+
+    setCustomGroupPolygons((prev) => ({
+      ...prev,
+      [groupId]: null as any
+    }));
+
+    setDrawnPoints([]);
+    setIsDrawing(false);
+    alert(`Polygón skupiny "${targetGroup?.name || groupId}" bol úspešne zmazaný.`);
+  };
+
   const handleSelectArea = (area: AreaData | null) => {
+    if (isEmbedMode && area) {
+      window.open(`https://kluby.sss.sk/?area=${encodeURIComponent(area.id)}`, '_blank');
+      return;
+    }
+
     setSelectedArea(area);
     if (area) {
       setSelectedGroup(null);
@@ -281,6 +304,11 @@ export function App() {
   };
 
   const handleSelectGroup = (group: GroupData | null) => {
+    if (isEmbedMode && group) {
+      window.open(`https://kluby.sss.sk/?group=${encodeURIComponent(group.id)}`, '_blank');
+      return;
+    }
+
     setSelectedGroup(group);
     if (group && group.area_relationships && group.area_relationships.length > 0) {
       const linkedAreaId = group.area_relationships[0].area_id;
@@ -301,6 +329,19 @@ export function App() {
 
   return (
     <div className={`app-root ${isEmbedMode ? 'is-embed-mode' : ''}`}>
+      {/* Direct Portal Link Badge in Embed Mode */}
+      {isEmbedMode && (
+        <a
+          href="https://kluby.sss.sk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="embed-portal-badge font-ui"
+          title="Otvoriť plnú interaktívnu mapu na portáli kluby.sss.sk"
+        >
+          <span className="badge-dot"></span>
+          <span>kluby.sss.sk ↗</span>
+        </a>
+      )}
       {/* Top Floating Navigation Header (Hidden if embed mode) */}
       {!isEmbedMode && (
         <Header
@@ -363,6 +404,7 @@ export function App() {
           onUndoPoint={handleUndoDrawnPoint}
           onClearPoints={handleClearDrawnPoints}
           onSavePolygon={handleSavePolygon}
+          onDeletePolygon={handleDeletePolygon}
           showPolygons={showPolygons}
           onToggleShowPolygons={() => setShowPolygons(!showPolygons)}
         />
@@ -431,9 +473,19 @@ export function App() {
         onSelectGroup={handleSelectGroup}
       />
 
+      {/* Karst Areas Directory Modal */}
+      <AreasListModal
+        isOpen={activeTab === 'areas'}
+        onClose={() => setActiveTab('map')}
+        areas={areas}
+        groups={groups}
+        onSelectArea={handleSelectArea}
+        onSelectGroup={handleSelectGroup}
+      />
+
       {/* Full Groups Directory Modal */}
       <GroupsListModal
-        isOpen={activeTab === 'groups' || activeTab === 'areas'}
+        isOpen={activeTab === 'groups'}
         onClose={() => setActiveTab('map')}
         groups={groups}
         onSelectGroup={handleSelectGroup}

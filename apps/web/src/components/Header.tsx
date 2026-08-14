@@ -158,11 +158,11 @@ export const Header: React.FC<HeaderProps> = ({
           </select>
         </div>
 
-        {/* WordPress Shortcode Generator Button */}
+        {/* Web Embed & WordPress Shortcode Generator Button */}
         <button
           className="icon-action-btn wp-btn"
           onClick={onOpenWpModal}
-          title="Generátor WordPress Shortcode & WebSupport Plugin"
+          title="Vložiť mapu na web (HTML iFrame & WordPress Plugin)"
         >
           <Globe size={16} className="wp-globe-icon" />
         </button>

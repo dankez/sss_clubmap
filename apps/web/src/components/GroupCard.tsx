@@ -1,6 +1,6 @@
 import React from 'react';
 import { GroupData } from '../types';
-import { X, Globe, Mail, ExternalLink, ShieldCheck, MapPin, Edit, MessageSquare, Lock } from 'lucide-react';
+import { X, Globe, Mail, ExternalLink, ShieldCheck, MapPin, Edit, MessageSquare, Lock, Compass, Mountain, Sparkles, Users, FileText, AlertTriangle } from 'lucide-react';
 
 interface GroupCardProps {
   group: GroupData;
@@ -63,18 +63,136 @@ export const GroupCard: React.FC<GroupCardProps> = ({
       </div>
 
       <p className="group-desc">
-        {group.short_description || `${group.name} pôsobí v oblasti speleológia, prieskumu a mapovania krasu na Slovensku.`}
+        {group.short_description || `${group.name} aktívne pôsobí v oblasti speleologického prieskumu, mapovania a ochrany krasových fenoménov na Slovensku.`}
       </p>
 
-      {/* Activity Chips */}
-      <div className="activities-row">
-        <span className="chip">Prieskum</span>
-        <span className="chip">Mapovanie</span>
-        <span className="chip">Dokumentácia</span>
-        <span className="chip">Ochrana prírody</span>
+      {/* Operating Areas & Mountain Ranges */}
+      {group.operating_areas && group.operating_areas.length > 0 && (
+        <div className="card-section">
+          <div className="section-title">
+            <Mountain size={14} className="section-icon" /> Krasové územia a pohoria
+          </div>
+          <div className="area-tags-row">
+            {group.operating_areas.map((area, idx) => (
+              <span key={idx} className="area-tag">
+                {area}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Priority Karst Areas & Systematic Exploration Sites */}
+      {group.priority_oblasti && group.priority_oblasti.length > 0 && (
+        <div className="card-section priority-areas-section">
+          <div className="section-title">
+            <Mountain size={14} className="section-icon" /> Prioritné krasové územia & lokality
+          </div>
+          <div className="priority-areas-list">
+            {group.priority_oblasti.map((pArea, idx) => (
+              <div key={idx} className="priority-area-item">
+                <div className="priority-area-top">
+                  <span className="celok-tag">{pArea.celok}</span>
+                  <strong className="uzemie-name">{pArea.uzemie}</strong>
+                </div>
+                {pArea.lokality && pArea.lokality.length > 0 && (
+                  <div className="lokality-tags-row">
+                    {pArea.lokality.map((lok, lIdx) => (
+                      <span key={lIdx} className="lokalita-chip">
+                        🏔️ {lok}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Key Caves & Exploration Sites */}
+      {group.key_caves && group.key_caves.length > 0 && (
+        <div className="card-section">
+          <div className="section-title">
+            <Compass size={14} className="section-icon" /> Kľúčové jaskyne a lokality
+          </div>
+          <div className="caves-list">
+            {group.key_caves.map((cave, idx) => (
+              <span key={idx} className="cave-pill">
+                {cave}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Speleological Activities & Focus */}
+      {group.key_activities && group.key_activities.length > 0 && (
+        <div className="card-section">
+          <div className="section-title">
+            <Sparkles size={14} className="section-icon" /> Činnosť a špecializácia
+          </div>
+          <div className="activities-row">
+            {group.key_activities.map((act, idx) => (
+              <span key={idx} className="chip">
+                {act}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Highlights from Spravodaj SSS (2021-2025) & Annual Report PDF Link */}
+      <div className="card-section highlights-section">
+        <div className="section-title">
+          <Sparkles size={14} className="section-icon" /> Z výročných správ Spravodaj SSS
+        </div>
+        {group.annual_highlights && group.annual_highlights.length > 0 && (
+          <ul className="highlights-list">
+            {group.annual_highlights.map((item, idx) => (
+              <li key={idx} className="highlight-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className="spravodaj-links-container">
+          <a
+            href="https://sss.sk/wp-content/uploads/2026/06/Spravodaj_1_2026_vnutro_NET_web.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="spravodaj-pdf-btn"
+            title="Otvoriť najnovšiu výročnú správu v Spravodaji SSS 1/2026 (PDF)"
+          >
+            <FileText size={14} />
+            <span>Čítať výročnú správu 2026 (Spravodaj SSS)</span>
+            <ExternalLink size={12} />
+          </a>
+          <a
+            href="https://sss.sk/spravodaj-sss/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="spravodaj-archive-link"
+            title="Zobraziť všetky čísla Spravodaja SSS"
+          >
+            Archív všetkých výročných správ SSS →
+          </a>
+        </div>
       </div>
 
-      {/* Contact Details List (Private items masked) */}
+      {/* Contact Motivation Box */}
+      <div className="motivation-box">
+        <div className="motivation-header">
+          <Users size={14} className="motivation-icon" />
+          <span>Máte záujem o jaskyniarstvo?</span>
+        </div>
+        <p className="motivation-text">
+          {group.contact_motivation || `Chcete sa zapojiť do výskumu podzemia, absolvovať speleologický výcvik alebo pomôcť s ochranou jaskýň v regióne ${group.hq_city || 'Slovensko'}? Radi vás privítame.`}
+        </p>
+      </div>
+
+      {/* Contact Details List */}
       <div className="contacts-block">
         <div className="contact-line clickable" onClick={() => onOpenContactForm(group)}>
           <Mail size={15} className="contact-icon" />
@@ -114,8 +232,12 @@ export const GroupCard: React.FC<GroupCardProps> = ({
         )}
       </div>
 
-      <div className="safety-note">
-        <MapPin size={12} /> Súkromné kontakty a presné súradnice sú chránené proti zberu spamu.
+      {/* Compact Cave Conservation & Law Reference */}
+      <div className="conservation-notice">
+        <AlertTriangle size={14} className="notice-icon" />
+        <div>
+          <strong>Ochrana krasu a zákon:</strong> Vstup do nesprístupnených jaskýň je podľa <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2002/543/" target="_blank" rel="noopener noreferrer" className="law-link">zákona č. 543/2002 Z. z.</a> viazaný na úradné povolenia. Pre bezpečný vstup a účasť na výskume kontaktujte náš klub.
+        </div>
       </div>
 
       <style>{`
@@ -273,23 +395,231 @@ export const GroupCard: React.FC<GroupCardProps> = ({
           font-size: 0.88rem;
           line-height: 1.5;
           color: var(--color-fog);
-          margin-bottom: 1rem;
+          margin-bottom: 0.85rem;
+        }
+
+        .card-section {
+          margin-bottom: 0.85rem;
+          background: rgba(0, 0, 0, 0.18);
+          border: 1px solid rgba(218, 211, 196, 0.08);
+          border-radius: var(--radius-md);
+          padding: 0.75rem 0.85rem;
+        }
+
+        .section-title {
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--color-lantern-amber);
+          display: flex;
+          align-items: center;
+          gap: 0.35rem;
+          margin-bottom: 0.45rem;
+        }
+
+        .section-icon {
+          color: var(--color-lantern-amber);
+        }
+
+        .area-tags-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+        }
+
+        .area-tag {
+          background: rgba(13, 148, 136, 0.18);
+          border: 1px solid rgba(13, 148, 136, 0.4);
+          color: #A7F3D0;
+          font-size: 0.74rem;
+          font-weight: 600;
+          padding: 0.2rem 0.55rem;
+          border-radius: var(--radius-sm);
+        }
+
+        .caves-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+        }
+
+        .cave-pill {
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(218, 211, 196, 0.14);
+          color: var(--color-limestone);
+          font-size: 0.74rem;
+          padding: 0.2rem 0.55rem;
+          border-radius: var(--radius-sm);
         }
 
         .activities-row {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.4rem;
-          margin-bottom: 1.2rem;
+          gap: 0.35rem;
         }
 
         .chip {
-          background: rgba(255, 255, 255, 0.06);
-          border: 1px solid rgba(218, 211, 196, 0.12);
-          color: var(--color-limestone);
-          font-size: 0.75rem;
-          padding: 0.25rem 0.6rem;
+          background: rgba(224, 145, 47, 0.12);
+          border: 1px solid rgba(224, 145, 47, 0.3);
+          color: var(--color-lantern-amber);
+          font-size: 0.73rem;
+          padding: 0.2rem 0.55rem;
           border-radius: var(--radius-sm);
+        }
+
+        .highlights-section {
+          background: rgba(224, 145, 47, 0.06);
+          border-color: rgba(224, 145, 47, 0.2);
+        }
+
+        .highlights-list {
+          margin: 0;
+          padding-left: 1.1rem;
+          font-size: 0.78rem;
+          line-height: 1.45;
+          color: var(--color-limestone);
+          display: flex;
+          flex-direction: column;
+          gap: 0.35rem;
+        }
+
+        .highlight-item {
+          color: var(--color-fog);
+        }
+
+        .spravodaj-links-container {
+          margin-top: 0.65rem;
+          padding-top: 0.55rem;
+          border-top: 1px dashed rgba(224, 145, 47, 0.25);
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+
+        .spravodaj-pdf-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.45rem;
+          background: rgba(224, 145, 47, 0.15);
+          border: 1px solid rgba(224, 145, 47, 0.45);
+          color: var(--color-lantern-amber);
+          padding: 0.45rem 0.65rem;
+          border-radius: var(--radius-sm);
+          font-size: 0.77rem;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+
+        .spravodaj-pdf-btn:hover {
+          background: var(--color-lantern-amber);
+          color: #1A140E;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(224, 145, 47, 0.3);
+        }
+
+        .spravodaj-archive-link {
+          font-size: 0.72rem;
+          color: var(--color-fog);
+          text-decoration: none;
+          transition: color 0.2s;
+          display: inline-block;
+        }
+
+        .spravodaj-archive-link:hover {
+          color: var(--color-lantern-amber);
+          text-decoration: underline;
+        }
+
+        .priority-areas-section {
+          background: rgba(0, 0, 0, 0.18);
+          border: 1px solid rgba(224, 145, 47, 0.25);
+          border-radius: var(--radius-md);
+          padding: 0.75rem;
+        }
+
+        .priority-areas-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+        }
+
+        .priority-area-item {
+          background: rgba(255, 255, 255, 0.04);
+          border-radius: 6px;
+          padding: 0.5rem 0.65rem;
+          border-left: 3px solid var(--color-lantern-amber);
+        }
+
+        .priority-area-top {
+          display: flex;
+          align-items: center;
+          gap: 0.45rem;
+          margin-bottom: 0.35rem;
+          flex-wrap: wrap;
+        }
+
+        .celok-tag {
+          font-size: 0.68rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          background: rgba(224, 145, 47, 0.25);
+          color: var(--color-lantern-amber);
+          padding: 0.1rem 0.4rem;
+          border-radius: 4px;
+        }
+
+        .uzemie-name {
+          font-size: 0.82rem;
+          color: #FFFFFF;
+        }
+
+        .lokality-tags-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+        }
+
+        .lokalita-chip {
+          font-size: 0.72rem;
+          background: rgba(13, 148, 136, 0.2);
+          border: 1px solid rgba(13, 148, 136, 0.35);
+          color: #5EEAD4;
+          padding: 0.15rem 0.45rem;
+          border-radius: 4px;
+          font-weight: 500;
+        }
+
+        .motivation-box {
+          background: linear-gradient(135deg, rgba(224, 145, 47, 0.18), rgba(13, 148, 136, 0.14));
+          border: 1px solid rgba(224, 145, 47, 0.35);
+          border-radius: var(--radius-md);
+          padding: 0.75rem 0.85rem;
+          margin-bottom: 0.85rem;
+        }
+
+        .motivation-header {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-size: 0.8rem;
+          font-weight: 700;
+          color: var(--color-lantern-amber);
+          margin-bottom: 0.25rem;
+        }
+
+        .motivation-icon {
+          color: var(--color-lantern-amber);
+        }
+
+        .motivation-text {
+          font-size: 0.78rem;
+          line-height: 1.4;
+          color: var(--color-limestone);
+          margin: 0;
         }
 
         .contacts-block {
@@ -299,7 +629,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({
           display: flex;
           flex-direction: column;
           gap: 0.6rem;
-          margin-bottom: 1.25rem;
+          margin-bottom: 0.85rem;
         }
 
         .contact-line {
@@ -362,7 +692,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
-          margin-bottom: 0.85rem;
+          margin-bottom: 0.75rem;
         }
 
         .cta-btn {
@@ -393,13 +723,40 @@ export const GroupCard: React.FC<GroupCardProps> = ({
           color: #1A140E;
         }
 
-        .safety-note {
-          font-size: 0.72rem;
-          color: var(--color-rock-grey-light);
+        .conservation-notice {
+          font-size: 0.74rem;
+          color: #FFFFFF;
+          background: linear-gradient(145deg, rgba(220, 38, 38, 0.2), rgba(217, 119, 6, 0.2));
+          border-left: 3px solid #EF4444;
+          border: 1px solid rgba(239, 68, 68, 0.4);
+          padding: 0.6rem 0.75rem;
+          border-radius: var(--radius-sm);
           display: flex;
-          align-items: center;
-          gap: 0.35rem;
-          line-height: 1.3;
+          align-items: flex-start;
+          gap: 0.45rem;
+          line-height: 1.4;
+          margin-top: 0.5rem;
+        }
+
+        .conservation-notice strong {
+          color: #FCA5A5;
+        }
+
+        .conservation-notice .notice-icon {
+          color: #EF4444;
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+
+        .conservation-notice .law-link {
+          color: #FDE047;
+          font-weight: 700;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+        }
+
+        .conservation-notice .law-link:hover {
+          color: #FEF08A;
         }
 
         @media (max-width: 640px) {

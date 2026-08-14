@@ -1,6 +1,6 @@
 import React from 'react';
 import { AreaData, GroupData } from '../types';
-import { X, Layers, Users, ChevronRight } from 'lucide-react';
+import { X, Layers, Users, ChevronRight, AlertTriangle, ShieldAlert, LifeBuoy } from 'lucide-react';
 
 interface AreaCardProps {
   area: AreaData;
@@ -61,16 +61,56 @@ export const AreaCard: React.FC<AreaCardProps> = ({
         </div>
       </div>
 
+      {/* Prominent Cave Safety, Contact Prompt & Law/Risk Warning */}
+      <div className="area-cave-safety-card">
+        {/* 1. Welcoming Safe Contact Prompt at Top */}
+        <div className="alert-callout-top">
+          <div className="callout-header-row">
+            <LifeBuoy size={16} className="callout-icon" />
+            <h4 className="callout-main-title">Chcete spoznať jaskyne bezpečne a legálne?</h4>
+          </div>
+          <p className="callout-text">
+            <strong>Nikdy nevstupujte sami.</strong> Kontaktujte oficiálny jaskyniarsky klub SSS – jaskyniari disponujú potrebným výcvikom, certifikovanou jednolanovou technikou (SRT) a povoleniami. Radi vás vezmeme do podzemia bezpečne.
+          </p>
+        </div>
+
+        {/* 2. Rationale: Legal & Severe Hazards Warning */}
+        <div className="alert-rationale-section">
+          <div className="alert-badge-header">
+            <AlertTriangle size={14} className="alert-badge-icon" />
+            <span className="alert-badge-title">Prečo nevstupovať bez klubu a povolenia?</span>
+          </div>
+
+          <p className="alert-law-text">
+            Podľa <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2002/543/" target="_blank" rel="noopener noreferrer" className="law-link">zákona č. 543/2002 Z. z. o ochrane prírody a krajiny</a> sú všetky jaskyne na Slovensku chránené prírodné pamiatky. Voľný vstup bez oficiálneho povolenia je <strong>prísne zakázaný a pokutovaný</strong>.
+          </p>
+
+          <div className="risk-warning-subbox">
+            <div className="risk-header">
+              <ShieldAlert size={14} className="risk-icon" />
+              <span>Jaskyne sú extrémne nebezpečné prostredie:</span>
+            </div>
+            <ul className="risk-points-list">
+              <li>Riziko fatálnych pádov do hlbokých vertikál a priepastí</li>
+              <li>Závaly, nestabilné bloky a padajúce kamene</li>
+              <li>Absolútna tma, strata orientácie a rýchle podchladenie (hypotermia)</li>
+              <li>Náhle záplavy vodou a výskyt nedýchateľných plynov</li>
+              <li>Záchranné akcie v podzemí trvajú desiatky hodín</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <style>{`
         .area-card-overlay {
           position: absolute;
           bottom: 28px;
           left: 28px;
-          width: 380px;
+          width: 400px;
           max-width: calc(100vw - 56px);
-          max-height: calc(100vh - 120px);
+          max-height: calc(100vh - 75px);
           overflow-y: auto;
-          padding: 1.5rem;
+          padding: 1.25rem;
           z-index: 12;
           color: var(--color-limestone);
           animation: slideUp 0.3s ease-out forwards;
@@ -89,13 +129,13 @@ export const AreaCard: React.FC<AreaCardProps> = ({
 
         .close-btn {
           position: absolute;
-          top: 1rem;
-          right: 1rem;
+          top: 0.85rem;
+          right: 0.85rem;
           background: rgba(255, 255, 255, 0.08);
           border: none;
           color: var(--color-fog);
-          width: 32px;
-          height: 32px;
+          width: 30px;
+          height: 30px;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -112,12 +152,12 @@ export const AreaCard: React.FC<AreaCardProps> = ({
         .area-header {
           display: flex;
           flex-direction: column;
-          gap: 0.4rem;
-          margin-bottom: 1rem;
+          gap: 0.3rem;
+          margin-bottom: 0.65rem;
         }
 
         .area-badge {
-          font-size: 0.75rem;
+          font-size: 0.72rem;
           color: var(--color-lantern-amber);
           text-transform: uppercase;
           letter-spacing: 0.06em;
@@ -128,7 +168,7 @@ export const AreaCard: React.FC<AreaCardProps> = ({
         }
 
         .area-title {
-          font-size: 1.75rem;
+          font-size: 1.45rem;
           color: var(--color-limestone);
           line-height: 1.2;
         }
@@ -136,31 +176,31 @@ export const AreaCard: React.FC<AreaCardProps> = ({
         .cave-count-tag {
           display: inline-flex;
           align-items: baseline;
-          gap: 0.4rem;
+          gap: 0.35rem;
           background: rgba(224, 145, 47, 0.15);
           border: 1px solid rgba(224, 145, 47, 0.3);
-          padding: 0.3rem 0.75rem;
+          padding: 0.2rem 0.6rem;
           border-radius: var(--radius-sm);
           width: fit-content;
-          margin-top: 0.2rem;
+          margin-top: 0.15rem;
         }
 
         .cave-num {
           font-weight: 700;
-          font-size: 1.1rem;
+          font-size: 0.95rem;
           color: var(--color-lantern-amber);
         }
 
         .cave-text {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           color: var(--color-fog);
         }
 
         .area-desc {
-          font-size: 0.9rem;
-          line-height: 1.5;
+          font-size: 0.82rem;
+          line-height: 1.4;
           color: var(--color-fog);
-          margin-bottom: 1.25rem;
+          margin-bottom: 0.75rem;
         }
 
         .section-title {
@@ -229,6 +269,143 @@ export const AreaCard: React.FC<AreaCardProps> = ({
           font-size: 0.85rem;
           color: var(--color-fog);
           font-style: italic;
+        }
+
+        /* High-Contrast Cave Safety, Law & Danger Alert Card */
+        .area-cave-safety-card {
+          background: linear-gradient(145deg, #180808 0%, #220E04 100%);
+          border: 2px solid #EF4444;
+          border-radius: var(--radius-md);
+          padding: 0.95rem;
+          margin-top: 1rem;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(239, 68, 68, 0.25);
+        }
+
+        /* 1. Welcoming Contact Box at Top */
+        .alert-callout-top {
+          background: rgba(13, 148, 136, 0.28);
+          border: 1.5px solid #14B8A6;
+          border-radius: var(--radius-sm);
+          padding: 0.75rem 0.85rem;
+          margin-bottom: 0.85rem;
+          box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+        }
+
+        .callout-header-row {
+          display: flex;
+          align-items: center;
+          gap: 0.45rem;
+          margin-bottom: 0.35rem;
+        }
+
+        .callout-icon {
+          color: #34D399;
+          flex-shrink: 0;
+        }
+
+        .callout-main-title {
+          font-size: 0.88rem;
+          font-weight: 800;
+          line-height: 1.3;
+          color: #F0FDF4;
+          margin: 0;
+        }
+
+        .callout-text {
+          font-size: 0.77rem;
+          line-height: 1.45;
+          color: #FFFFFF;
+          margin: 0;
+        }
+
+        .callout-text strong {
+          color: #A7F3D0;
+        }
+
+        /* 2. Rationale & Hazard Warning */
+        .alert-rationale-section {
+          border-top: 1px dashed rgba(239, 68, 68, 0.35);
+          padding-top: 0.75rem;
+        }
+
+        .alert-badge-header {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          margin-bottom: 0.35rem;
+        }
+
+        .alert-badge-icon {
+          color: #EF4444;
+          filter: drop-shadow(0 0 4px rgba(239, 68, 68, 0.8));
+        }
+
+        .alert-badge-title {
+          font-size: 0.74rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #FCA5A5;
+        }
+
+        .alert-law-text {
+          font-size: 0.76rem;
+          line-height: 1.45;
+          color: #FFFFFF;
+          margin-bottom: 0.6rem;
+        }
+
+        .law-link {
+          color: #FDE047;
+          font-weight: 700;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+          transition: color 0.2s;
+        }
+
+        .law-link:hover {
+          color: #FEF08A;
+        }
+
+        .risk-warning-subbox {
+          background: #110505;
+          border: 1.5px solid rgba(239, 68, 68, 0.45);
+          border-radius: var(--radius-sm);
+          padding: 0.65rem 0.75rem;
+        }
+
+        .risk-header {
+          font-size: 0.77rem;
+          font-weight: 800;
+          color: #FCA5A5;
+          display: flex;
+          align-items: center;
+          gap: 0.35rem;
+          margin-bottom: 0.35rem;
+        }
+
+        .risk-icon {
+          color: #EF4444;
+          flex-shrink: 0;
+        }
+
+        .risk-points-list {
+          margin: 0;
+          padding-left: 1.1rem;
+          font-size: 0.75rem;
+          line-height: 1.4;
+          color: #FFFFFF;
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+        }
+
+        .risk-points-list li {
+          color: #FFFFFF;
+        }
+
+        .risk-points-list li::marker {
+          color: #EF4444;
         }
 
         @media (max-width: 640px) {

@@ -22,13 +22,14 @@ function sss_speleo_map_shortcode_handler($atts) {
         'polygons' => 'true',
         'pois' => 'true',
         'is3d' => 'false',
-        'height' => '520px',
+        'zoom' => '',
+        'height' => '560px',
         'width' => '100%',
         'src' => ''
     ), $atts, 'sss_speleo_map');
 
-    // Base URL of the hosted SSS Map application (adjust URL to your hosted domain/subfolder)
-    $base_url = !empty($atts['src']) ? $atts['src'] : 'https://dankez.github.io/sss_clubmap/';
+    // Base URL of the hosted SSS Map application
+    $base_url = !empty($atts['src']) ? $atts['src'] : 'https://kluby.sss.sk/';
 
     $query_args = array(
         'embed' => 'true'
@@ -41,6 +42,7 @@ function sss_speleo_map_shortcode_handler($atts) {
     if ($atts['polygons'] === 'false') $query_args['polygons'] = 'false';
     if ($atts['pois'] === 'false') $query_args['pois'] = 'false';
     if ($atts['is3d'] === 'true') $query_args['is3d'] = 'true';
+    if (!empty($atts['zoom'])) $query_args['zoom'] = $atts['zoom'];
 
     $iframe_src = add_query_arg($query_args, $base_url);
 

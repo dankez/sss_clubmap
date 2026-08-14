@@ -21,6 +21,11 @@ export interface GroupData {
   public_contact?: PublicContact;
   social_links?: SocialLink[];
   activities?: string[];
+  operating_areas?: string[];
+  key_caves?: string[];
+  key_activities?: string[];
+  annual_highlights?: string[];
+  contact_motivation?: string;
   area_relationships?: Array<{ area_id: string; relationship: string }>;
   verified_at: string | null;
   polygon_status: string;
@@ -29,6 +34,11 @@ export interface GroupData {
     type: string;
     coordinates: number[][][];
   };
+  priority_oblasti?: Array<{
+    celok: string;
+    uzemie: string;
+    lokality: string[];
+  }>;
 }
 
 export interface AdminCredentials {
@@ -53,6 +63,10 @@ export interface AreaData {
     coordinates: number[][][];
   };
   polygon_status: string;
+  groups?: string[];
+  region_category?: string;
+  region_name?: string;
+  major_caves?: string[];
 }
 
 export interface DataBundle {

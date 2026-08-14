@@ -80,11 +80,21 @@ export const MapView: React.FC<MapViewProps> = ({
       ]
     };
 
+    const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+    const urlZoom = urlParams?.get('zoom');
+    const parsedZoom = urlZoom && !isNaN(parseFloat(urlZoom)) ? parseFloat(urlZoom) : 7.5;
+
+    const urlLat = urlParams?.get('lat');
+    const urlLng = urlParams?.get('lng');
+    const parsedCenter: [number, number] = (urlLat && urlLng && !isNaN(parseFloat(urlLat)) && !isNaN(parseFloat(urlLng)))
+      ? [parseFloat(urlLng), parseFloat(urlLat)]
+      : [19.6, 48.7];
+
     const map = new maplibregl.Map({
       container: mapContainerRef.current,
       style: style,
-      center: [19.6, 48.7], // Slovakia geographical center
-      zoom: 7.5,
+      center: parsedCenter,
+      zoom: parsedZoom,
       pitch: is3D ? 65 : 0,
       bearing: is3D ? -25 : 0,
       attributionControl: false
@@ -425,69 +435,82 @@ export const MapView: React.FC<MapViewProps> = ({
     htmlMarkersRef.current.forEach((m) => m.remove());
     htmlMarkersRef.current = [];
 
-    // Track occupied positions to offset overlapping HQ markers
-    const placedPositions: Array<{ lng: number; lat: number; count: number }> = [];
+    // 1. Group clubs into clusters by proximity (< 0.015 deg ~ 1.2km)
+    type MarkerCluster = {
+      lng: number;
+      lat: number;
+      groups: GroupData[];
+    };
 
-    // Strict Grid / Side-by-side & Top-bottom Offsets for colliding markers (42px step)
-    const gridOffsets: Array<[number, number]> = [
-      [0, 0],
-      [42, 0],    // 1: Right
-      [-42, 0],   // 2: Left
-      [0, -42],   // 3: Top
-      [0, 42],    // 4: Bottom
-      [42, -42],  // 5: Top-Right
-      [-42, 42],  // 6: Bottom-Left
-      [-42, -42], // 7: Top-Left
-      [42, 42],   // 8: Bottom-Right
-      [84, 0],    // 9: Far Right
-      [-84, 0],   // 10: Far Left
-      [0, -84],   // 11: Far Top
-      [0, 84]     // 12: Far Bottom
-    ];
+    const clusters: MarkerCluster[] = [];
 
     groups.forEach((group) => {
       if (group.hq_coordinates && group.hq_coordinates.length === 2) {
-        const lng = group.hq_coordinates[0];
-        const lat = group.hq_coordinates[1];
+        let lng = group.hq_coordinates[0];
+        let lat = group.hq_coordinates[1];
 
-        // Check if another marker exists nearby (< 0.06 deg threshold)
-        const match = placedPositions.find(
-          (p) => Math.abs(p.lng - lng) < 0.06 && Math.abs(p.lat - lat) < 0.06
+        // Ensure proper [longitude, latitude] orientation
+        if (lng > 40 && lat < 30) {
+          lng = group.hq_coordinates[1];
+          lat = group.hq_coordinates[0];
+        }
+
+        const match = clusters.find(
+          (c) => Math.abs(c.lng - lng) < 0.015 && Math.abs(c.lat - lat) < 0.015
         );
 
-        let offsetX = 0;
-        let offsetY = 0;
-
         if (match) {
-          match.count += 1;
-          const idx = Math.min(match.count, gridOffsets.length - 1);
-          offsetX = gridOffsets[idx][0];
-          offsetY = gridOffsets[idx][1];
+          match.groups.push(group);
         } else {
-          placedPositions.push({ lng, lat, count: 0 });
+          clusters.push({
+            lng,
+            lat,
+            groups: [group]
+          });
         }
+      }
+    });
+
+    // 2. Render each group with a clean Micro-Offset cascade for cities with multiple clubs
+    clusters.forEach((cluster) => {
+      const { lng, lat, groups: clusterGroups } = cluster;
+
+      clusterGroups.forEach((group, index) => {
+        // Subtle card cascade: 0px, 7px, 14px...
+        const cascadeX = index * 7;
+        const cascadeY = index * -6;
 
         const el = document.createElement('div');
         el.className = 'custom-poi-marker-badge';
         if (!showPois) el.style.display = 'none';
 
+        const baseZIndex = 10 + index;
+        el.style.zIndex = `${baseZIndex}`;
+
         const logoHtml = group.logo_url
           ? `<img src="${group.logo_url}" alt="${group.name}" class="poi-marker-logo" />`
           : `<span class="poi-marker-initials">${group.name.substring(0, 2).toUpperCase()}</span>`;
 
+        const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+        const isEmbed = urlParams?.get('embed') === 'true';
+
         el.innerHTML = `
-          <div class="poi-badge-inner">
+          <div class="poi-badge-inner" title="${group.name}${isEmbed ? ' — Otvoriť na kluby.sss.sk ↗' : ''}">
             ${logoHtml}
           </div>
-          <div class="poi-badge-label">${group.name}</div>
+          <div class="poi-badge-pin-tip"></div>
+          <div class="poi-badge-label">${group.name}${isEmbed ? ' ↗' : ''}</div>
         `;
 
-        el.addEventListener('mouseenter', () => {
-          el.style.zIndex = '99999';
-        });
-        el.addEventListener('mouseleave', () => {
-          el.style.zIndex = '5';
-        });
+        const innerBadge = el.querySelector('.poi-badge-inner');
+        if (innerBadge) {
+          innerBadge.addEventListener('mouseenter', () => {
+            el.style.zIndex = '99999';
+          });
+          innerBadge.addEventListener('mouseleave', () => {
+            el.style.zIndex = `${baseZIndex}`;
+          });
+        }
 
         el.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -496,12 +519,16 @@ export const MapView: React.FC<MapViewProps> = ({
           }
         });
 
-        const marker = new maplibregl.Marker({ element: el, offset: [offsetX, offsetY] })
+        const marker = new maplibregl.Marker({
+          element: el,
+          anchor: 'bottom',
+          offset: [cascadeX, cascadeY]
+        })
           .setLngLat([lng, lat])
           .addTo(map);
 
         htmlMarkersRef.current.push(marker);
-      }
+      });
     });
   }, [groups, showPois]);
 
@@ -518,19 +545,19 @@ export const MapView: React.FC<MapViewProps> = ({
         const color = POLYGON_PALETTE[idx % POLYGON_PALETTE.length];
         return {
           type: 'Feature' as const,
-          geometry: g.polygon!,
+          geometry: g.polygon as any,
           properties: {
             id: g.id,
             name: g.name,
-            fillColor: color.fill,
-            strokeColor: color.stroke
+            fillColor: color,
+            strokeColor: color
           }
         };
       });
 
     source.setData({
       type: 'FeatureCollection',
-      features: groupPolygonFeatures
+      features: groupPolygonFeatures as any
     });
   }, [groups]);
 
@@ -619,8 +646,15 @@ export const MapView: React.FC<MapViewProps> = ({
     if (isDrawing) return; // DO NOT auto-fly or auto-center when admin is drawing polygon!
 
     if (selectedGroup && selectedGroup.hq_coordinates && selectedGroup.hq_coordinates.length === 2) {
+      let lng = selectedGroup.hq_coordinates[0];
+      let lat = selectedGroup.hq_coordinates[1];
+      if (lng > 40 && lat < 30) {
+        lng = selectedGroup.hq_coordinates[1];
+        lat = selectedGroup.hq_coordinates[0];
+      }
+
       mapRef.current.flyTo({
-        center: [selectedGroup.hq_coordinates[0], selectedGroup.hq_coordinates[1]],
+        center: [lng, lat],
         zoom: 12.5,
         pitch: is3D ? 55 : 0,
         bearing: is3D ? 15 : 0,
@@ -630,11 +664,21 @@ export const MapView: React.FC<MapViewProps> = ({
     }
 
     if (selectedArea) {
-      const groupIds = selectedArea.group_relationships.map((rel) => rel.group_id);
-      const areaGroups = groups.filter((g) => groupIds.includes(g.id));
+      const areaGroups = groups.filter((g) =>
+        g.area_relationships?.some((rel) => rel.area_id === selectedArea.id)
+      );
       const validCoords = areaGroups
-        .map((g) => g.hq_coordinates)
-        .filter((coords): coords is [number, number] => !!coords && coords.length === 2);
+        .map((g) => {
+          if (!g.hq_coordinates || g.hq_coordinates.length !== 2) return null;
+          let lng = g.hq_coordinates[0];
+          let lat = g.hq_coordinates[1];
+          if (lng > 40 && lat < 30) {
+            lng = g.hq_coordinates[1];
+            lat = g.hq_coordinates[0];
+          }
+          return [lng, lat] as [number, number];
+        })
+        .filter((coords): coords is [number, number] => !!coords);
 
       if (validCoords.length > 0) {
         let minLng = validCoords[0][0];
@@ -664,15 +708,23 @@ export const MapView: React.FC<MapViewProps> = ({
     <div ref={mapContainerRef} className="map-container">
       <style>{`
         .custom-poi-marker-badge {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35px;
+          height: auto;
           cursor: pointer;
           display: flex;
           flex-direction: column;
           align-items: center;
           z-index: 5;
-          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), z-index 0.2s;
+          pointer-events: none;
+          transition: z-index 0.2s;
+          user-select: none;
         }
 
-        .custom-poi-marker-badge:hover {
+        .custom-poi-marker-badge:hover,
+        .custom-poi-marker-badge:has(.poi-badge-inner:hover) {
           z-index: 99999 !important;
         }
 
@@ -689,9 +741,22 @@ export const MapView: React.FC<MapViewProps> = ({
           overflow: hidden;
           padding: 2px;
           transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          pointer-events: auto;
+          cursor: pointer;
         }
 
-        .custom-poi-marker-badge:hover .poi-badge-inner {
+        .poi-badge-pin-tip {
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 6px solid #0D9488;
+          margin-top: -1px;
+          pointer-events: none;
+          transition: border-top-color 0.25s;
+        }
+
+        .poi-badge-inner:hover {
           width: 60px;
           height: 60px;
           border-radius: 12px;
@@ -700,11 +765,16 @@ export const MapView: React.FC<MapViewProps> = ({
           box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 0 4px rgba(224, 145, 47, 0.55);
         }
 
+        .poi-badge-inner:hover + .poi-badge-pin-tip {
+          border-top-color: #E0912F;
+        }
+
         .poi-marker-logo {
           width: 100%;
           height: 100%;
           object-fit: contain;
           border-radius: 5px;
+          pointer-events: none;
         }
 
         .poi-marker-initials {
@@ -712,12 +782,16 @@ export const MapView: React.FC<MapViewProps> = ({
           font-weight: 800;
           font-size: 0.88rem;
           color: #0F172A;
+          pointer-events: none;
         }
 
         .poi-badge-label {
+          position: absolute;
+          top: 100%;
+          left: 50%;
           opacity: 0;
           visibility: hidden;
-          transform: translateY(-4px);
+          transform: translate(-50%, -4px);
           transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
           background: rgba(20, 25, 23, 0.94);
           color: #F8FAFC;
@@ -725,7 +799,7 @@ export const MapView: React.FC<MapViewProps> = ({
           font-weight: 700;
           padding: 4px 10px;
           border-radius: 99px;
-          margin-top: 5px;
+          margin-top: 6px;
           white-space: nowrap;
           box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
           border: 1px solid rgba(224, 145, 47, 0.5);
@@ -733,10 +807,10 @@ export const MapView: React.FC<MapViewProps> = ({
           pointer-events: none;
         }
 
-        .custom-poi-marker-badge:hover .poi-badge-label {
+        .poi-badge-inner:hover ~ .poi-badge-label {
           opacity: 1;
           visibility: visible;
-          transform: translateY(0);
+          transform: translate(-50%, 0);
         }
       `}</style>
     </div>

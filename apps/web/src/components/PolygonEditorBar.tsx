@@ -13,6 +13,7 @@ interface PolygonEditorBarProps {
   onUndoPoint: () => void;
   onClearPoints: () => void;
   onSavePolygon: (groupId: string, points: number[][]) => void;
+  onDeletePolygon: (groupId: string) => void;
   showPolygons: boolean;
   onToggleShowPolygons: () => void;
 }
@@ -27,6 +28,7 @@ export const PolygonEditorBar: React.FC<PolygonEditorBarProps> = ({
   onUndoPoint,
   onClearPoints,
   onSavePolygon,
+  onDeletePolygon,
   showPolygons,
   onToggleShowPolygons,
 }) => {
@@ -90,6 +92,18 @@ export const PolygonEditorBar: React.FC<PolygonEditorBarProps> = ({
               </option>
             ))}
           </select>
+
+          {/* Delete Existing Polygon Button */}
+          {activeGroup?.polygon && (
+            <button
+              className="btn-delete-saved-poly"
+              onClick={() => onDeletePolygon(activeGroup.id)}
+              title={`Zmazať existujúci polygón skupiny ${activeGroup.name}`}
+            >
+              <Trash2 size={15} />
+              <span>Zmazať existujúci polygón</span>
+            </button>
+          )}
         </div>
 
         {/* Drawing Controls */}
@@ -104,17 +118,17 @@ export const PolygonEditorBar: React.FC<PolygonEditorBarProps> = ({
 
           {isDrawing && (
             <div className="points-counter">
-              <span>Body: <strong>{drawnPoints.length}</strong></span>
+              <span>Vyklikané body: <strong>{drawnPoints.length}</strong></span>
             </div>
           )}
 
           {drawnPoints.length > 0 && (
             <>
-              <button className="btn-tool" onClick={onUndoPoint} title="Zmazať posledný bod">
+              <button className="btn-tool" onClick={onUndoPoint} title="Zmazať posledný vyklikaný bod">
                 <RotateCcw size={15} /> Späť
               </button>
-              <button className="btn-tool danger" onClick={onClearPoints} title="Vymazať všetky body">
-                <Trash2 size={15} /> Vyčistiť
+              <button className="btn-tool danger" onClick={onClearPoints} title="Zmazať všetky rozkreslené body">
+                <Trash2 size={15} /> Zmazať rozkreslené ({drawnPoints.length})
               </button>
               <button className="btn-save-poly" onClick={handleSave}>
                 <Check size={16} /> Uložiť skupine {activeGroup ? `"${activeGroup.name.slice(0, 18)}..."` : ''}
@@ -290,6 +304,28 @@ export const PolygonEditorBar: React.FC<PolygonEditorBarProps> = ({
 
         .btn-save-poly:hover {
           background: #4B6940;
+        }
+
+        .btn-delete-saved-poly {
+          background: rgba(239, 68, 68, 0.12);
+          border: 1px solid rgba(239, 68, 68, 0.4);
+          color: #EF4444;
+          font-weight: 600;
+          font-size: 0.8rem;
+          padding: 0.45rem 0.75rem;
+          border-radius: var(--radius-md);
+          display: flex;
+          align-items: center;
+          gap: 0.35rem;
+          cursor: pointer;
+          transition: all 0.2s;
+          white-space: nowrap;
+        }
+
+        .btn-delete-saved-poly:hover {
+          background: #EF4444;
+          color: #FFFFFF;
+          border-color: #EF4444;
         }
       `}</style>
     </div>
